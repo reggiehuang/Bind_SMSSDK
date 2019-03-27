@@ -1,0 +1,6803 @@
+<api
+  api-source="class-parse">
+  <package
+    name="cn.smssdk"
+    jni-name="cn/smssdk">
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="a"
+      jni-signature="Lcn/smssdk/a;"
+      static="false"
+      visibility="public">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="cn.smssdk.a"
+        jni-return="Lcn/smssdk/a;"
+        static="true"
+        synchronized="true"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lcn/smssdk/a;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Z)V">
+        <parameter
+          name="p0"
+          type="boolean"
+          jni-type="Z" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="b"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Z" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="b"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Z)V">
+        <parameter
+          name="p0"
+          type="boolean"
+          jni-type="Z" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="c"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Z" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="c"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Z)V">
+        <parameter
+          name="p0"
+          type="boolean"
+          jni-type="Z" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="b"
+      jni-signature="Lcn/smssdk/b;"
+      static="false"
+      visibility="public">
+      <implements
+        name="cn.smssdk.contact.OnContactChangeListener"
+        name-generic-aware="cn.smssdk.contact.OnContactChangeListener"
+        jni-type="Lcn/smssdk/contact/OnContactChangeListener;" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="b"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcn/smssdk/SMSSDK$InitFlag;)V">
+        <parameter
+          name="p0"
+          type="cn.smssdk.SMSSDK.InitFlag"
+          jni-type="Lcn/smssdk/SMSSDK$InitFlag;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(ILjava/lang/Object;)V">
+        <parameter
+          name="p0"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="p1"
+          type="java.lang.Object"
+          jni-type="Ljava/lang/Object;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/telephony/SmsMessage;Lcn/smssdk/SMSSDK$VerifyCodeReadListener;)V">
+        <parameter
+          name="p0"
+          type="android.telephony.SmsMessage"
+          jni-type="Landroid/telephony/SmsMessage;" />
+        <parameter
+          name="p1"
+          type="cn.smssdk.SMSSDK.VerifyCodeReadListener"
+          jni-type="Lcn/smssdk/SMSSDK$VerifyCodeReadListener;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcn/smssdk/EventHandler;)V">
+        <parameter
+          name="p0"
+          type="cn.smssdk.EventHandler"
+          jni-type="Lcn/smssdk/EventHandler;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="java.lang.String[]"
+        jni-return="[Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)[Ljava/lang/String;">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="b"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="b"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcn/smssdk/EventHandler;)V">
+        <parameter
+          name="p0"
+          type="cn.smssdk.EventHandler"
+          jni-type="Lcn/smssdk/EventHandler;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="b"
+        native="false"
+        return="java.lang.String[]"
+        jni-return="[Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)[Ljava/lang/String;">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="c"
+        native="false"
+        return="java.util.HashMap&lt;java.lang.Character, java.util.ArrayList&lt;java.lang.String[]&gt;&gt;"
+        jni-return="Ljava/util/HashMap&lt;Ljava/lang/Character;Ljava/util/ArrayList&lt;[Ljava/lang/String;&gt;;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/util/HashMap;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="d"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onContactChange"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Z)V">
+        <parameter
+          name="p0"
+          type="boolean"
+          jni-type="Z" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="b.1"
+      jni-signature="Lcn/smssdk/b$1;"
+      static="false"
+      visibility="">
+      <implements
+        name="android.os.Handler.Callback"
+        name-generic-aware="android.os.Handler.Callback"
+        jni-type="Landroid/os/Handler$Callback;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="handleMessage"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/os/Message;)Z">
+        <parameter
+          name="p0"
+          type="android.os.Message"
+          jni-type="Landroid/os/Message;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="b.1.1"
+      jni-signature="Lcn/smssdk/b$1$1;"
+      static="false"
+      visibility="">
+      <implements
+        name="java.lang.Runnable"
+        name-generic-aware="java.lang.Runnable"
+        jni-type="Ljava/lang/Runnable;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="run"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Thread;"
+      extends="java.lang.Thread"
+      extends-generic-aware="java.lang.Thread"
+      final="false"
+      name="b.2"
+      jni-signature="Lcn/smssdk/b$2;"
+      static="false"
+      visibility="">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="run"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="b.3"
+      jni-signature="Lcn/smssdk/b$3;"
+      static="false"
+      visibility="">
+      <implements
+        name="android.os.Handler.Callback"
+        name-generic-aware="android.os.Handler.Callback"
+        jni-type="Landroid/os/Handler$Callback;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="handleMessage"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/os/Message;)Z">
+        <parameter
+          name="p0"
+          type="android.os.Message"
+          jni-type="Landroid/os/Message;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="b.4"
+      jni-signature="Lcn/smssdk/b$4;"
+      static="false"
+      visibility="">
+      <implements
+        name="android.os.Handler.Callback"
+        name-generic-aware="android.os.Handler.Callback"
+        jni-type="Landroid/os/Handler$Callback;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="handleMessage"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/os/Message;)Z">
+        <parameter
+          name="p0"
+          type="android.os.Message"
+          jni-type="Landroid/os/Message;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="b.5"
+      jni-signature="Lcn/smssdk/b$5;"
+      static="false"
+      visibility="">
+      <implements
+        name="java.lang.Runnable"
+        name-generic-aware="java.lang.Runnable"
+        jni-type="Ljava/lang/Runnable;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="run"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="b.5.1"
+      jni-signature="Lcn/smssdk/b$5$1;"
+      static="false"
+      visibility="">
+      <implements
+        name="android.os.Handler.Callback"
+        name-generic-aware="android.os.Handler.Callback"
+        jni-type="Landroid/os/Handler$Callback;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="handleMessage"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/os/Message;)Z">
+        <parameter
+          name="p0"
+          type="android.os.Message"
+          jni-type="Landroid/os/Message;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="b.6"
+      jni-signature="Lcn/smssdk/b$6;"
+      static="true"
+      visibility="" />
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="DefaultOnSendMessageHandler"
+      jni-signature="Lcn/smssdk/DefaultOnSendMessageHandler;"
+      static="false"
+      visibility="public">
+      <implements
+        name="cn.smssdk.OnSendMessageHandler"
+        name-generic-aware="cn.smssdk.OnSendMessageHandler"
+        jni-type="Lcn/smssdk/OnSendMessageHandler;" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="DefaultOnSendMessageHandler"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onSendMessage"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Ljava/lang/String;)Z">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p1"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="EventHandler"
+      jni-signature="Lcn/smssdk/EventHandler;"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="EventHandler"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="afterEvent"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(IILjava/lang/Object;)V">
+        <parameter
+          name="p0"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="p1"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="p2"
+          type="java.lang.Object"
+          jni-type="Ljava/lang/Object;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="beforeEvent"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(ILjava/lang/Object;)V">
+        <parameter
+          name="p0"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="p1"
+          type="java.lang.Object"
+          jni-type="Ljava/lang/Object;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onRegister"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onUnregister"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="OnSendMessageHandler"
+      jni-signature="Lcn/smssdk/OnSendMessageHandler;"
+      static="false"
+      visibility="public">
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onSendMessage"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Ljava/lang/String;)Z">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p1"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+    </interface>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lcn/smssdk/EventHandler;"
+      extends="cn.smssdk.EventHandler"
+      extends-generic-aware="cn.smssdk.EventHandler"
+      final="false"
+      name="ReflectableEnventHandler"
+      jni-signature="Lcn/smssdk/ReflectableEnventHandler;"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="ReflectableEnventHandler"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="afterEvent"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(IILjava/lang/Object;)V">
+        <parameter
+          name="p0"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="p1"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="p2"
+          type="java.lang.Object"
+          jni-type="Ljava/lang/Object;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="beforeEvent"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(ILjava/lang/Object;)V">
+        <parameter
+          name="p0"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="p1"
+          type="java.lang.Object"
+          jni-type="Ljava/lang/Object;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onRegister"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onUnregister"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setAfterEventCallback"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(ILandroid/os/Handler$Callback;)V">
+        <parameter
+          name="p0"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="p1"
+          type="android.os.Handler.Callback"
+          jni-type="Landroid/os/Handler$Callback;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setBeforeEventCallback"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(ILandroid/os/Handler$Callback;)V">
+        <parameter
+          name="p0"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="p1"
+          type="android.os.Handler.Callback"
+          jni-type="Landroid/os/Handler$Callback;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setOnRegisterCallback"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(ILandroid/os/Handler$Callback;)V">
+        <parameter
+          name="p0"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="p1"
+          type="android.os.Handler.Callback"
+          jni-type="Landroid/os/Handler$Callback;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setOnUnregisterCallback"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(ILandroid/os/Handler$Callback;)V">
+        <parameter
+          name="p0"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="p1"
+          type="android.os.Handler.Callback"
+          jni-type="Landroid/os/Handler$Callback;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="SMSSDK"
+      jni-signature="Lcn/smssdk/SMSSDK;"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="SMSSDK"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getContacts"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Z)V">
+        <parameter
+          name="p0"
+          type="boolean"
+          jni-type="Z" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getCountry"
+        native="false"
+        return="java.lang.String[]"
+        jni-return="[Ljava/lang/String;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)[Ljava/lang/String;">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getCountryByMCC"
+        native="false"
+        return="java.lang.String[]"
+        jni-return="[Ljava/lang/String;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)[Ljava/lang/String;">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getFriendsInApp"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getGroupedCountryList"
+        native="false"
+        return="java.util.HashMap&lt;java.lang.Character, java.util.ArrayList&lt;java.lang.String[]&gt;&gt;"
+        jni-return="Ljava/util/HashMap&lt;Ljava/lang/Character;Ljava/util/ArrayList&lt;[Ljava/lang/String;&gt;;&gt;;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/util/HashMap;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getNewFriendsCount"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getSupportedCountries"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getVerificationCode"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Ljava/lang/String;)V">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p1"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getVerificationCode"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Ljava/lang/String;Lcn/smssdk/OnSendMessageHandler;)V">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p1"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p2"
+          type="cn.smssdk.OnSendMessageHandler"
+          jni-type="Lcn/smssdk/OnSendMessageHandler;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getVerificationCode"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p1"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p2"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getVerificationCode"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcn/smssdk/OnSendMessageHandler;)V">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p1"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p2"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p3"
+          type="cn.smssdk.OnSendMessageHandler"
+          jni-type="Lcn/smssdk/OnSendMessageHandler;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getVerificationCode"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcn/smssdk/OnSendMessageHandler;)V">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p1"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p2"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p3"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p4"
+          type="cn.smssdk.OnSendMessageHandler"
+          jni-type="Lcn/smssdk/OnSendMessageHandler;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getVersion"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getVoiceVerifyCode"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Ljava/lang/String;)V">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p1"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getVoiceVerifyCode"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p1"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p2"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="readVerificationCode"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/telephony/SmsMessage;Lcn/smssdk/SMSSDK$VerifyCodeReadListener;)V">
+        <parameter
+          name="p0"
+          type="android.telephony.SmsMessage"
+          jni-type="Landroid/telephony/SmsMessage;" />
+        <parameter
+          name="p1"
+          type="cn.smssdk.SMSSDK.VerifyCodeReadListener"
+          jni-type="Lcn/smssdk/SMSSDK$VerifyCodeReadListener;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="registerEventHandler"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcn/smssdk/EventHandler;)V">
+        <parameter
+          name="p0"
+          type="cn.smssdk.EventHandler"
+          jni-type="Lcn/smssdk/EventHandler;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setAskPermisionOnReadContact"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="true"
+        synchronized="true"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Z)V">
+        <parameter
+          name="p0"
+          type="boolean"
+          jni-type="Z" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setInitFlag"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcn/smssdk/SMSSDK$InitFlag;)V">
+        <parameter
+          name="p0"
+          type="cn.smssdk.SMSSDK.InitFlag"
+          jni-type="Lcn/smssdk/SMSSDK$InitFlag;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="submitUserInfo"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p1"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p2"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p3"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p4"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="submitVerificationCode"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p1"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p2"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="unregisterAllEventHandler"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="unregisterEventHandler"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcn/smssdk/EventHandler;)V">
+        <parameter
+          name="p0"
+          type="cn.smssdk.EventHandler"
+          jni-type="Lcn/smssdk/EventHandler;" />
+      </method>
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="EVENT_GET_CONTACTS"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        value="4"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="EVENT_GET_FRIENDS_IN_APP"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        value="6"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="EVENT_GET_NEW_FRIENDS_COUNT"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        value="7"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="EVENT_GET_SUPPORTED_COUNTRIES"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        value="1"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="EVENT_GET_VERIFICATION_CODE"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        value="2"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="EVENT_GET_VOICE_VERIFICATION_CODE"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        value="8"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="EVENT_SUBMIT_USER_INFO"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        value="5"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="EVENT_SUBMIT_VERIFICATION_CODE"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        value="3"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="RESULT_COMPLETE"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        value="-1"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="RESULT_ERROR"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        value="0"
+        visibility="public"
+        volatile="false" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Enum;"
+      extends="java.lang.Enum"
+      extends-generic-aware="java.lang.Enum&lt;cn.smssdk.SMSSDK.InitFlag&gt;"
+      final="true"
+      name="SMSSDK.InitFlag"
+      jni-signature="Lcn/smssdk/SMSSDK$InitFlag;"
+      static="true"
+      visibility="public">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="valueOf"
+        native="false"
+        return="cn.smssdk.SMSSDK.InitFlag"
+        jni-return="Lcn/smssdk/SMSSDK$InitFlag;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcn/smssdk/SMSSDK$InitFlag;">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="values"
+        native="false"
+        return="cn.smssdk.SMSSDK.InitFlag[]"
+        jni-return="[Lcn/smssdk/SMSSDK$InitFlag;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()[Lcn/smssdk/SMSSDK$InitFlag;" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="DEFAULT"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="cn.smssdk.SMSSDK.InitFlag"
+        type-generic-aware="cn.smssdk.SMSSDK.InitFlag"
+        jni-signature="Lcn/smssdk/SMSSDK$InitFlag;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="DISABLE_CONTACT"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="cn.smssdk.SMSSDK.InitFlag"
+        type-generic-aware="cn.smssdk.SMSSDK.InitFlag"
+        jni-signature="Lcn/smssdk/SMSSDK$InitFlag;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="WARNNING_READCONTACT"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="cn.smssdk.SMSSDK.InitFlag"
+        type-generic-aware="cn.smssdk.SMSSDK.InitFlag"
+        jni-signature="Lcn/smssdk/SMSSDK$InitFlag;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="WARNNING_READCONTACT_DIALOG_MODE"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="cn.smssdk.SMSSDK.InitFlag"
+        type-generic-aware="cn.smssdk.SMSSDK.InitFlag"
+        jni-signature="Lcn/smssdk/SMSSDK$InitFlag;"
+        visibility="public"
+        volatile="false" />
+    </class>
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="SMSSDK.VerifyCodeReadListener"
+      jni-signature="Lcn/smssdk/SMSSDK$VerifyCodeReadListener;"
+      static="true"
+      visibility="public">
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onReadVerifyCode"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)V">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+    </interface>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Exception;"
+      extends="java.lang.Exception"
+      extends-generic-aware="java.lang.Exception"
+      final="false"
+      name="UserInterruptException"
+      jni-signature="Lcn/smssdk/UserInterruptException;"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="UserInterruptException"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+  </package>
+  <package
+    name="cn.smssdk.a"
+    jni-name="cn/smssdk/a">
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="a"
+      jni-signature="Lcn/smssdk/a/a;"
+      static="false"
+      visibility="public">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="cn.smssdk.a.a"
+        jni-return="Lcn/smssdk/a/a;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lcn/smssdk/a/a;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(ILandroid/os/Handler$Callback;)V">
+        <parameter
+          name="p0"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="p1"
+          type="android.os.Handler.Callback"
+          jni-type="Landroid/os/Handler$Callback;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/os/Handler$Callback;)V">
+        <parameter
+          name="p0"
+          type="android.os.Handler.Callback"
+          jni-type="Landroid/os/Handler$Callback;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p1"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p2"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p3"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p4"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <exception
+          name="java/lang/Throwable"
+          type="java.lang.Throwable"
+          type-generic-aware="java.lang.Throwable" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="java.util.ArrayList&lt;java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;&gt;"
+        jni-return="Ljava/util/ArrayList&lt;Ljava/util/HashMap&lt;Ljava/lang/String;Ljava/lang/Object;&gt;;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/util/ArrayList;)Ljava/util/ArrayList;">
+        <parameter
+          name="p0"
+          type="java.util.ArrayList&lt;java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;&gt;"
+          jni-type="Ljava/util/ArrayList&lt;Ljava/util/HashMap&lt;Ljava/lang/String;Ljava/lang/Object;&gt;;&gt;;" />
+        <exception
+          name="java/lang/Throwable"
+          type="java.lang.Throwable"
+          type-generic-aware="java.lang.Throwable" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="b"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/os/Handler$Callback;)V">
+        <parameter
+          name="p0"
+          type="android.os.Handler.Callback"
+          jni-type="Landroid/os/Handler$Callback;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="a.1"
+      jni-signature="Lcn/smssdk/a/a$1;"
+      static="false"
+      visibility="">
+      <implements
+        name="android.os.Handler.Callback"
+        name-generic-aware="android.os.Handler.Callback"
+        jni-type="Landroid/os/Handler$Callback;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="handleMessage"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/os/Message;)Z">
+        <parameter
+          name="p0"
+          type="android.os.Message"
+          jni-type="Landroid/os/Message;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="a.2"
+      jni-signature="Lcn/smssdk/a/a$2;"
+      static="false"
+      visibility="">
+      <implements
+        name="android.os.Handler.Callback"
+        name-generic-aware="android.os.Handler.Callback"
+        jni-type="Landroid/os/Handler$Callback;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="handleMessage"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/os/Message;)Z">
+        <parameter
+          name="p0"
+          type="android.os.Message"
+          jni-type="Landroid/os/Message;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="a.3"
+      jni-signature="Lcn/smssdk/a/a$3;"
+      static="false"
+      visibility="">
+      <implements
+        name="java.lang.Runnable"
+        name-generic-aware="java.lang.Runnable"
+        jni-type="Ljava/lang/Runnable;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="run"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Thread;"
+      extends="java.lang.Thread"
+      extends-generic-aware="java.lang.Thread"
+      final="false"
+      name="a.3.1"
+      jni-signature="Lcn/smssdk/a/a$3$1;"
+      static="false"
+      visibility="">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="run"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="a.4"
+      jni-signature="Lcn/smssdk/a/a$4;"
+      static="false"
+      visibility="">
+      <implements
+        name="java.lang.Runnable"
+        name-generic-aware="java.lang.Runnable"
+        jni-type="Ljava/lang/Runnable;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="run"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Thread;"
+      extends="java.lang.Thread"
+      extends-generic-aware="java.lang.Thread"
+      final="false"
+      name="a.4.1"
+      jni-signature="Lcn/smssdk/a/a$4$1;"
+      static="false"
+      visibility="">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="run"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="b"
+      jni-signature="Lcn/smssdk/a/b;"
+      static="false"
+      visibility="public">
+      <implements
+        name="android.os.Handler.Callback"
+        name-generic-aware="android.os.Handler.Callback"
+        jni-type="Landroid/os/Handler$Callback;" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="b"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcn/smssdk/a/a;)V">
+        <parameter
+          name="p0"
+          type="cn.smssdk.a.a"
+          jni-type="Lcn/smssdk/a/a;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()I">
+        <exception
+          name="java/lang/Throwable"
+          type="java.lang.Throwable"
+          type-generic-aware="java.lang.Throwable" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(ILandroid/os/Handler$Callback;)V">
+        <parameter
+          name="p0"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="p1"
+          type="android.os.Handler.Callback"
+          jni-type="Landroid/os/Handler$Callback;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="handleMessage"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/os/Message;)Z">
+        <parameter
+          name="p0"
+          type="android.os.Message"
+          jni-type="Landroid/os/Message;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Thread;"
+      extends="java.lang.Thread"
+      extends-generic-aware="java.lang.Thread"
+      final="false"
+      name="b.1"
+      jni-signature="Lcn/smssdk/a/b$1;"
+      static="false"
+      visibility="">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="run"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+  </package>
+  <package
+    name="cn.smssdk.b"
+    jni-name="cn/smssdk/b">
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="a"
+      jni-signature="Lcn/smssdk/b/a;"
+      static="false"
+      visibility="public">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="cn.smssdk.b.a"
+        jni-return="Lcn/smssdk/b/a;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lcn/smssdk/b/a;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/telephony/SmsMessage;)Z">
+        <parameter
+          name="p0"
+          type="android.telephony.SmsMessage"
+          jni-type="Landroid/telephony/SmsMessage;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcn/smssdk/SMSSDK$VerifyCodeReadListener;)V">
+        <parameter
+          name="p0"
+          type="cn.smssdk.SMSSDK.VerifyCodeReadListener"
+          jni-type="Lcn/smssdk/SMSSDK$VerifyCodeReadListener;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="a.1"
+      jni-signature="Lcn/smssdk/b/a$1;"
+      static="false"
+      visibility="">
+      <implements
+        name="java.lang.Runnable"
+        name-generic-aware="java.lang.Runnable"
+        jni-type="Ljava/lang/Runnable;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="run"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+  </package>
+  <package
+    name="cn.smssdk.contact"
+    jni-name="cn/smssdk/contact">
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lcom/mob/tools/FakeActivity;"
+      extends="com.mob.tools.FakeActivity"
+      extends-generic-aware="com.mob.tools.FakeActivity"
+      final="false"
+      name="a"
+      jni-signature="Lcn/smssdk/contact/a;"
+      static="false"
+      visibility="public">
+      <implements
+        name="android.view.View.OnClickListener"
+        name-generic-aware="android.view.View.OnClickListener"
+        jni-type="Landroid/view/View$OnClickListener;" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Runnable;Ljava/lang/Runnable;)V">
+        <parameter
+          name="p0"
+          type="java.lang.Runnable"
+          jni-type="Ljava/lang/Runnable;" />
+        <parameter
+          name="p1"
+          type="java.lang.Runnable"
+          jni-type="Ljava/lang/Runnable;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="b"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Z" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onClick"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/View;)V">
+        <parameter
+          name="p0"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onCreate"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onDestroy"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Landroid/graphics/drawable/shapes/Shape;"
+      extends="android.graphics.drawable.shapes.Shape"
+      extends-generic-aware="android.graphics.drawable.shapes.Shape"
+      final="false"
+      name="a.1"
+      jni-signature="Lcn/smssdk/contact/a$1;"
+      static="false"
+      visibility="">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="draw"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/graphics/Canvas;Landroid/graphics/Paint;)V">
+        <parameter
+          name="p0"
+          type="android.graphics.Canvas"
+          jni-type="Landroid/graphics/Canvas;" />
+        <parameter
+          name="p1"
+          type="android.graphics.Paint"
+          jni-type="Landroid/graphics/Paint;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Landroid/graphics/drawable/shapes/Shape;"
+      extends="android.graphics.drawable.shapes.Shape"
+      extends-generic-aware="android.graphics.drawable.shapes.Shape"
+      final="false"
+      name="a.2"
+      jni-signature="Lcn/smssdk/contact/a$2;"
+      static="false"
+      visibility="">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="draw"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/graphics/Canvas;Landroid/graphics/Paint;)V">
+        <parameter
+          name="p0"
+          type="android.graphics.Canvas"
+          jni-type="Landroid/graphics/Canvas;" />
+        <parameter
+          name="p1"
+          type="android.graphics.Paint"
+          jni-type="Landroid/graphics/Paint;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="b"
+      jni-signature="Lcn/smssdk/contact/b;"
+      static="false"
+      visibility="public">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="cn.smssdk.contact.b"
+        jni-return="Lcn/smssdk/contact/b;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lcn/smssdk/contact/b;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcn/smssdk/contact/OnContactChangeListener;)V">
+        <parameter
+          name="p0"
+          type="cn.smssdk.contact.OnContactChangeListener"
+          jni-type="Lcn/smssdk/contact/OnContactChangeListener;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Runnable;Ljava/lang/Runnable;)V">
+        <parameter
+          name="p0"
+          type="java.lang.Runnable"
+          jni-type="Ljava/lang/Runnable;" />
+        <parameter
+          name="p1"
+          type="java.lang.Runnable"
+          jni-type="Ljava/lang/Runnable;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="java.util.ArrayList&lt;java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;&gt;"
+        jni-return="Ljava/util/ArrayList&lt;Ljava/util/HashMap&lt;Ljava/lang/String;Ljava/lang/Object;&gt;;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Z)Ljava/util/ArrayList;">
+        <parameter
+          name="p0"
+          type="boolean"
+          jni-type="Z" />
+        <exception
+          name="java/lang/Throwable"
+          type="java.lang.Throwable"
+          type-generic-aware="java.lang.Throwable" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="b"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="b"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Runnable;Ljava/lang/Runnable;)V">
+        <parameter
+          name="p0"
+          type="java.lang.Runnable"
+          jni-type="Ljava/lang/Runnable;" />
+        <parameter
+          name="p1"
+          type="java.lang.Runnable"
+          jni-type="Ljava/lang/Runnable;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="c"
+        native="false"
+        return="java.lang.String[]"
+        jni-return="[Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()[Ljava/lang/String;" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Landroid/database/ContentObserver;"
+      extends="android.database.ContentObserver"
+      extends-generic-aware="android.database.ContentObserver"
+      final="false"
+      name="b.1"
+      jni-signature="Lcn/smssdk/contact/b$1;"
+      static="false"
+      visibility="">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onChange"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Z)V">
+        <parameter
+          name="p0"
+          type="boolean"
+          jni-type="Z" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onChange"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(ZLandroid/net/Uri;)V">
+        <parameter
+          name="p0"
+          type="boolean"
+          jni-type="Z" />
+        <parameter
+          name="p1"
+          type="android.net.Uri"
+          jni-type="Landroid/net/Uri;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="b.1.1"
+      jni-signature="Lcn/smssdk/contact/b$1$1;"
+      static="false"
+      visibility="">
+      <implements
+        name="java.lang.Runnable"
+        name-generic-aware="java.lang.Runnable"
+        jni-type="Ljava/lang/Runnable;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="run"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="b.2"
+      jni-signature="Lcn/smssdk/contact/b$2;"
+      static="false"
+      visibility="">
+      <implements
+        name="java.lang.Runnable"
+        name-generic-aware="java.lang.Runnable"
+        jni-type="Ljava/lang/Runnable;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="run"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lcom/mob/tools/FakeActivity;"
+      extends="com.mob.tools.FakeActivity"
+      extends-generic-aware="com.mob.tools.FakeActivity"
+      final="false"
+      name="b.3"
+      jni-signature="Lcn/smssdk/contact/b$3;"
+      static="false"
+      visibility="">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onResult"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/util/HashMap;)V">
+        <parameter
+          name="p0"
+          type="java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;"
+          jni-type="Ljava/util/HashMap&lt;Ljava/lang/String;Ljava/lang/Object;&gt;;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="b.4"
+      jni-signature="Lcn/smssdk/contact/b$4;"
+      static="false"
+      visibility="">
+      <implements
+        name="java.lang.Runnable"
+        name-generic-aware="java.lang.Runnable"
+        jni-type="Ljava/lang/Runnable;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="run"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Thread;"
+      extends="java.lang.Thread"
+      extends-generic-aware="java.lang.Thread"
+      final="false"
+      name="b.4.1"
+      jni-signature="Lcn/smssdk/contact/b$4$1;"
+      static="false"
+      visibility="">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="run"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="b.5"
+      jni-signature="Lcn/smssdk/contact/b$5;"
+      static="false"
+      visibility="">
+      <implements
+        name="java.lang.Runnable"
+        name-generic-aware="java.lang.Runnable"
+        jni-type="Ljava/lang/Runnable;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="run"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="b.6"
+      jni-signature="Lcn/smssdk/contact/b$6;"
+      static="false"
+      visibility="">
+      <implements
+        name="android.os.Handler.Callback"
+        name-generic-aware="android.os.Handler.Callback"
+        jni-type="Landroid/os/Handler$Callback;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="handleMessage"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/os/Message;)Z">
+        <parameter
+          name="p0"
+          type="android.os.Message"
+          jni-type="Landroid/os/Message;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="c"
+      jni-signature="Lcn/smssdk/contact/c;"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="c"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/ContentResolver;)V">
+        <parameter
+          name="p0"
+          type="android.content.ContentResolver"
+          jni-type="Landroid/content/ContentResolver;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="java.util.ArrayList&lt;java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;&gt;"
+        jni-return="Ljava/util/ArrayList&lt;Ljava/util/HashMap&lt;Ljava/lang/String;Ljava/lang/Object;&gt;;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;">
+        <parameter
+          name="p0"
+          type="android.net.Uri"
+          jni-type="Landroid/net/Uri;" />
+        <parameter
+          name="p1"
+          type="java.lang.String[]"
+          jni-type="[Ljava/lang/String;" />
+        <parameter
+          name="p2"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p3"
+          type="java.lang.String[]"
+          jni-type="[Ljava/lang/String;" />
+        <parameter
+          name="p4"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="d"
+      jni-signature="Lcn/smssdk/contact/d;"
+      static="false"
+      visibility="public">
+      <implements
+        name="android.os.Handler.Callback"
+        name-generic-aware="android.os.Handler.Callback"
+        jni-type="Landroid/os/Handler$Callback;" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="d"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcn/smssdk/contact/b;)V">
+        <parameter
+          name="p0"
+          type="cn.smssdk.contact.b"
+          jni-type="Lcn/smssdk/contact/b;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="handleMessage"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/os/Message;)Z">
+        <parameter
+          name="p0"
+          type="android.os.Message"
+          jni-type="Landroid/os/Message;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="d.1"
+      jni-signature="Lcn/smssdk/contact/d$1;"
+      static="false"
+      visibility="">
+      <implements
+        name="cn.smssdk.utils.LockAction"
+        name-generic-aware="cn.smssdk.utils.LockAction"
+        jni-type="Lcn/smssdk/utils/LockAction;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="run"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/mob/tools/utils/FileLocker;)Z">
+        <parameter
+          name="p0"
+          type="com.mob.tools.utils.FileLocker"
+          jni-type="Lcom/mob/tools/utils/FileLocker;" />
+      </method>
+    </class>
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="OnContactChangeListener"
+      jni-signature="Lcn/smssdk/contact/OnContactChangeListener;"
+      static="false"
+      visibility="public">
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onContactChange"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Z)V">
+        <parameter
+          name="p0"
+          type="boolean"
+          jni-type="Z" />
+      </method>
+    </interface>
+  </package>
+  <package
+    name="cn.smssdk.contact.a"
+    jni-name="cn/smssdk/contact/a">
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="a"
+      jni-signature="Lcn/smssdk/contact/a/a;"
+      static="false"
+      visibility="public">
+      <implements
+        name="java.io.Serializable"
+        name-generic-aware="java.io.Serializable"
+        jni-type="Ljava/io/Serializable;" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcn/smssdk/contact/c;Ljava/lang/String;)V">
+        <parameter
+          name="p0"
+          type="cn.smssdk.contact.c"
+          jni-type="Lcn/smssdk/contact/c;" />
+        <parameter
+          name="p1"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </constructor>
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)V">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="cn.smssdk.contact.a.h"
+        jni-return="Lcn/smssdk/contact/a/h;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lcn/smssdk/contact/a/h;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="b"
+        native="false"
+        return="cn.smssdk.contact.a.i"
+        jni-return="Lcn/smssdk/contact/a/i;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lcn/smssdk/contact/a/i;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="c"
+        native="false"
+        return="cn.smssdk.contact.a.e"
+        jni-return="Lcn/smssdk/contact/a/e;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lcn/smssdk/contact/a/e;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="d"
+        native="false"
+        return="cn.smssdk.contact.a.k"
+        jni-return="Lcn/smssdk/contact/a/k;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lcn/smssdk/contact/a/k;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="e"
+        native="false"
+        return="cn.smssdk.contact.a.m"
+        jni-return="Lcn/smssdk/contact/a/m;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lcn/smssdk/contact/a/m;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="f"
+        native="false"
+        return="cn.smssdk.contact.a.j"
+        jni-return="Lcn/smssdk/contact/a/j;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lcn/smssdk/contact/a/j;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="g"
+        native="false"
+        return="java.util.ArrayList&lt;cn.smssdk.contact.a.q&gt;"
+        jni-return="Ljava/util/ArrayList&lt;Lcn/smssdk/contact/a/q;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/util/ArrayList;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="h"
+        native="false"
+        return="java.util.ArrayList&lt;cn.smssdk.contact.a.g&gt;"
+        jni-return="Ljava/util/ArrayList&lt;Lcn/smssdk/contact/a/g;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/util/ArrayList;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="i"
+        native="false"
+        return="java.util.ArrayList&lt;cn.smssdk.contact.a.c&gt;"
+        jni-return="Ljava/util/ArrayList&lt;Lcn/smssdk/contact/a/c;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/util/ArrayList;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="j"
+        native="false"
+        return="java.util.ArrayList&lt;cn.smssdk.contact.a.l&gt;"
+        jni-return="Ljava/util/ArrayList&lt;Lcn/smssdk/contact/a/l;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/util/ArrayList;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="k"
+        native="false"
+        return="java.util.ArrayList&lt;cn.smssdk.contact.a.n&gt;"
+        jni-return="Ljava/util/ArrayList&lt;Lcn/smssdk/contact/a/n;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/util/ArrayList;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="l"
+        native="false"
+        return="java.util.ArrayList&lt;cn.smssdk.contact.a.d&gt;"
+        jni-return="Ljava/util/ArrayList&lt;Lcn/smssdk/contact/a/d;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/util/ArrayList;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="m"
+        native="false"
+        return="java.util.ArrayList&lt;cn.smssdk.contact.a.o&gt;"
+        jni-return="Ljava/util/ArrayList&lt;Lcn/smssdk/contact/a/o;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/util/ArrayList;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="n"
+        native="false"
+        return="java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;"
+        jni-return="Ljava/util/HashMap&lt;Ljava/lang/String;Ljava/lang/Object;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/util/HashMap;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="toString"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+    </class>
+    <class
+      abstract="true"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="b"
+      jni-signature="Lcn/smssdk/contact/a/b;"
+      static="false"
+      visibility="public">
+      <implements
+        name="java.io.Serializable"
+        name-generic-aware="java.io.Serializable"
+        jni-type="Ljava/io/Serializable;" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="b"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;"
+        jni-return="Ljava/util/HashMap&lt;Ljava/lang/String;Ljava/lang/Object;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/util/HashMap;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="byte[]"
+        jni-return="[B"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)[B">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;I)I">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p1"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="cn.smssdk.contact.a.b"
+        jni-return="Lcn/smssdk/contact/a/b;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/util/HashMap;)Lcn/smssdk/contact/a/b;">
+        <parameter
+          name="p0"
+          type="java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;"
+          jni-type="Ljava/util/HashMap&lt;Ljava/lang/String;Ljava/lang/Object;&gt;;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="b"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Ljava/lang/String;">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="b"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/util/HashMap;)V">
+        <parameter
+          name="p0"
+          type="java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;"
+          jni-type="Ljava/util/HashMap&lt;Ljava/lang/String;Ljava/lang/Object;&gt;;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="toString"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lcn/smssdk/contact/a/b;"
+      extends="cn.smssdk.contact.a.b"
+      extends-generic-aware="cn.smssdk.contact.a.b"
+      final="false"
+      name="c"
+      jni-signature="Lcn/smssdk/contact/a/c;"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="c"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)I">
+        <parameter
+          name="p0"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="b"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="c"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()I" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="d"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lcn/smssdk/contact/a/b;"
+      extends="cn.smssdk.contact.a.b"
+      extends-generic-aware="cn.smssdk.contact.a.b"
+      final="false"
+      name="d"
+      jni-signature="Lcn/smssdk/contact/a/d;"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="d"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)I">
+        <parameter
+          name="p0"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="b"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="c"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()I" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="d"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lcn/smssdk/contact/a/b;"
+      extends="cn.smssdk.contact.a.b"
+      extends-generic-aware="cn.smssdk.contact.a.b"
+      final="false"
+      name="e"
+      jni-signature="Lcn/smssdk/contact/a/e;"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="e"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="b"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lcn/smssdk/contact/a/b;"
+      extends="cn.smssdk.contact.a.b"
+      extends-generic-aware="cn.smssdk.contact.a.b"
+      final="false"
+      name="f"
+      jni-signature="Lcn/smssdk/contact/a/f;"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="f"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lcn/smssdk/contact/a/b;"
+      extends="cn.smssdk.contact.a.b"
+      extends-generic-aware="cn.smssdk.contact.a.b"
+      final="false"
+      name="g"
+      jni-signature="Lcn/smssdk/contact/a/g;"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="g"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)I">
+        <parameter
+          name="p0"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="b"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="c"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()I" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="d"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lcn/smssdk/contact/a/b;"
+      extends="cn.smssdk.contact.a.b"
+      extends-generic-aware="cn.smssdk.contact.a.b"
+      final="false"
+      name="h"
+      jni-signature="Lcn/smssdk/contact/a/h;"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="h"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="b"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="c"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="d"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="e"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="f"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="g"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="h"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="i"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lcn/smssdk/contact/a/b;"
+      extends="cn.smssdk.contact.a.b"
+      extends-generic-aware="cn.smssdk.contact.a.b"
+      final="false"
+      name="i"
+      jni-signature="Lcn/smssdk/contact/a/i;"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="i"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="b"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lcn/smssdk/contact/a/b;"
+      extends="cn.smssdk.contact.a.b"
+      extends-generic-aware="cn.smssdk.contact.a.b"
+      final="false"
+      name="j"
+      jni-signature="Lcn/smssdk/contact/a/j;"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="j"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="b"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lcn/smssdk/contact/a/b;"
+      extends="cn.smssdk.contact.a.b"
+      extends-generic-aware="cn.smssdk.contact.a.b"
+      final="false"
+      name="k"
+      jni-signature="Lcn/smssdk/contact/a/k;"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="k"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="b"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="c"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lcn/smssdk/contact/a/b;"
+      extends="cn.smssdk.contact.a.b"
+      extends-generic-aware="cn.smssdk.contact.a.b"
+      final="false"
+      name="l"
+      jni-signature="Lcn/smssdk/contact/a/l;"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="l"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)I">
+        <parameter
+          name="p0"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="b"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="c"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()I" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="d"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lcn/smssdk/contact/a/b;"
+      extends="cn.smssdk.contact.a.b"
+      extends-generic-aware="cn.smssdk.contact.a.b"
+      final="false"
+      name="m"
+      jni-signature="Lcn/smssdk/contact/a/m;"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="m"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="b"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lcn/smssdk/contact/a/b;"
+      extends="cn.smssdk.contact.a.b"
+      extends-generic-aware="cn.smssdk.contact.a.b"
+      final="false"
+      name="n"
+      jni-signature="Lcn/smssdk/contact/a/n;"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="n"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)I">
+        <parameter
+          name="p0"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="b"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="c"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()I" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="d"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lcn/smssdk/contact/a/b;"
+      extends="cn.smssdk.contact.a.b"
+      extends-generic-aware="cn.smssdk.contact.a.b"
+      final="false"
+      name="o"
+      jni-signature="Lcn/smssdk/contact/a/o;"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="o"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)I">
+        <parameter
+          name="p0"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="b"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="c"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()I" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="d"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lcn/smssdk/contact/a/b;"
+      extends="cn.smssdk.contact.a.b"
+      extends-generic-aware="cn.smssdk.contact.a.b"
+      final="false"
+      name="p"
+      jni-signature="Lcn/smssdk/contact/a/p;"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="p"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lcn/smssdk/contact/a/b;"
+      extends="cn.smssdk.contact.a.b"
+      extends-generic-aware="cn.smssdk.contact.a.b"
+      final="false"
+      name="q"
+      jni-signature="Lcn/smssdk/contact/a/q;"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="q"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)I">
+        <parameter
+          name="p0"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="b"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="c"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()I" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="d"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+    </class>
+  </package>
+  <package
+    name="cn.smssdk.net"
+    jni-name="cn/smssdk/net">
+    <class
+      abstract="true"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="a"
+      jni-signature="Lcn/smssdk/net/a;"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;"
+        jni-return="Ljava/util/HashMap&lt;Ljava/lang/String;Ljava/lang/Object;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Ljava/lang/String;Ljava/util/HashMap;)Ljava/util/HashMap;">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p1"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p2"
+          type="java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;"
+          jni-type="Ljava/util/HashMap&lt;Ljava/lang/String;Ljava/lang/Object;&gt;;" />
+        <exception
+          name="java/lang/Throwable"
+          type="java.lang.Throwable"
+          type-generic-aware="java.lang.Throwable" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/util/concurrent/locks/ReentrantReadWriteLock;)V">
+        <parameter
+          name="p0"
+          type="java.util.concurrent.locks.ReentrantReadWriteLock"
+          jni-type="Ljava/util/concurrent/locks/ReentrantReadWriteLock;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="b"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()I" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="b"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Ljava/lang/String;Ljava/util/HashMap;)Ljava/lang/String;">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p1"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p2"
+          type="java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;"
+          jni-type="Ljava/util/HashMap&lt;Ljava/lang/String;Ljava/lang/Object;&gt;;" />
+        <exception
+          name="java/lang/Throwable"
+          type="java.lang.Throwable"
+          type-generic-aware="java.lang.Throwable" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="c"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Z">
+        <exception
+          name="java/lang/Throwable"
+          type="java.lang.Throwable"
+          type-generic-aware="java.lang.Throwable" />
+      </method>
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        visibility="protected"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="b"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        visibility="protected"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="c"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        visibility="protected"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="d"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        visibility="protected"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="e"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="boolean"
+        type-generic-aware="boolean"
+        jni-signature="Z"
+        visibility="protected"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="f"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="boolean"
+        type-generic-aware="boolean"
+        jni-signature="Z"
+        visibility="protected"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="g"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="boolean"
+        type-generic-aware="boolean"
+        jni-signature="Z"
+        visibility="protected"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="h"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="java.util.concurrent.locks.ReentrantReadWriteLock"
+        type-generic-aware="java.util.concurrent.locks.ReentrantReadWriteLock"
+        jni-signature="Ljava/util/concurrent/locks/ReentrantReadWriteLock;"
+        visibility="protected"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="i"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="java.util.ArrayList"
+        type-generic-aware="java.util.ArrayList&lt;java.lang.String&gt;"
+        jni-signature="Ljava/util/ArrayList;"
+        visibility="protected"
+        volatile="false" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="b"
+      jni-signature="Lcn/smssdk/net/b;"
+      static="false"
+      visibility="public">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="cn.smssdk.net.b"
+        jni-return="Lcn/smssdk/net/b;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lcn/smssdk/net/b;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;"
+        jni-return="Ljava/util/HashMap&lt;Ljava/lang/String;Ljava/lang/Object;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(ILjava/util/HashMap;)Ljava/util/HashMap;">
+        <parameter
+          name="p0"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="p1"
+          type="java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;"
+          jni-type="Ljava/util/HashMap&lt;Ljava/lang/String;Ljava/lang/Object;&gt;;" />
+        <exception
+          name="java/lang/Throwable"
+          type="java.lang.Throwable"
+          type-generic-aware="java.lang.Throwable" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="b"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Z" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="c"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="d"
+        native="false"
+        return="long"
+        jni-return="J"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()J" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="e"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.util.HashMap"
+        type-generic-aware="java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;"
+        jni-signature="Ljava/util/HashMap;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="b"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.util.HashMap"
+        type-generic-aware="java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;"
+        jni-signature="Ljava/util/HashMap;"
+        visibility="public"
+        volatile="false" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="b.1"
+      jni-signature="Lcn/smssdk/net/b$1;"
+      static="true"
+      visibility="">
+      <implements
+        name="java.lang.Runnable"
+        name-generic-aware="java.lang.Runnable"
+        jni-type="Ljava/lang/Runnable;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="run"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Thread;"
+      extends="java.lang.Thread"
+      extends-generic-aware="java.lang.Thread"
+      final="false"
+      name="b.a"
+      jni-signature="Lcn/smssdk/net/b$a;"
+      static="false"
+      visibility="">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="run"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="c"
+      jni-signature="Lcn/smssdk/net/c;"
+      static="false"
+      visibility="public">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="java.lang.Object[]"
+        jni-return="[Ljava/lang/Object;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()[Ljava/lang/Object;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Ljava/lang/String;">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <exception
+          name="java/lang/Throwable"
+          type="java.lang.Throwable"
+          type-generic-aware="java.lang.Throwable" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p1"
+          type="java.lang.Object"
+          jni-type="Ljava/lang/Object;" />
+        <exception
+          name="java/lang/Throwable"
+          type="java.lang.Throwable"
+          type-generic-aware="java.lang.Throwable" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="java.lang.Object"
+        jni-return="Ljava/lang/Object;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p1"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <exception
+          name="java/lang/Throwable"
+          type="java.lang.Throwable"
+          type-generic-aware="java.lang.Throwable" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Ljava/lang/String;I)V">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p1"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p2"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="b"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Ljava/lang/String;">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <exception
+          name="java/lang/Throwable"
+          type="java.lang.Throwable"
+          type-generic-aware="java.lang.Throwable" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="c"
+        native="false"
+        return="byte[]"
+        jni-return="[B"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)[B">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lcn/smssdk/net/a;"
+      extends="cn.smssdk.net.a"
+      extends-generic-aware="cn.smssdk.net.a"
+      final="false"
+      name="d"
+      jni-signature="Lcn/smssdk/net/d;"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="d"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;"
+        jni-return="Ljava/util/HashMap&lt;Ljava/lang/String;Ljava/lang/Object;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Ljava/lang/String;Ljava/util/HashMap;)Ljava/util/HashMap;">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p1"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p2"
+          type="java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;"
+          jni-type="Ljava/util/HashMap&lt;Ljava/lang/String;Ljava/lang/Object;&gt;;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="c"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Z">
+        <exception
+          name="java/lang/Throwable"
+          type="java.lang.Throwable"
+          type-generic-aware="java.lang.Throwable" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="e"
+      jni-signature="Lcn/smssdk/net/e;"
+      static="false"
+      visibility="public">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="cn.smssdk.net.e"
+        jni-return="Lcn/smssdk/net/e;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lcn/smssdk/net/e;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;"
+        jni-return="Ljava/util/HashMap&lt;Ljava/lang/String;Ljava/lang/Object;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(ILjava/util/ArrayList;Ljava/lang/String;Ljava/lang/String;Ljava/util/HashMap;)Ljava/util/HashMap;">
+        <parameter
+          name="p0"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="p1"
+          type="java.util.ArrayList&lt;java.lang.String&gt;"
+          jni-type="Ljava/util/ArrayList&lt;Ljava/lang/String;&gt;;" />
+        <parameter
+          name="p2"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p3"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p4"
+          type="java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;"
+          jni-type="Ljava/util/HashMap&lt;Ljava/lang/String;Ljava/lang/Object;&gt;;" />
+        <exception
+          name="java/lang/Throwable"
+          type="java.lang.Throwable"
+          type-generic-aware="java.lang.Throwable" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="b"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="f"
+      jni-signature="Lcn/smssdk/net/f;"
+      static="false"
+      visibility="public">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="cn.smssdk.net.f"
+        jni-return="Lcn/smssdk/net/f;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lcn/smssdk/net/f;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p1"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p2"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <exception
+          name="java/lang/Throwable"
+          type="java.lang.Throwable"
+          type-generic-aware="java.lang.Throwable" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p1"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p2"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p3"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <exception
+          name="java/lang/Throwable"
+          type="java.lang.Throwable"
+          type-generic-aware="java.lang.Throwable" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p1"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p2"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p3"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p4"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <exception
+          name="java/lang/Throwable"
+          type="java.lang.Throwable"
+          type-generic-aware="java.lang.Throwable" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;)V">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p1"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p2"
+          type="java.util.ArrayList&lt;java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;&gt;"
+          jni-type="Ljava/util/ArrayList&lt;Ljava/util/HashMap&lt;Ljava/lang/String;Ljava/lang/Object;&gt;;&gt;;" />
+        <exception
+          name="java/lang/Throwable"
+          type="java.lang.Throwable"
+          type-generic-aware="java.lang.Throwable" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="java.util.ArrayList&lt;java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;&gt;"
+        jni-return="Ljava/util/ArrayList&lt;Ljava/util/HashMap&lt;Ljava/lang/String;Ljava/lang/Object;&gt;;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="([Ljava/lang/String;)Ljava/util/ArrayList;">
+        <parameter
+          name="p0"
+          type="java.lang.String[]"
+          jni-type="[Ljava/lang/String;" />
+        <exception
+          name="java/lang/Throwable"
+          type="java.lang.Throwable"
+          type-generic-aware="java.lang.Throwable" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="b"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Z" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="b"
+        native="false"
+        return="java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;"
+        jni-return="Ljava/util/HashMap&lt;Ljava/lang/String;Ljava/lang/Object;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/util/HashMap;">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p1"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p2"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <exception
+          name="java/lang/Throwable"
+          type="java.lang.Throwable"
+          type-generic-aware="java.lang.Throwable" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="c"
+        native="false"
+        return="java.util.ArrayList&lt;java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;&gt;"
+        jni-return="Ljava/util/ArrayList&lt;Ljava/util/HashMap&lt;Ljava/lang/String;Ljava/lang/Object;&gt;;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/util/ArrayList;">
+        <exception
+          name="java/lang/Throwable"
+          type="java.lang.Throwable"
+          type-generic-aware="java.lang.Throwable" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lcn/smssdk/net/a;"
+      extends="cn.smssdk.net.a"
+      extends-generic-aware="cn.smssdk.net.a"
+      final="false"
+      name="g"
+      jni-signature="Lcn/smssdk/net/g;"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="g"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;"
+        jni-return="Ljava/util/HashMap&lt;Ljava/lang/String;Ljava/lang/Object;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;Ljava/lang/String;Ljava/util/HashMap;)Ljava/util/HashMap;">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p1"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p2"
+          type="java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;"
+          jni-type="Ljava/util/HashMap&lt;Ljava/lang/String;Ljava/lang/Object;&gt;;" />
+        <exception
+          name="java/lang/Throwable"
+          type="java.lang.Throwable"
+          type-generic-aware="java.lang.Throwable" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/util/HashMap;)V">
+        <parameter
+          name="p0"
+          type="java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;"
+          jni-type="Ljava/util/HashMap&lt;Ljava/lang/String;Ljava/lang/Object;&gt;;" />
+        <exception
+          name="java/lang/Throwable"
+          type="java.lang.Throwable"
+          type-generic-aware="java.lang.Throwable" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="c"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Z">
+        <exception
+          name="java/lang/Throwable"
+          type="java.lang.Throwable"
+          type-generic-aware="java.lang.Throwable" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="d"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="HttpResponseCallbackImp"
+      jni-signature="Lcn/smssdk/net/HttpResponseCallbackImp;"
+      static="false"
+      visibility="public">
+      <implements
+        name="com.mob.tools.network.HttpResponseCallback"
+        name-generic-aware="com.mob.tools.network.HttpResponseCallback"
+        jni-type="Lcom/mob/tools/network/HttpResponseCallback;" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="HttpResponseCallbackImp"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/util/HashMap;)V">
+        <parameter
+          name="p0"
+          type="java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;"
+          jni-type="Ljava/util/HashMap&lt;Ljava/lang/String;Ljava/lang/Object;&gt;;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="handleInput"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/io/InputStream;)V">
+        <parameter
+          name="p0"
+          type="java.io.InputStream"
+          jni-type="Ljava/io/InputStream;" />
+        <exception
+          name="java/lang/Throwable"
+          type="java.lang.Throwable"
+          type-generic-aware="java.lang.Throwable" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onResponse"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/mob/tools/network/HttpConnection;)V">
+        <parameter
+          name="p0"
+          type="com.mob.tools.network.HttpConnection"
+          jni-type="Lcom/mob/tools/network/HttpConnection;" />
+        <exception
+          name="java/lang/Throwable"
+          type="java.lang.Throwable"
+          type-generic-aware="java.lang.Throwable" />
+      </method>
+    </class>
+  </package>
+  <package
+    name="cn.smssdk.utils"
+    jni-name="cn/smssdk/utils">
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="a"
+      jni-signature="Lcn/smssdk/utils/a;"
+      static="false"
+      visibility="public">
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="b"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.Boolean"
+        type-generic-aware="java.lang.Boolean"
+        jni-signature="Ljava/lang/Boolean;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="c"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.Boolean"
+        type-generic-aware="java.lang.Boolean"
+        jni-signature="Ljava/lang/Boolean;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="d"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.Boolean"
+        type-generic-aware="java.lang.Boolean"
+        jni-signature="Ljava/lang/Boolean;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="e"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.Boolean"
+        type-generic-aware="java.lang.Boolean"
+        jni-signature="Ljava/lang/Boolean;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="f"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        visibility="public"
+        volatile="false" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="b"
+      jni-signature="Lcn/smssdk/utils/b;"
+      static="false"
+      visibility="public">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)Ljava/lang/String;">
+        <parameter
+          name="p0"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/util/List;)Ljava/lang/String;">
+        <parameter
+          name="p0"
+          type="java.util.List"
+          jni-type="Ljava/util/List;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/util/Map;)Ljava/lang/String;">
+        <parameter
+          name="p0"
+          type="java.util.Map"
+          jni-type="Ljava/util/Map;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="([Ljava/lang/String;)Ljava/lang/String;">
+        <parameter
+          name="p0"
+          type="java.lang.String[]"
+          jni-type="[Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="b"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)Ljava/lang/String;">
+        <parameter
+          name="p0"
+          type="int"
+          jni-type="I" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="c"
+      jni-signature="Lcn/smssdk/utils/c;"
+      static="false"
+      visibility="public">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="java.io.File"
+        jni-return="Ljava/io/File;"
+        static="true"
+        synchronized="true"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/Context;Ljava/lang/String;)Ljava/io/File;">
+        <parameter
+          name="p0"
+          type="android.content.Context"
+          jni-type="Landroid/content/Context;" />
+        <parameter
+          name="p1"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/io/File;ZLcn/smssdk/utils/LockAction;)Z">
+        <parameter
+          name="p0"
+          type="java.io.File"
+          jni-type="Ljava/io/File;" />
+        <parameter
+          name="p1"
+          type="boolean"
+          jni-type="Z" />
+        <parameter
+          name="p2"
+          type="cn.smssdk.utils.LockAction"
+          jni-type="Lcn/smssdk/utils/LockAction;" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="d"
+      jni-signature="Lcn/smssdk/utils/d;"
+      static="false"
+      visibility="public">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()I" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="a"
+        native="false"
+        return="java.lang.Object"
+        jni-return="Ljava/lang/Object;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/Object;)Ljava/lang/Object;">
+        <parameter
+          name="p0"
+          type="java.lang.Object"
+          jni-type="Ljava/lang/Object;" />
+      </method>
+    </class>
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="LockAction"
+      jni-signature="Lcn/smssdk/utils/LockAction;"
+      static="false"
+      visibility="public">
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="run"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/mob/tools/utils/FileLocker;)Z">
+        <parameter
+          name="p0"
+          type="com.mob.tools.utils.FileLocker"
+          jni-type="Lcom/mob/tools/utils/FileLocker;" />
+      </method>
+    </interface>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lcom/mob/tools/log/NLog;"
+      extends="com.mob.tools.log.NLog"
+      extends-generic-aware="com.mob.tools.log.NLog"
+      final="false"
+      name="SMSLog"
+      jni-signature="Lcn/smssdk/utils/SMSLog;"
+      static="false"
+      visibility="public">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getInstance"
+        native="false"
+        return="com.mob.tools.log.NLog"
+        jni-return="Lcom/mob/tools/log/NLog;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lcom/mob/tools/log/NLog;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getSDKTag"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="prepare"
+        native="false"
+        return="com.mob.tools.log.NLog"
+        jni-return="Lcom/mob/tools/log/NLog;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lcom/mob/tools/log/NLog;" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="FORMAT"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;[SMSSDK][%s][%s] %s&quot;"
+        visibility="public"
+        volatile="false" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lcom/mob/commons/logcollector/LogsCollector;"
+      extends="com.mob.commons.logcollector.LogsCollector"
+      extends-generic-aware="com.mob.commons.logcollector.LogsCollector"
+      final="false"
+      name="SMSLog.1"
+      jni-signature="Lcn/smssdk/utils/SMSLog$1;"
+      static="false"
+      visibility="">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getSDKTag"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getSDKVersion"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()I" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="SPHelper"
+      jni-signature="Lcn/smssdk/utils/SPHelper;"
+      static="false"
+      visibility="public">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="clearBuffer"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="clearLog"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getBufferedContactPhones"
+        native="false"
+        return="java.lang.String[]"
+        jni-return="[Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()[Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getBufferedContacts"
+        native="false"
+        return="java.util.ArrayList&lt;java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;&gt;"
+        jni-return="Ljava/util/ArrayList&lt;Ljava/util/HashMap&lt;Ljava/lang/String;Ljava/lang/Object;&gt;;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/util/ArrayList;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getBufferedContactsSignature"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getBufferedCountrylist"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getBufferedFriends"
+        native="false"
+        return="java.util.ArrayList&lt;java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;&gt;"
+        jni-return="Ljava/util/ArrayList&lt;Ljava/util/HashMap&lt;Ljava/lang/String;Ljava/lang/Object;&gt;;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/util/ArrayList;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getBufferedNewFriends"
+        native="false"
+        return="java.util.ArrayList&lt;java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;&gt;"
+        jni-return="Ljava/util/ArrayList&lt;Ljava/util/HashMap&lt;Ljava/lang/String;Ljava/lang/Object;&gt;;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/util/ArrayList;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getConfig"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;">
+        <exception
+          name="java/lang/Throwable"
+          type="java.lang.Throwable"
+          type-generic-aware="java.lang.Throwable" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getInstance"
+        native="false"
+        return="cn.smssdk.utils.SPHelper"
+        jni-return="Lcn/smssdk/utils/SPHelper;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lcn/smssdk/utils/SPHelper;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getLastRequestNewFriendsTime"
+        native="false"
+        return="long"
+        jni-return="J"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()J" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getLastRequestTimeMillis"
+        native="false"
+        return="long"
+        jni-return="J"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)J">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getLastZoneAt"
+        native="false"
+        return="long"
+        jni-return="J"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()J" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getLog"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getSMSID"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getToken"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getVCodeHash"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getVerifyCountry"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;">
+        <exception
+          name="java/lang/Throwable"
+          type="java.lang.Throwable"
+          type-generic-aware="java.lang.Throwable" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getVerifyPhone"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;">
+        <exception
+          name="java/lang/Throwable"
+          type="java.lang.Throwable"
+          type-generic-aware="java.lang.Throwable" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="isAllowReadContact"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Z" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="isWarnWhenReadContact"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Z" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setAllowReadContact"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setBufferedContactPhones"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="([Ljava/lang/String;)V">
+        <parameter
+          name="p0"
+          type="java.lang.String[]"
+          jni-type="[Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setBufferedContacts"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/util/ArrayList;)V">
+        <parameter
+          name="p0"
+          type="java.util.ArrayList&lt;java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;&gt;"
+          jni-type="Ljava/util/ArrayList&lt;Ljava/util/HashMap&lt;Ljava/lang/String;Ljava/lang/Object;&gt;;&gt;;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setBufferedContactsSignature"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)V">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setBufferedCountrylist"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)V">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setBufferedFriends"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/util/ArrayList;)V">
+        <parameter
+          name="p0"
+          type="java.util.ArrayList&lt;java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;&gt;"
+          jni-type="Ljava/util/ArrayList&lt;Ljava/util/HashMap&lt;Ljava/lang/String;Ljava/lang/Object;&gt;;&gt;;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setBufferedNewFriends"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/util/ArrayList;)V">
+        <parameter
+          name="p0"
+          type="java.util.ArrayList&lt;java.util.HashMap&lt;java.lang.String, java.lang.Object&gt;&gt;"
+          jni-type="Ljava/util/ArrayList&lt;Ljava/util/HashMap&lt;Ljava/lang/String;Ljava/lang/Object;&gt;;&gt;;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setConfig"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)V">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <exception
+          name="java/lang/Throwable"
+          type="java.lang.Throwable"
+          type-generic-aware="java.lang.Throwable" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setLastRequestTimeMillis"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;J)V">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <parameter
+          name="p1"
+          type="long"
+          jni-type="J" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setLastZoneAt"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(J)V">
+        <parameter
+          name="p0"
+          type="long"
+          jni-type="J" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setLog"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)V">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setRequestNewFriendsTime"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setSMSID"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)V">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setToken"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)V">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setVCodeHash"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)V">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setVerifyCountry"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)V">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <exception
+          name="java/lang/Throwable"
+          type="java.lang.Throwable"
+          type-generic-aware="java.lang.Throwable" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setVerifyPhone"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)V">
+        <parameter
+          name="p0"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+        <exception
+          name="java/lang/Throwable"
+          type="java.lang.Throwable"
+          type-generic-aware="java.lang.Throwable" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setWarnWhenReadContact"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Z)V">
+        <parameter
+          name="p0"
+          type="boolean"
+          jni-type="Z" />
+      </method>
+    </class>
+  </package>
+  <package
+    name="com.mob.commons"
+    jni-name="com/mob/commons">
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="SMSSDK"
+      jni-signature="Lcom/mob/commons/SMSSDK;"
+      static="false"
+      visibility="public">
+      <implements
+        name="com.mob.commons.MobProduct"
+        name-generic-aware="com.mob.commons.MobProduct"
+        jni-type="Lcom/mob/commons/MobProduct;" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="SMSSDK"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getProductTag"
+        native="false"
+        return="java.lang.String"
+        jni-return="Ljava/lang/String;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/lang/String;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getSdkver"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()I" />
+    </class>
+  </package>
+</api>

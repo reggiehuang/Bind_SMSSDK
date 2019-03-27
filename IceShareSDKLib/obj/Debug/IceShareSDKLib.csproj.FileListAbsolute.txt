@@ -1,0 +1,6 @@
+E:\11_Android\IceShareSDKLib\IceShareSDKLib\IceShareSDKLib\bin\Debug\IceShareSDKLib.dll
+E:\11_Android\IceShareSDKLib\IceShareSDKLib\IceShareSDKLib\bin\Debug\IceShareSDKLib.pdb
+E:\11_Android\IceShareSDKLib\IceShareSDKLib\IceShareSDKLib\obj\Debug\IceShareSDKLib.csprojAssemblyReference.cache
+E:\11_Android\IceShareSDKLib\IceShareSDKLib\IceShareSDKLib\obj\Debug\IceShareSDKLib.csproj.CoreCompileInputs.cache
+E:\11_Android\IceShareSDKLib\IceShareSDKLib\IceShareSDKLib\obj\Debug\IceShareSDKLib.dll
+E:\11_Android\IceShareSDKLib\IceShareSDKLib\IceShareSDKLib\obj\Debug\IceShareSDKLib.pdb

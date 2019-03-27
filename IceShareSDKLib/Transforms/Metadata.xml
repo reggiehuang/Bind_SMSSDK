@@ -1,0 +1,31 @@
+﻿<metadata>
+  <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+  <remove-node path="/api/package[@name='com.mob.tools.utils']/class[@name='Strings']" />
+  <remove-node path="/api/package[@name='com.mob.tools.java8']/class[@name='FlowIterator.BoolArrayIterator']" />
+  <remove-node path="/api/package[@name='com.mob.tools.java8']/class[@name='FlowIterator.ByteArrayIterator']" />
+  <remove-node path="/api/package[@name='com.mob.tools.java8']/class[@name='FlowIterator.CharArrayIterator']" />
+  <remove-node path="/api/package[@name='com.mob.tools.java8']/class[@name='FlowIterator.DoubleArrayIterator']" />
+  <remove-node path="/api/package[@name='com.mob.tools.java8']/class[@name='FlowIterator.DoubleRangeIterator']" />
+  <remove-node path="/api/package[@name='com.mob.tools.java8']/class[@name='FlowIterator.FloatArrayIterator']" />
+  <remove-node path="/api/package[@name='com.mob.tools.java8']/class[@name='FlowIterator.IntArrayIterator']" />
+  <remove-node path="/api/package[@name='com.mob.tools.java8']/class[@name='FlowIterator.IntRangeIterator']" />
+  <remove-node path="/api/package[@name='com.mob.tools.java8']/class[@name='FlowIterator.LongArrayIterator']" />
+  <remove-node path="/api/package[@name='com.mob.tools.java8']/class[@name='FlowIterator.ShortArrayIterator']" />
+  <remove-node path="/api/package[@name='com.mob.tools.java8']/class[@name='MapFlow']" />
+  <attr path="/api/package[@name='cn.sharesdk.whatsapp']/class[@name='WhatsApp']/method[@name='getPlatformId' and count(parameter)=0]" name="visibility">protected</attr>
+  <attr path="/api/package[@name='cn.sharesdk.wechat.moments']/class[@name='WechatMoments']/method[@name='getPlatformId' and count(parameter)=0]" name="visibility">protected</attr>
+  <attr path="/api/package[@name='cn.sharesdk.wechat.friends']/class[@name='Wechat']/method[@name='getPlatformId' and count(parameter)=0]" name="visibility">protected</attr>
+  <attr path="/api/package[@name='cn.sharesdk.twitter']/class[@name='Twitter']/method[@name='getPlatformId' and count(parameter)=0]" name="visibility">protected</attr>
+  <attr path="/api/package[@name='cn.sharesdk.facebook']/class[@name='Facebook']/method[@name='getPlatformId' and count(parameter)=0]" name="visibility">protected</attr> 
+  <attr path="/api/package[@name='cn.sharesdk.wechat.utils']/class[@name='WXMediaMessage']/field[@name='mediaObject']" name="name">MediaObjectInfo</attr>
+  <remove-node path="/api/package[@name='cn.sharesdk.framework']/class[@name='CustomPlatform']" />
+  <remove-node path="/api/package[@name='cn.sharesdk.onekeyshare.themes.classic']/class[@name='FriendAdapter']" />
+  <remove-node path="/api/package[@name='cn.sharesdk.framework.authorize']/interface[@name='SSOListener']" />
+
+</metadata>
