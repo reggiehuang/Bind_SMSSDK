@@ -9,7 +9,7 @@ namespace Com.Mob.Commons {
 	[global::Android.Runtime.Register ("com/mob/commons/SHARESDK", DoNotGenerateAcw=true)]
 	public partial class SHARESDK : global::Java.Lang.Object, global::Com.Mob.Commons.IMobProduct {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/commons/SHARESDK", typeof (SHARESDK));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/commons/SHARESDK", typeof (SHARESDK));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

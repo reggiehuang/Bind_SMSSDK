@@ -139,7 +139,7 @@ namespace CN.Sharesdk.Onekeyshare.Themes.Classic {
 				}
 			}
 		}
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/sharesdk/onekeyshare/themes/classic/PlatformPageAdapter", typeof (PlatformPageAdapter));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/onekeyshare/themes/classic/PlatformPageAdapter", typeof (PlatformPageAdapter));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;
@@ -415,7 +415,7 @@ namespace CN.Sharesdk.Onekeyshare.Themes.Classic {
 
 		public PlatformPageAdapterInvoker (IntPtr handle, JniHandleOwnership transfer) : base (handle, transfer) {}
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("cn/sharesdk/onekeyshare/themes/classic/PlatformPageAdapter", typeof (PlatformPageAdapterInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/onekeyshare/themes/classic/PlatformPageAdapter", typeof (PlatformPageAdapterInvoker));
 
 		public override global::Java.Interop.JniPeerMembers JniPeerMembers {
 			get { return _members; }

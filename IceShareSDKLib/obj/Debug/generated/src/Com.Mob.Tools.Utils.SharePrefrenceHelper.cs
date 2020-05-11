@@ -11,7 +11,7 @@ namespace Com.Mob.Tools.Utils {
 
 		// Metadata.xml XPath interface reference: path="/api/package[@name='com.mob.tools.utils']/interface[@name='SharePrefrenceHelper.OnCommitListener']"
 		[Register ("com/mob/tools/utils/SharePrefrenceHelper$OnCommitListener", "", "Com.Mob.Tools.Utils.SharePrefrenceHelper/IOnCommitListenerInvoker")]
-		public partial interface IOnCommitListener : IJavaObject {
+		public partial interface IOnCommitListener : IJavaObject, IJavaPeerable {
 
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.mob.tools.utils']/interface[@name='SharePrefrenceHelper.OnCommitListener']/method[@name='onCommit' and count(parameter)=1 and parameter[1][@type='java.lang.Throwable']]"
 			[Register ("onCommit", "(Ljava/lang/Throwable;)V", "GetOnCommit_Ljava_lang_Throwable_Handler:Com.Mob.Tools.Utils.SharePrefrenceHelper/IOnCommitListenerInvoker, IceShareSDKLib")]
@@ -20,9 +20,9 @@ namespace Com.Mob.Tools.Utils {
 		}
 
 		[global::Android.Runtime.Register ("com/mob/tools/utils/SharePrefrenceHelper$OnCommitListener", DoNotGenerateAcw=true)]
-		internal class IOnCommitListenerInvoker : global::Java.Lang.Object, IOnCommitListener {
+		internal partial class IOnCommitListenerInvoker : global::Java.Lang.Object, IOnCommitListener {
 
-			internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/utils/SharePrefrenceHelper$OnCommitListener", typeof (IOnCommitListenerInvoker));
+			static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/utils/SharePrefrenceHelper$OnCommitListener", typeof (IOnCommitListenerInvoker));
 
 			static IntPtr java_class_ref {
 				get { return _members.JniPeerType.PeerReference.Handle; }
@@ -145,7 +145,7 @@ namespace Com.Mob.Tools.Utils {
 		}
 
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/utils/SharePrefrenceHelper", typeof (SharePrefrenceHelper));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/utils/SharePrefrenceHelper", typeof (SharePrefrenceHelper));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

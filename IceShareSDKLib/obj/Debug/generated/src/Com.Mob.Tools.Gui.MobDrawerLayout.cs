@@ -85,7 +85,7 @@ namespace Com.Mob.Tools.Gui {
 					return global::Java.Lang.Object.GetObject<global::Com.Mob.Tools.Gui.MobDrawerLayout.DrawerType> (__v.Handle, JniHandleOwnership.TransferLocalRef);
 				}
 			}
-			internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/gui/MobDrawerLayout$DrawerType", typeof (DrawerType));
+			static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/gui/MobDrawerLayout$DrawerType", typeof (DrawerType));
 			internal static new IntPtr class_ref {
 				get {
 					return _members.JniPeerType.PeerReference.Handle;
@@ -138,7 +138,7 @@ namespace Com.Mob.Tools.Gui {
 
 		// Metadata.xml XPath interface reference: path="/api/package[@name='com.mob.tools.gui']/interface[@name='MobDrawerLayout.OnDrawerStateChangeListener']"
 		[Register ("com/mob/tools/gui/MobDrawerLayout$OnDrawerStateChangeListener", "", "Com.Mob.Tools.Gui.MobDrawerLayout/IOnDrawerStateChangeListenerInvoker")]
-		public partial interface IOnDrawerStateChangeListener : IJavaObject {
+		public partial interface IOnDrawerStateChangeListener : IJavaObject, IJavaPeerable {
 
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.mob.tools.gui']/interface[@name='MobDrawerLayout.OnDrawerStateChangeListener']/method[@name='onClosing' and count(parameter)=2 and parameter[1][@type='com.mob.tools.gui.MobDrawerLayout'] and parameter[2][@type='int']]"
 			[Register ("onClosing", "(Lcom/mob/tools/gui/MobDrawerLayout;I)V", "GetOnClosing_Lcom_mob_tools_gui_MobDrawerLayout_IHandler:Com.Mob.Tools.Gui.MobDrawerLayout/IOnDrawerStateChangeListenerInvoker, IceShareSDKLib")]
@@ -151,9 +151,9 @@ namespace Com.Mob.Tools.Gui {
 		}
 
 		[global::Android.Runtime.Register ("com/mob/tools/gui/MobDrawerLayout$OnDrawerStateChangeListener", DoNotGenerateAcw=true)]
-		internal class IOnDrawerStateChangeListenerInvoker : global::Java.Lang.Object, IOnDrawerStateChangeListener {
+		internal partial class IOnDrawerStateChangeListenerInvoker : global::Java.Lang.Object, IOnDrawerStateChangeListener {
 
-			internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/gui/MobDrawerLayout$OnDrawerStateChangeListener", typeof (IOnDrawerStateChangeListenerInvoker));
+			static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/gui/MobDrawerLayout$OnDrawerStateChangeListener", typeof (IOnDrawerStateChangeListenerInvoker));
 
 			static IntPtr java_class_ref {
 				get { return _members.JniPeerType.PeerReference.Handle; }
@@ -341,7 +341,7 @@ namespace Com.Mob.Tools.Gui {
 		}
 
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/gui/MobDrawerLayout", typeof (MobDrawerLayout));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/gui/MobDrawerLayout", typeof (MobDrawerLayout));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

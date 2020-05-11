@@ -11,7 +11,7 @@ namespace Com.Mob.Commons.Utag {
 
 		// Metadata.xml XPath interface reference: path="/api/package[@name='com.mob.commons.utag']/interface[@name='TagRequester.UserTagsResponse']"
 		[Register ("com/mob/commons/utag/TagRequester$UserTagsResponse", "", "Com.Mob.Commons.Utag.TagRequester/IUserTagsResponseInvoker")]
-		public partial interface IUserTagsResponse : IJavaObject {
+		public partial interface IUserTagsResponse : IJavaObject, IJavaPeerable {
 
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.mob.commons.utag']/interface[@name='TagRequester.UserTagsResponse']/method[@name='onResponse' and count(parameter)=1 and parameter[1][@type='java.util.Map&lt;java.lang.String, java.lang.Object&gt;']]"
 			[Register ("onResponse", "(Ljava/util/Map;)V", "GetOnResponse_Ljava_util_Map_Handler:Com.Mob.Commons.Utag.TagRequester/IUserTagsResponseInvoker, IceShareSDKLib")]
@@ -20,9 +20,9 @@ namespace Com.Mob.Commons.Utag {
 		}
 
 		[global::Android.Runtime.Register ("com/mob/commons/utag/TagRequester$UserTagsResponse", DoNotGenerateAcw=true)]
-		internal class IUserTagsResponseInvoker : global::Java.Lang.Object, IUserTagsResponse {
+		internal partial class IUserTagsResponseInvoker : global::Java.Lang.Object, IUserTagsResponse {
 
-			internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/commons/utag/TagRequester$UserTagsResponse", typeof (IUserTagsResponseInvoker));
+			static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/commons/utag/TagRequester$UserTagsResponse", typeof (IUserTagsResponseInvoker));
 
 			static IntPtr java_class_ref {
 				get { return _members.JniPeerType.PeerReference.Handle; }
@@ -102,7 +102,7 @@ namespace Com.Mob.Commons.Utag {
 		}
 
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/commons/utag/TagRequester", typeof (TagRequester));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/commons/utag/TagRequester", typeof (TagRequester));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

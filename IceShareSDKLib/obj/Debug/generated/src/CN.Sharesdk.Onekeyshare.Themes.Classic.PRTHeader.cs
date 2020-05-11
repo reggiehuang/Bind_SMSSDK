@@ -9,7 +9,7 @@ namespace CN.Sharesdk.Onekeyshare.Themes.Classic {
 	[global::Android.Runtime.Register ("cn/sharesdk/onekeyshare/themes/classic/PRTHeader", DoNotGenerateAcw=true)]
 	public partial class PRTHeader : global::Android.Widget.LinearLayout {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/sharesdk/onekeyshare/themes/classic/PRTHeader", typeof (PRTHeader));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/onekeyshare/themes/classic/PRTHeader", typeof (PRTHeader));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

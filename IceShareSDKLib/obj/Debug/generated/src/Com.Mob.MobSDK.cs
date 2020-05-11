@@ -33,7 +33,7 @@ namespace Com.Mob {
 				return JNIEnv.GetString (__v.Handle, JniHandleOwnership.TransferLocalRef);
 			}
 		}
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/MobSDK", typeof (MobSDK));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/MobSDK", typeof (MobSDK));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;
@@ -74,7 +74,7 @@ namespace Com.Mob {
 
 		public static unsafe string AppSecret {
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.mob']/class[@name='MobSDK']/method[@name='getAppSecret' and count(parameter)=0]"
-			[Register ("getAppSecret", "()Ljava/lang/String;", "GetGetAppSecretHandler")]
+			[Register ("getAppSecret", "()Ljava/lang/String;", "")]
 			get {
 				const string __id = "getAppSecret.()Ljava/lang/String;";
 				try {
@@ -87,7 +87,7 @@ namespace Com.Mob {
 
 		public static unsafe string Appkey {
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.mob']/class[@name='MobSDK']/method[@name='getAppkey' and count(parameter)=0]"
-			[Register ("getAppkey", "()Ljava/lang/String;", "GetGetAppkeyHandler")]
+			[Register ("getAppkey", "()Ljava/lang/String;", "")]
 			get {
 				const string __id = "getAppkey.()Ljava/lang/String;";
 				try {
@@ -100,7 +100,7 @@ namespace Com.Mob {
 
 		public static unsafe global::Android.Content.Context Context {
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.mob']/class[@name='MobSDK']/method[@name='getContext' and count(parameter)=0]"
-			[Register ("getContext", "()Landroid/content/Context;", "GetGetContextHandler")]
+			[Register ("getContext", "()Landroid/content/Context;", "")]
 			get {
 				const string __id = "getContext.()Landroid/content/Context;";
 				try {
@@ -113,7 +113,7 @@ namespace Com.Mob {
 
 		public static unsafe global::Com.Mob.Commons.InternationalDomain Domain {
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.mob']/class[@name='MobSDK']/method[@name='getDomain' and count(parameter)=0]"
-			[Register ("getDomain", "()Lcom/mob/commons/InternationalDomain;", "GetGetDomainHandler")]
+			[Register ("getDomain", "()Lcom/mob/commons/InternationalDomain;", "")]
 			get {
 				const string __id = "getDomain.()Lcom/mob/commons/InternationalDomain;";
 				try {
@@ -123,7 +123,7 @@ namespace Com.Mob {
 				}
 			}
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.mob']/class[@name='MobSDK']/method[@name='setDomain' and count(parameter)=1 and parameter[1][@type='com.mob.commons.InternationalDomain']]"
-			[Register ("setDomain", "(Lcom/mob/commons/InternationalDomain;)V", "GetSetDomain_Lcom_mob_commons_InternationalDomain_Handler")]
+			[Register ("setDomain", "(Lcom/mob/commons/InternationalDomain;)V", "")]
 			set {
 				const string __id = "setDomain.(Lcom/mob/commons/InternationalDomain;)V";
 				try {
@@ -137,7 +137,7 @@ namespace Com.Mob {
 
 		public static unsafe bool IsMob {
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.mob']/class[@name='MobSDK']/method[@name='isMob' and count(parameter)=0]"
-			[Register ("isMob", "()Z", "GetIsMobHandler")]
+			[Register ("isMob", "()Z", "")]
 			get {
 				const string __id = "isMob.()Z";
 				try {

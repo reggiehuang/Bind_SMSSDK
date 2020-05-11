@@ -7,7 +7,7 @@ namespace CN.Sharesdk.Onekeyshare {
 
 	// Metadata.xml XPath interface reference: path="/api/package[@name='cn.sharesdk.onekeyshare']/interface[@name='ShareContentCustomizeCallback']"
 	[Register ("cn/sharesdk/onekeyshare/ShareContentCustomizeCallback", "", "CN.Sharesdk.Onekeyshare.IShareContentCustomizeCallbackInvoker")]
-	public partial interface IShareContentCustomizeCallback : IJavaObject {
+	public partial interface IShareContentCustomizeCallback : IJavaObject, IJavaPeerable {
 
 		// Metadata.xml XPath method reference: path="/api/package[@name='cn.sharesdk.onekeyshare']/interface[@name='ShareContentCustomizeCallback']/method[@name='onShare' and count(parameter)=2 and parameter[1][@type='cn.sharesdk.framework.Platform'] and parameter[2][@type='cn.sharesdk.framework.Platform.ShareParams']]"
 		[Register ("onShare", "(Lcn/sharesdk/framework/Platform;Lcn/sharesdk/framework/Platform$ShareParams;)V", "GetOnShare_Lcn_sharesdk_framework_Platform_Lcn_sharesdk_framework_Platform_ShareParams_Handler:CN.Sharesdk.Onekeyshare.IShareContentCustomizeCallbackInvoker, IceShareSDKLib")]
@@ -16,9 +16,9 @@ namespace CN.Sharesdk.Onekeyshare {
 	}
 
 	[global::Android.Runtime.Register ("cn/sharesdk/onekeyshare/ShareContentCustomizeCallback", DoNotGenerateAcw=true)]
-	internal class IShareContentCustomizeCallbackInvoker : global::Java.Lang.Object, IShareContentCustomizeCallback {
+	internal partial class IShareContentCustomizeCallbackInvoker : global::Java.Lang.Object, IShareContentCustomizeCallback {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("cn/sharesdk/onekeyshare/ShareContentCustomizeCallback", typeof (IShareContentCustomizeCallbackInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/onekeyshare/ShareContentCustomizeCallback", typeof (IShareContentCustomizeCallbackInvoker));
 
 		static IntPtr java_class_ref {
 			get { return _members.JniPeerType.PeerReference.Handle; }

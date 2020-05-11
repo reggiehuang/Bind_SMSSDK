@@ -7,7 +7,7 @@ namespace CN.Smssdk {
 
 	// Metadata.xml XPath interface reference: path="/api/package[@name='cn.smssdk']/interface[@name='OnSendMessageHandler']"
 	[Register ("cn/smssdk/OnSendMessageHandler", "", "CN.Smssdk.IOnSendMessageHandlerInvoker")]
-	public partial interface IOnSendMessageHandler : IJavaObject {
+	public partial interface IOnSendMessageHandler : IJavaObject, IJavaPeerable {
 
 		// Metadata.xml XPath method reference: path="/api/package[@name='cn.smssdk']/interface[@name='OnSendMessageHandler']/method[@name='onSendMessage' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.String']]"
 		[Register ("onSendMessage", "(Ljava/lang/String;Ljava/lang/String;)Z", "GetOnSendMessage_Ljava_lang_String_Ljava_lang_String_Handler:CN.Smssdk.IOnSendMessageHandlerInvoker, IceShareSDKLib")]
@@ -16,9 +16,9 @@ namespace CN.Smssdk {
 	}
 
 	[global::Android.Runtime.Register ("cn/smssdk/OnSendMessageHandler", DoNotGenerateAcw=true)]
-	internal class IOnSendMessageHandlerInvoker : global::Java.Lang.Object, IOnSendMessageHandler {
+	internal partial class IOnSendMessageHandlerInvoker : global::Java.Lang.Object, IOnSendMessageHandler {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("cn/smssdk/OnSendMessageHandler", typeof (IOnSendMessageHandlerInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/smssdk/OnSendMessageHandler", typeof (IOnSendMessageHandlerInvoker));
 
 		static IntPtr java_class_ref {
 			get { return _members.JniPeerType.PeerReference.Handle; }

@@ -13,9 +13,9 @@ namespace Com.Mob.Tools.Java8 {
 	}
 
 	[global::Android.Runtime.Register ("com/mob/tools/java8/Collect$CollectByte", DoNotGenerateAcw=true)]
-	internal class ICollectCollectByteInvoker : global::Java.Lang.Object, ICollectCollectByte {
+	internal partial class ICollectCollectByteInvoker : global::Java.Lang.Object, ICollectCollectByte {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/java8/Collect$CollectByte", typeof (ICollectCollectByteInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/java8/Collect$CollectByte", typeof (ICollectCollectByteInvoker));
 
 		static IntPtr java_class_ref {
 			get { return _members.JniPeerType.PeerReference.Handle; }
@@ -105,9 +105,9 @@ namespace Com.Mob.Tools.Java8 {
 	}
 
 	[global::Android.Runtime.Register ("com/mob/tools/java8/Collect$CollectDouble", DoNotGenerateAcw=true)]
-	internal class ICollectCollectDoubleInvoker : global::Java.Lang.Object, ICollectCollectDouble {
+	internal partial class ICollectCollectDoubleInvoker : global::Java.Lang.Object, ICollectCollectDouble {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/java8/Collect$CollectDouble", typeof (ICollectCollectDoubleInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/java8/Collect$CollectDouble", typeof (ICollectCollectDoubleInvoker));
 
 		static IntPtr java_class_ref {
 			get { return _members.JniPeerType.PeerReference.Handle; }
@@ -197,9 +197,9 @@ namespace Com.Mob.Tools.Java8 {
 	}
 
 	[global::Android.Runtime.Register ("com/mob/tools/java8/Collect$CollectFloat", DoNotGenerateAcw=true)]
-	internal class ICollectCollectFloatInvoker : global::Java.Lang.Object, ICollectCollectFloat {
+	internal partial class ICollectCollectFloatInvoker : global::Java.Lang.Object, ICollectCollectFloat {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/java8/Collect$CollectFloat", typeof (ICollectCollectFloatInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/java8/Collect$CollectFloat", typeof (ICollectCollectFloatInvoker));
 
 		static IntPtr java_class_ref {
 			get { return _members.JniPeerType.PeerReference.Handle; }
@@ -289,9 +289,9 @@ namespace Com.Mob.Tools.Java8 {
 	}
 
 	[global::Android.Runtime.Register ("com/mob/tools/java8/Collect$CollectInt", DoNotGenerateAcw=true)]
-	internal class ICollectCollectIntInvoker : global::Java.Lang.Object, ICollectCollectInt {
+	internal partial class ICollectCollectIntInvoker : global::Java.Lang.Object, ICollectCollectInt {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/java8/Collect$CollectInt", typeof (ICollectCollectIntInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/java8/Collect$CollectInt", typeof (ICollectCollectIntInvoker));
 
 		static IntPtr java_class_ref {
 			get { return _members.JniPeerType.PeerReference.Handle; }
@@ -381,9 +381,9 @@ namespace Com.Mob.Tools.Java8 {
 	}
 
 	[global::Android.Runtime.Register ("com/mob/tools/java8/Collect$CollectLong", DoNotGenerateAcw=true)]
-	internal class ICollectCollectLongInvoker : global::Java.Lang.Object, ICollectCollectLong {
+	internal partial class ICollectCollectLongInvoker : global::Java.Lang.Object, ICollectCollectLong {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/java8/Collect$CollectLong", typeof (ICollectCollectLongInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/java8/Collect$CollectLong", typeof (ICollectCollectLongInvoker));
 
 		static IntPtr java_class_ref {
 			get { return _members.JniPeerType.PeerReference.Handle; }
@@ -473,9 +473,9 @@ namespace Com.Mob.Tools.Java8 {
 	}
 
 	[global::Android.Runtime.Register ("com/mob/tools/java8/Collect$CollectShort", DoNotGenerateAcw=true)]
-	internal class ICollectCollectShortInvoker : global::Java.Lang.Object, ICollectCollectShort {
+	internal partial class ICollectCollectShortInvoker : global::Java.Lang.Object, ICollectCollectShort {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/java8/Collect$CollectShort", typeof (ICollectCollectShortInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/java8/Collect$CollectShort", typeof (ICollectCollectShortInvoker));
 
 		static IntPtr java_class_ref {
 			get { return _members.JniPeerType.PeerReference.Handle; }
@@ -569,9 +569,9 @@ namespace Com.Mob.Tools.Java8 {
 	}
 
 	[global::Android.Runtime.Register ("com/mob/tools/java8/Collect", DoNotGenerateAcw=true)]
-	internal class ICollectInvoker : global::Java.Lang.Object, ICollect {
+	internal partial class ICollectInvoker : global::Java.Lang.Object, ICollect {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/java8/Collect", typeof (ICollectInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/java8/Collect", typeof (ICollectInvoker));
 
 		static IntPtr java_class_ref {
 			get { return _members.JniPeerType.PeerReference.Handle; }

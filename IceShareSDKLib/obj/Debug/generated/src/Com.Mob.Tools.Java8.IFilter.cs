@@ -8,7 +8,7 @@ namespace Com.Mob.Tools.Java8 {
 	// Metadata.xml XPath interface reference: path="/api/package[@name='com.mob.tools.java8']/interface[@name='Filter.MapFilter']"
 	[Register ("com/mob/tools/java8/Filter$MapFilter", "", "Com.Mob.Tools.Java8.IFilterMapFilterInvoker")]
 	[global::Java.Interop.JavaTypeParameters (new string [] {"K", "V"})]
-	public partial interface IFilterMapFilter : IJavaObject {
+	public partial interface IFilterMapFilter : IJavaObject, IJavaPeerable {
 
 		// Metadata.xml XPath method reference: path="/api/package[@name='com.mob.tools.java8']/interface[@name='Filter.MapFilter']/method[@name='filter' and count(parameter)=2 and parameter[1][@type='K'] and parameter[2][@type='V']]"
 		[Register ("filter", "(Ljava/lang/Object;Ljava/lang/Object;)Z", "GetFilter_Ljava_lang_Object_Ljava_lang_Object_Handler:Com.Mob.Tools.Java8.IFilterMapFilterInvoker, IceShareSDKLib")]
@@ -17,9 +17,9 @@ namespace Com.Mob.Tools.Java8 {
 	}
 
 	[global::Android.Runtime.Register ("com/mob/tools/java8/Filter$MapFilter", DoNotGenerateAcw=true)]
-	internal class IFilterMapFilterInvoker : global::Java.Lang.Object, IFilterMapFilter {
+	internal partial class IFilterMapFilterInvoker : global::Java.Lang.Object, IFilterMapFilter {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/java8/Filter$MapFilter", typeof (IFilterMapFilterInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/java8/Filter$MapFilter", typeof (IFilterMapFilterInvoker));
 
 		static IntPtr java_class_ref {
 			get { return _members.JniPeerType.PeerReference.Handle; }
@@ -117,9 +117,9 @@ namespace Com.Mob.Tools.Java8 {
 	}
 
 	[global::Android.Runtime.Register ("com/mob/tools/java8/Filter", DoNotGenerateAcw=true)]
-	internal class IFilterInvoker : global::Java.Lang.Object, IFilter {
+	internal partial class IFilterInvoker : global::Java.Lang.Object, IFilter {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/java8/Filter", typeof (IFilterInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/java8/Filter", typeof (IFilterInvoker));
 
 		static IntPtr java_class_ref {
 			get { return _members.JniPeerType.PeerReference.Handle; }

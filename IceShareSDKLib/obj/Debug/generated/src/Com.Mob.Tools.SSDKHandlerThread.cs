@@ -32,7 +32,7 @@ namespace Com.Mob.Tools {
 				}
 			}
 		}
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/SSDKHandlerThread", typeof (SSDKHandlerThread));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/SSDKHandlerThread", typeof (SSDKHandlerThread));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;
@@ -291,7 +291,7 @@ namespace Com.Mob.Tools {
 
 		public SSDKHandlerThreadInvoker (IntPtr handle, JniHandleOwnership transfer) : base (handle, transfer) {}
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/SSDKHandlerThread", typeof (SSDKHandlerThreadInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/SSDKHandlerThread", typeof (SSDKHandlerThreadInvoker));
 
 		public override global::Java.Interop.JniPeerMembers JniPeerMembers {
 			get { return _members; }

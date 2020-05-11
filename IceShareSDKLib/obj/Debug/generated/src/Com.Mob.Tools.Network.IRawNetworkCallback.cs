@@ -7,7 +7,7 @@ namespace Com.Mob.Tools.Network {
 
 	// Metadata.xml XPath interface reference: path="/api/package[@name='com.mob.tools.network']/interface[@name='RawNetworkCallback']"
 	[Register ("com/mob/tools/network/RawNetworkCallback", "", "Com.Mob.Tools.Network.IRawNetworkCallbackInvoker")]
-	public partial interface IRawNetworkCallback : IJavaObject {
+	public partial interface IRawNetworkCallback : IJavaObject, IJavaPeerable {
 
 		// Metadata.xml XPath method reference: path="/api/package[@name='com.mob.tools.network']/interface[@name='RawNetworkCallback']/method[@name='onResponse' and count(parameter)=1 and parameter[1][@type='java.io.InputStream']]"
 		[Register ("onResponse", "(Ljava/io/InputStream;)V", "GetOnResponse_Ljava_io_InputStream_Handler:Com.Mob.Tools.Network.IRawNetworkCallbackInvoker, IceShareSDKLib")]
@@ -16,9 +16,9 @@ namespace Com.Mob.Tools.Network {
 	}
 
 	[global::Android.Runtime.Register ("com/mob/tools/network/RawNetworkCallback", DoNotGenerateAcw=true)]
-	internal class IRawNetworkCallbackInvoker : global::Java.Lang.Object, IRawNetworkCallback {
+	internal partial class IRawNetworkCallbackInvoker : global::Java.Lang.Object, IRawNetworkCallback {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/network/RawNetworkCallback", typeof (IRawNetworkCallbackInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/network/RawNetworkCallback", typeof (IRawNetworkCallbackInvoker));
 
 		static IntPtr java_class_ref {
 			get { return _members.JniPeerType.PeerReference.Handle; }

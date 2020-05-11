@@ -106,7 +106,7 @@ namespace CN.Sharesdk.Wechat.Utils {
 		}
 
 		[Register ("cn/sharesdk/wechat/utils/WechatResp$ErrCode", DoNotGenerateAcw=true)]
-		[global::System.Obsolete ("Use the 'ErrCode' type. This type will be removed in a future release.")]
+		[global::System.Obsolete ("Use the 'ErrCode' type. This type will be removed in a future release.", error: true)]
 		public abstract class ErrCodeConsts : ErrCode {
 
 			private ErrCodeConsts ()
@@ -115,7 +115,7 @@ namespace CN.Sharesdk.Wechat.Utils {
 		}
 
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/sharesdk/wechat/utils/WechatResp", typeof (WechatResp));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/wechat/utils/WechatResp", typeof (WechatResp));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;
@@ -243,7 +243,7 @@ namespace CN.Sharesdk.Wechat.Utils {
 
 		public WechatRespInvoker (IntPtr handle, JniHandleOwnership transfer) : base (handle, transfer) {}
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("cn/sharesdk/wechat/utils/WechatResp", typeof (WechatRespInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/wechat/utils/WechatResp", typeof (WechatRespInvoker));
 
 		public override global::Java.Interop.JniPeerMembers JniPeerMembers {
 			get { return _members; }

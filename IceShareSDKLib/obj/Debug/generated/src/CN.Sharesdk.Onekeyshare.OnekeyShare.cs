@@ -9,7 +9,7 @@ namespace CN.Sharesdk.Onekeyshare {
 	[global::Android.Runtime.Register ("cn/sharesdk/onekeyshare/OnekeyShare", DoNotGenerateAcw=true)]
 	public partial class OnekeyShare : global::Java.Lang.Object {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/sharesdk/onekeyshare/OnekeyShare", typeof (OnekeyShare));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/onekeyshare/OnekeyShare", typeof (OnekeyShare));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

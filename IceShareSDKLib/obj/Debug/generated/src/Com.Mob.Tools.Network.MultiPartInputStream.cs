@@ -9,7 +9,7 @@ namespace Com.Mob.Tools.Network {
 	[global::Android.Runtime.Register ("com/mob/tools/network/MultiPartInputStream", DoNotGenerateAcw=true)]
 	public partial class MultiPartInputStream : global::Java.IO.InputStream {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/network/MultiPartInputStream", typeof (MultiPartInputStream));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/network/MultiPartInputStream", typeof (MultiPartInputStream));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

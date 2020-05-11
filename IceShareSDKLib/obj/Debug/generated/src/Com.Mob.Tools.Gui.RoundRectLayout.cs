@@ -9,7 +9,7 @@ namespace Com.Mob.Tools.Gui {
 	[global::Android.Runtime.Register ("com/mob/tools/gui/RoundRectLayout", DoNotGenerateAcw=true)]
 	public partial class RoundRectLayout : global::Android.Widget.RelativeLayout {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/gui/RoundRectLayout", typeof (RoundRectLayout));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/gui/RoundRectLayout", typeof (RoundRectLayout));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

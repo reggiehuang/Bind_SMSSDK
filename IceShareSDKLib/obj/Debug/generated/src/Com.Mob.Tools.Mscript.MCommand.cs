@@ -31,7 +31,7 @@ namespace Com.Mob.Tools.Mscript {
 				}
 			}
 		}
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/mscript/MCommand", typeof (MCommand));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/mscript/MCommand", typeof (MCommand));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;
@@ -176,7 +176,7 @@ namespace Com.Mob.Tools.Mscript {
 
 		public MCommandInvoker (IntPtr handle, JniHandleOwnership transfer) : base (handle, transfer) {}
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/mscript/MCommand", typeof (MCommandInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/mscript/MCommand", typeof (MCommandInvoker));
 
 		public override global::Java.Interop.JniPeerMembers JniPeerMembers {
 			get { return _members; }

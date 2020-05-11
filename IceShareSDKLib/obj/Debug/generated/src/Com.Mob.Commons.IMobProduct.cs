@@ -7,7 +7,7 @@ namespace Com.Mob.Commons {
 
 	// Metadata.xml XPath interface reference: path="/api/package[@name='com.mob.commons']/interface[@name='MobProduct']"
 	[Register ("com/mob/commons/MobProduct", "", "Com.Mob.Commons.IMobProductInvoker")]
-	public partial interface IMobProduct : IJavaObject {
+	public partial interface IMobProduct : IJavaObject, IJavaPeerable {
 
 		string ProductTag {
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.mob.commons']/interface[@name='MobProduct']/method[@name='getProductTag' and count(parameter)=0]"
@@ -22,9 +22,9 @@ namespace Com.Mob.Commons {
 	}
 
 	[global::Android.Runtime.Register ("com/mob/commons/MobProduct", DoNotGenerateAcw=true)]
-	internal class IMobProductInvoker : global::Java.Lang.Object, IMobProduct {
+	internal partial class IMobProductInvoker : global::Java.Lang.Object, IMobProduct {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/commons/MobProduct", typeof (IMobProductInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/commons/MobProduct", typeof (IMobProductInvoker));
 
 		static IntPtr java_class_ref {
 			get { return _members.JniPeerType.PeerReference.Handle; }

@@ -187,7 +187,7 @@ namespace Com.Sina.Weibo.Sdk.Api {
 				}
 			}
 		}
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/sina/weibo/sdk/api/WebpageObject", typeof (WebpageObject));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/sina/weibo/sdk/api/WebpageObject", typeof (WebpageObject));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

@@ -11,7 +11,7 @@ namespace Com.Mob.Commons.Clt {
 
 		// Metadata.xml XPath interface reference: path="/api/package[@name='com.mob.commons.clt']/interface[@name='FBManager.FBListener']"
 		[Register ("com/mob/commons/clt/FBManager$FBListener", "", "Com.Mob.Commons.Clt.FBManager/IFBListenerInvoker")]
-		public partial interface IFBListener : IJavaObject {
+		public partial interface IFBListener : IJavaObject, IJavaPeerable {
 
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.mob.commons.clt']/interface[@name='FBManager.FBListener']/method[@name='onFBChanged' and count(parameter)=3 and parameter[1][@type='boolean'] and parameter[2][@type='boolean'] and parameter[3][@type='long']]"
 			[Register ("onFBChanged", "(ZZJ)V", "GetOnFBChanged_ZZJHandler:Com.Mob.Commons.Clt.FBManager/IFBListenerInvoker, IceShareSDKLib")]
@@ -20,9 +20,9 @@ namespace Com.Mob.Commons.Clt {
 		}
 
 		[global::Android.Runtime.Register ("com/mob/commons/clt/FBManager$FBListener", DoNotGenerateAcw=true)]
-		internal class IFBListenerInvoker : global::Java.Lang.Object, IFBListener {
+		internal partial class IFBListenerInvoker : global::Java.Lang.Object, IFBListener {
 
-			internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/commons/clt/FBManager$FBListener", typeof (IFBListenerInvoker));
+			static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/commons/clt/FBManager$FBListener", typeof (IFBListenerInvoker));
 
 			static IntPtr java_class_ref {
 				get { return _members.JniPeerType.PeerReference.Handle; }
@@ -158,7 +158,7 @@ namespace Com.Mob.Commons.Clt {
 		}
 
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/commons/clt/FBManager", typeof (FBManager));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/commons/clt/FBManager", typeof (FBManager));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

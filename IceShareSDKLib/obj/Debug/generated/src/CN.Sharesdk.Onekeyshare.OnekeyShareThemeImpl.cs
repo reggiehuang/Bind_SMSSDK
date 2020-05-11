@@ -181,7 +181,7 @@ namespace CN.Sharesdk.Onekeyshare {
 				}
 			}
 		}
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/sharesdk/onekeyshare/OnekeyShareThemeImpl", typeof (OnekeyShareThemeImpl));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/onekeyshare/OnekeyShareThemeImpl", typeof (OnekeyShareThemeImpl));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;
@@ -511,7 +511,7 @@ namespace CN.Sharesdk.Onekeyshare {
 
 		public OnekeyShareThemeImplInvoker (IntPtr handle, JniHandleOwnership transfer) : base (handle, transfer) {}
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("cn/sharesdk/onekeyshare/OnekeyShareThemeImpl", typeof (OnekeyShareThemeImplInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/onekeyshare/OnekeyShareThemeImpl", typeof (OnekeyShareThemeImplInvoker));
 
 		public override global::Java.Interop.JniPeerMembers JniPeerMembers {
 			get { return _members; }

@@ -9,7 +9,7 @@ namespace Com.Mob.Tools.Mscript.Commands {
 	[global::Android.Runtime.Register ("com/mob/tools/mscript/commands/If", DoNotGenerateAcw=true)]
 	public partial class If : global::Com.Mob.Tools.Mscript.MCommand {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/mscript/commands/If", typeof (If));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/mscript/commands/If", typeof (If));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

@@ -9,7 +9,7 @@ namespace CN.Sharesdk.Onekeyshare.Themes.Classic {
 	[global::Android.Runtime.Register ("cn/sharesdk/onekeyshare/themes/classic/FriendListItem", DoNotGenerateAcw=true)]
 	public partial class FriendListItem : global::Android.Widget.LinearLayout {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/sharesdk/onekeyshare/themes/classic/FriendListItem", typeof (FriendListItem));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/onekeyshare/themes/classic/FriendListItem", typeof (FriendListItem));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

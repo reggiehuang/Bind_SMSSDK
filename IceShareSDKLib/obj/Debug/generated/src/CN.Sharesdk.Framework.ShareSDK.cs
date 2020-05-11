@@ -29,7 +29,7 @@ namespace CN.Sharesdk.Framework {
 		// Metadata.xml XPath field reference: path="/api/package[@name='cn.sharesdk.framework']/class[@name='ShareSDK']/field[@name='SDK_VERSION_NAME']"
 		[Register ("SDK_VERSION_NAME")]
 		public const string SdkVersionName = (string) "3.3.0";
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/sharesdk/framework/ShareSDK", typeof (ShareSDK));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/framework/ShareSDK", typeof (ShareSDK));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;
@@ -70,7 +70,7 @@ namespace CN.Sharesdk.Framework {
 
 		public static unsafe bool IsDebug {
 			// Metadata.xml XPath method reference: path="/api/package[@name='cn.sharesdk.framework']/class[@name='ShareSDK']/method[@name='isDebug' and count(parameter)=0]"
-			[Register ("isDebug", "()Z", "GetIsDebugHandler")]
+			[Register ("isDebug", "()Z", "")]
 			get {
 				const string __id = "isDebug.()Z";
 				try {
@@ -83,7 +83,7 @@ namespace CN.Sharesdk.Framework {
 
 		public static unsafe bool IsRemoveCookieOnAuthorize {
 			// Metadata.xml XPath method reference: path="/api/package[@name='cn.sharesdk.framework']/class[@name='ShareSDK']/method[@name='isRemoveCookieOnAuthorize' and count(parameter)=0]"
-			[Register ("isRemoveCookieOnAuthorize", "()Z", "GetIsRemoveCookieOnAuthorizeHandler")]
+			[Register ("isRemoveCookieOnAuthorize", "()Z", "")]
 			get {
 				const string __id = "isRemoveCookieOnAuthorize.()Z";
 				try {

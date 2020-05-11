@@ -9,7 +9,7 @@ namespace Com.Mob.Tools.Log {
 	[global::Android.Runtime.Register ("com/mob/tools/log/NLog", DoNotGenerateAcw=true)]
 	public abstract partial class NLog : global::Java.Lang.Object {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/log/NLog", typeof (NLog));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/log/NLog", typeof (NLog));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;
@@ -538,7 +538,7 @@ namespace Com.Mob.Tools.Log {
 
 		public NLogInvoker (IntPtr handle, JniHandleOwnership transfer) : base (handle, transfer) {}
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/log/NLog", typeof (NLogInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/log/NLog", typeof (NLogInvoker));
 
 		public override global::Java.Interop.JniPeerMembers JniPeerMembers {
 			get { return _members; }

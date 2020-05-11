@@ -13,9 +13,9 @@ namespace Com.Mob.Tools.Java8 {
 	}
 
 	[global::Android.Runtime.Register ("com/mob/tools/java8/Map$MapByte", DoNotGenerateAcw=true)]
-	internal class IMapMapByteInvoker : global::Java.Lang.Object, IMapMapByte {
+	internal partial class IMapMapByteInvoker : global::Java.Lang.Object, IMapMapByte {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/java8/Map$MapByte", typeof (IMapMapByteInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/java8/Map$MapByte", typeof (IMapMapByteInvoker));
 
 		static IntPtr java_class_ref {
 			get { return _members.JniPeerType.PeerReference.Handle; }
@@ -105,9 +105,9 @@ namespace Com.Mob.Tools.Java8 {
 	}
 
 	[global::Android.Runtime.Register ("com/mob/tools/java8/Map$MapDouble", DoNotGenerateAcw=true)]
-	internal class IMapMapDoubleInvoker : global::Java.Lang.Object, IMapMapDouble {
+	internal partial class IMapMapDoubleInvoker : global::Java.Lang.Object, IMapMapDouble {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/java8/Map$MapDouble", typeof (IMapMapDoubleInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/java8/Map$MapDouble", typeof (IMapMapDoubleInvoker));
 
 		static IntPtr java_class_ref {
 			get { return _members.JniPeerType.PeerReference.Handle; }
@@ -197,9 +197,9 @@ namespace Com.Mob.Tools.Java8 {
 	}
 
 	[global::Android.Runtime.Register ("com/mob/tools/java8/Map$MapFloat", DoNotGenerateAcw=true)]
-	internal class IMapMapFloatInvoker : global::Java.Lang.Object, IMapMapFloat {
+	internal partial class IMapMapFloatInvoker : global::Java.Lang.Object, IMapMapFloat {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/java8/Map$MapFloat", typeof (IMapMapFloatInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/java8/Map$MapFloat", typeof (IMapMapFloatInvoker));
 
 		static IntPtr java_class_ref {
 			get { return _members.JniPeerType.PeerReference.Handle; }
@@ -289,9 +289,9 @@ namespace Com.Mob.Tools.Java8 {
 	}
 
 	[global::Android.Runtime.Register ("com/mob/tools/java8/Map$MapInt", DoNotGenerateAcw=true)]
-	internal class IMapMapIntInvoker : global::Java.Lang.Object, IMapMapInt {
+	internal partial class IMapMapIntInvoker : global::Java.Lang.Object, IMapMapInt {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/java8/Map$MapInt", typeof (IMapMapIntInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/java8/Map$MapInt", typeof (IMapMapIntInvoker));
 
 		static IntPtr java_class_ref {
 			get { return _members.JniPeerType.PeerReference.Handle; }
@@ -381,9 +381,9 @@ namespace Com.Mob.Tools.Java8 {
 	}
 
 	[global::Android.Runtime.Register ("com/mob/tools/java8/Map$MapLong", DoNotGenerateAcw=true)]
-	internal class IMapMapLongInvoker : global::Java.Lang.Object, IMapMapLong {
+	internal partial class IMapMapLongInvoker : global::Java.Lang.Object, IMapMapLong {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/java8/Map$MapLong", typeof (IMapMapLongInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/java8/Map$MapLong", typeof (IMapMapLongInvoker));
 
 		static IntPtr java_class_ref {
 			get { return _members.JniPeerType.PeerReference.Handle; }
@@ -468,7 +468,7 @@ namespace Com.Mob.Tools.Java8 {
 	// Metadata.xml XPath interface reference: path="/api/package[@name='com.mob.tools.java8']/interface[@name='Map.MapMap']"
 	[Register ("com/mob/tools/java8/Map$MapMap", "", "Com.Mob.Tools.Java8.IMapMapMapInvoker")]
 	[global::Java.Interop.JavaTypeParameters (new string [] {"K", "V", "R"})]
-	public partial interface IMapMapMap : IJavaObject {
+	public partial interface IMapMapMap : IJavaObject, IJavaPeerable {
 
 		// Metadata.xml XPath method reference: path="/api/package[@name='com.mob.tools.java8']/interface[@name='Map.MapMap']/method[@name='map' and count(parameter)=2 and parameter[1][@type='K'] and parameter[2][@type='V']]"
 		[Register ("map", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", "GetMap_Ljava_lang_Object_Ljava_lang_Object_Handler:Com.Mob.Tools.Java8.IMapMapMapInvoker, IceShareSDKLib")]
@@ -477,9 +477,9 @@ namespace Com.Mob.Tools.Java8 {
 	}
 
 	[global::Android.Runtime.Register ("com/mob/tools/java8/Map$MapMap", DoNotGenerateAcw=true)]
-	internal class IMapMapMapInvoker : global::Java.Lang.Object, IMapMapMap {
+	internal partial class IMapMapMapInvoker : global::Java.Lang.Object, IMapMapMap {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/java8/Map$MapMap", typeof (IMapMapMapInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/java8/Map$MapMap", typeof (IMapMapMapInvoker));
 
 		static IntPtr java_class_ref {
 			get { return _members.JniPeerType.PeerReference.Handle; }
@@ -573,9 +573,9 @@ namespace Com.Mob.Tools.Java8 {
 	}
 
 	[global::Android.Runtime.Register ("com/mob/tools/java8/Map$MapShort", DoNotGenerateAcw=true)]
-	internal class IMapMapShortInvoker : global::Java.Lang.Object, IMapMapShort {
+	internal partial class IMapMapShortInvoker : global::Java.Lang.Object, IMapMapShort {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/java8/Map$MapShort", typeof (IMapMapShortInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/java8/Map$MapShort", typeof (IMapMapShortInvoker));
 
 		static IntPtr java_class_ref {
 			get { return _members.JniPeerType.PeerReference.Handle; }
@@ -669,9 +669,9 @@ namespace Com.Mob.Tools.Java8 {
 	}
 
 	[global::Android.Runtime.Register ("com/mob/tools/java8/Map", DoNotGenerateAcw=true)]
-	internal class IMapInvoker : global::Java.Lang.Object, IMap {
+	internal partial class IMapInvoker : global::Java.Lang.Object, IMap {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/java8/Map", typeof (IMapInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/java8/Map", typeof (IMapInvoker));
 
 		static IntPtr java_class_ref {
 			get { return _members.JniPeerType.PeerReference.Handle; }

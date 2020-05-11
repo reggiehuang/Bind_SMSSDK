@@ -10,7 +10,7 @@ namespace Com.Mob.Tools.Java8 {
 	[global::Java.Interop.JavaTypeParameters (new string [] {"T"})]
 	public partial class FlowIteratorArrayIterator : global::Java.Lang.Object, global::Com.Mob.Tools.Java8.IFlowIterator {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/java8/FlowIterator$ArrayIterator", typeof (FlowIteratorArrayIterator));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/java8/FlowIterator$ArrayIterator", typeof (FlowIteratorArrayIterator));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;
@@ -121,7 +121,7 @@ namespace Com.Mob.Tools.Java8 {
 	[global::Android.Runtime.Register ("com/mob/tools/java8/FlowIterator$BufferedReaderIterator", DoNotGenerateAcw=true)]
 	public partial class FlowIteratorBufferedReaderIterator : global::Java.Lang.Object, global::Com.Mob.Tools.Java8.IFlowIterator {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/java8/FlowIterator$BufferedReaderIterator", typeof (FlowIteratorBufferedReaderIterator));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/java8/FlowIterator$BufferedReaderIterator", typeof (FlowIteratorBufferedReaderIterator));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;
@@ -239,7 +239,7 @@ namespace Com.Mob.Tools.Java8 {
 	[global::Java.Interop.JavaTypeParameters (new string [] {"T"})]
 	public partial class FlowIteratorEnumerationIterator : global::Java.Lang.Object, global::Com.Mob.Tools.Java8.IFlowIterator {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/java8/FlowIterator$EnumerationIterator", typeof (FlowIteratorEnumerationIterator));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/java8/FlowIterator$EnumerationIterator", typeof (FlowIteratorEnumerationIterator));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;
@@ -350,7 +350,7 @@ namespace Com.Mob.Tools.Java8 {
 	[global::Android.Runtime.Register ("com/mob/tools/java8/FlowIterator$FileReaderIterator", DoNotGenerateAcw=true)]
 	public partial class FlowIteratorFileReaderIterator : global::Java.Lang.Object, global::Com.Mob.Tools.Java8.IFlowIterator {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/java8/FlowIterator$FileReaderIterator", typeof (FlowIteratorFileReaderIterator));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/java8/FlowIterator$FileReaderIterator", typeof (FlowIteratorFileReaderIterator));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;
@@ -468,7 +468,7 @@ namespace Com.Mob.Tools.Java8 {
 	[global::Java.Interop.JavaTypeParameters (new string [] {"T"})]
 	public partial class FlowIteratorIterableIterator : global::Java.Lang.Object, global::Com.Mob.Tools.Java8.IFlowIterator {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/java8/FlowIterator$IterableIterator", typeof (FlowIteratorIterableIterator));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/java8/FlowIterator$IterableIterator", typeof (FlowIteratorIterableIterator));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;
@@ -580,7 +580,7 @@ namespace Com.Mob.Tools.Java8 {
 	[global::Java.Interop.JavaTypeParameters (new string [] {"K", "V"})]
 	public partial class FlowIteratorMapIterator : global::Java.Lang.Object {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/java8/FlowIterator$MapIterator", typeof (FlowIteratorMapIterator));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/java8/FlowIterator$MapIterator", typeof (FlowIteratorMapIterator));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;
@@ -692,7 +692,7 @@ namespace Com.Mob.Tools.Java8 {
 	[global::Java.Interop.JavaTypeParameters (new string [] {"E"})]
 	public abstract partial class FlowIteratorPrimitiveArrayIterator : global::Java.Lang.Object, global::Com.Mob.Tools.Java8.IFlowIterator {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/java8/FlowIterator$PrimitiveArrayIterator", typeof (FlowIteratorPrimitiveArrayIterator));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/java8/FlowIterator$PrimitiveArrayIterator", typeof (FlowIteratorPrimitiveArrayIterator));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;
@@ -862,7 +862,7 @@ namespace Com.Mob.Tools.Java8 {
 
 		public FlowIteratorPrimitiveArrayIteratorInvoker (IntPtr handle, JniHandleOwnership transfer) : base (handle, transfer) {}
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/java8/FlowIterator$PrimitiveArrayIterator", typeof (FlowIteratorPrimitiveArrayIteratorInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/java8/FlowIterator$PrimitiveArrayIterator", typeof (FlowIteratorPrimitiveArrayIteratorInvoker));
 
 		public override global::Java.Interop.JniPeerMembers JniPeerMembers {
 			get { return _members; }
@@ -906,7 +906,7 @@ namespace Com.Mob.Tools.Java8 {
 	[global::Java.Interop.JavaTypeParameters (new string [] {"T extends java.lang.Comparable<T>"})]
 	public abstract partial class FlowIteratorRangeIterator : global::Java.Lang.Object, global::Com.Mob.Tools.Java8.IFlowIterator {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/java8/FlowIterator$RangeIterator", typeof (FlowIteratorRangeIterator));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/java8/FlowIterator$RangeIterator", typeof (FlowIteratorRangeIterator));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;
@@ -1046,7 +1046,7 @@ namespace Com.Mob.Tools.Java8 {
 
 		public FlowIteratorRangeIteratorInvoker (IntPtr handle, JniHandleOwnership transfer) : base (handle, transfer) {}
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/java8/FlowIterator$RangeIterator", typeof (FlowIteratorRangeIteratorInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/java8/FlowIterator$RangeIterator", typeof (FlowIteratorRangeIteratorInvoker));
 
 		public override global::Java.Interop.JniPeerMembers JniPeerMembers {
 			get { return _members; }
@@ -1081,7 +1081,7 @@ namespace Com.Mob.Tools.Java8 {
 	// Metadata.xml XPath interface reference: path="/api/package[@name='com.mob.tools.java8']/interface[@name='FlowIterator']"
 	[Register ("com/mob/tools/java8/FlowIterator", "", "Com.Mob.Tools.Java8.IFlowIteratorInvoker")]
 	[global::Java.Interop.JavaTypeParameters (new string [] {"R"})]
-	public partial interface IFlowIterator : IJavaObject {
+	public partial interface IFlowIterator : IJavaObject, IJavaPeerable {
 
 		bool HasNext {
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.mob.tools.java8']/interface[@name='FlowIterator']/method[@name='hasNext' and count(parameter)=0]"
@@ -1099,9 +1099,9 @@ namespace Com.Mob.Tools.Java8 {
 	}
 
 	[global::Android.Runtime.Register ("com/mob/tools/java8/FlowIterator", DoNotGenerateAcw=true)]
-	internal class IFlowIteratorInvoker : global::Java.Lang.Object, IFlowIterator {
+	internal partial class IFlowIteratorInvoker : global::Java.Lang.Object, IFlowIterator {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/java8/FlowIterator", typeof (IFlowIteratorInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/java8/FlowIterator", typeof (IFlowIteratorInvoker));
 
 		static IntPtr java_class_ref {
 			get { return _members.JniPeerType.PeerReference.Handle; }

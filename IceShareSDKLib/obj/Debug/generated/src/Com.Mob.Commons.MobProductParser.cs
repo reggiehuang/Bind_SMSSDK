@@ -9,7 +9,7 @@ namespace Com.Mob.Commons {
 	[global::Android.Runtime.Register ("com/mob/commons/MobProductParser", DoNotGenerateAcw=true)]
 	public partial class MobProductParser : global::Java.Lang.Object, global::Com.Mob.Tools.Proguard.IPublicMemberKeeper {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/commons/MobProductParser", typeof (MobProductParser));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/commons/MobProductParser", typeof (MobProductParser));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

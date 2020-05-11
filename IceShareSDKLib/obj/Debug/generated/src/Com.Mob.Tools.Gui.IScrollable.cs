@@ -7,7 +7,7 @@ namespace Com.Mob.Tools.Gui {
 
 	// Metadata.xml XPath interface reference: path="/api/package[@name='com.mob.tools.gui']/interface[@name='Scrollable.OnScrollListener']"
 	[Register ("com/mob/tools/gui/Scrollable$OnScrollListener", "", "Com.Mob.Tools.Gui.IScrollableOnScrollListenerInvoker")]
-	public partial interface IScrollableOnScrollListener : IJavaObject {
+	public partial interface IScrollableOnScrollListener : IJavaObject, IJavaPeerable {
 
 		// Metadata.xml XPath method reference: path="/api/package[@name='com.mob.tools.gui']/interface[@name='Scrollable.OnScrollListener']/method[@name='onScrollChanged' and count(parameter)=5 and parameter[1][@type='com.mob.tools.gui.Scrollable'] and parameter[2][@type='int'] and parameter[3][@type='int'] and parameter[4][@type='int'] and parameter[5][@type='int']]"
 		[Register ("onScrollChanged", "(Lcom/mob/tools/gui/Scrollable;IIII)V", "GetOnScrollChanged_Lcom_mob_tools_gui_Scrollable_IIIIHandler:Com.Mob.Tools.Gui.IScrollableOnScrollListenerInvoker, IceShareSDKLib")]
@@ -16,9 +16,9 @@ namespace Com.Mob.Tools.Gui {
 	}
 
 	[global::Android.Runtime.Register ("com/mob/tools/gui/Scrollable$OnScrollListener", DoNotGenerateAcw=true)]
-	internal class IScrollableOnScrollListenerInvoker : global::Java.Lang.Object, IScrollableOnScrollListener {
+	internal partial class IScrollableOnScrollListenerInvoker : global::Java.Lang.Object, IScrollableOnScrollListener {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/gui/Scrollable$OnScrollListener", typeof (IScrollableOnScrollListenerInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/gui/Scrollable$OnScrollListener", typeof (IScrollableOnScrollListenerInvoker));
 
 		static IntPtr java_class_ref {
 			get { return _members.JniPeerType.PeerReference.Handle; }
@@ -171,14 +171,14 @@ namespace Com.Mob.Tools.Gui {
 
 	// Metadata.xml XPath interface reference: path="/api/package[@name='com.mob.tools.gui']/interface[@name='Scrollable']"
 	[Register ("com/mob/tools/gui/Scrollable", "", "Com.Mob.Tools.Gui.IScrollableInvoker")]
-	public partial interface IScrollable : IJavaObject {
+	public partial interface IScrollable : IJavaObject, IJavaPeerable {
 
 	}
 
 	[global::Android.Runtime.Register ("com/mob/tools/gui/Scrollable", DoNotGenerateAcw=true)]
-	internal class IScrollableInvoker : global::Java.Lang.Object, IScrollable {
+	internal partial class IScrollableInvoker : global::Java.Lang.Object, IScrollable {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/gui/Scrollable", typeof (IScrollableInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/gui/Scrollable", typeof (IScrollableInvoker));
 
 		static IntPtr java_class_ref {
 			get { return _members.JniPeerType.PeerReference.Handle; }

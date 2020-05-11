@@ -9,7 +9,7 @@ namespace CN.Sharesdk.Onekeyshare.Themes.Classic {
 	[global::Android.Runtime.Register ("cn/sharesdk/onekeyshare/themes/classic/IndicatorView", DoNotGenerateAcw=true)]
 	public partial class IndicatorView : global::Android.Views.View {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/sharesdk/onekeyshare/themes/classic/IndicatorView", typeof (IndicatorView));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/onekeyshare/themes/classic/IndicatorView", typeof (IndicatorView));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

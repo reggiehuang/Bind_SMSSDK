@@ -77,7 +77,7 @@ namespace CN.Sharesdk.Wechat.Utils {
 			public const int TypeVideo = (int) 4;
 		}
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/sharesdk/wechat/utils/WXWebpageObject", typeof (WXWebpageObject));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/wechat/utils/WXWebpageObject", typeof (WXWebpageObject));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

@@ -12,7 +12,7 @@ namespace Com.Mob.Tools {
 		// Metadata.xml XPath interface reference: path="/api/package[@name='com.mob.tools']/interface[@name='RxMob.OnSubscribe']"
 		[Register ("com/mob/tools/RxMob$OnSubscribe", "", "Com.Mob.Tools.RxMob/IOnSubscribeInvoker")]
 		[global::Java.Interop.JavaTypeParameters (new string [] {"T"})]
-		public partial interface IOnSubscribe : IJavaObject {
+		public partial interface IOnSubscribe : IJavaObject, IJavaPeerable {
 
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.mob.tools']/interface[@name='RxMob.OnSubscribe']/method[@name='call' and count(parameter)=1 and parameter[1][@type='com.mob.tools.RxMob.Subscriber&lt;T&gt;']]"
 			[Register ("call", "(Lcom/mob/tools/RxMob$Subscriber;)V", "GetCall_Lcom_mob_tools_RxMob_Subscriber_Handler:Com.Mob.Tools.RxMob/IOnSubscribeInvoker, IceShareSDKLib")]
@@ -21,9 +21,9 @@ namespace Com.Mob.Tools {
 		}
 
 		[global::Android.Runtime.Register ("com/mob/tools/RxMob$OnSubscribe", DoNotGenerateAcw=true)]
-		internal class IOnSubscribeInvoker : global::Java.Lang.Object, IOnSubscribe {
+		internal partial class IOnSubscribeInvoker : global::Java.Lang.Object, IOnSubscribe {
 
-			internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/RxMob$OnSubscribe", typeof (IOnSubscribeInvoker));
+			static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/RxMob$OnSubscribe", typeof (IOnSubscribeInvoker));
 
 			static IntPtr java_class_ref {
 				get { return _members.JniPeerType.PeerReference.Handle; }
@@ -106,7 +106,7 @@ namespace Com.Mob.Tools {
 		[global::Java.Interop.JavaTypeParameters (new string [] {"T"})]
 		public abstract partial class QuickSubscribe : global::Java.Lang.Object, global::Com.Mob.Tools.RxMob.IOnSubscribe {
 
-			internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/RxMob$QuickSubscribe", typeof (QuickSubscribe));
+			static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/RxMob$QuickSubscribe", typeof (QuickSubscribe));
 			internal static new IntPtr class_ref {
 				get {
 					return _members.JniPeerType.PeerReference.Handle;
@@ -186,7 +186,7 @@ namespace Com.Mob.Tools {
 
 			public QuickSubscribeInvoker (IntPtr handle, JniHandleOwnership transfer) : base (handle, transfer) {}
 
-			internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/RxMob$QuickSubscribe", typeof (QuickSubscribeInvoker));
+			static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/RxMob$QuickSubscribe", typeof (QuickSubscribeInvoker));
 
 			public override global::Java.Interop.JniPeerMembers JniPeerMembers {
 				get { return _members; }
@@ -217,7 +217,7 @@ namespace Com.Mob.Tools {
 		[global::Java.Interop.JavaTypeParameters (new string [] {"T"})]
 		public sealed partial class Subscribable : global::Java.Lang.Object {
 
-			internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/RxMob$Subscribable", typeof (Subscribable));
+			static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/RxMob$Subscribable", typeof (Subscribable));
 			internal static new IntPtr class_ref {
 				get {
 					return _members.JniPeerType.PeerReference.Handle;
@@ -299,7 +299,7 @@ namespace Com.Mob.Tools {
 		[global::Java.Interop.JavaTypeParameters (new string [] {"T"})]
 		public partial class Subscriber : global::Java.Lang.Object {
 
-			internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/RxMob$Subscriber", typeof (Subscriber));
+			static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/RxMob$Subscriber", typeof (Subscriber));
 			internal static new IntPtr class_ref {
 				get {
 					return _members.JniPeerType.PeerReference.Handle;
@@ -507,7 +507,7 @@ namespace Com.Mob.Tools {
 					return global::Java.Lang.Object.GetObject<global::Com.Mob.Tools.RxMob.Thread> (__v.Handle, JniHandleOwnership.TransferLocalRef);
 				}
 			}
-			internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/RxMob$Thread", typeof (Thread));
+			static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/RxMob$Thread", typeof (Thread));
 			internal static new IntPtr class_ref {
 				get {
 					return _members.JniPeerType.PeerReference.Handle;
@@ -558,7 +558,7 @@ namespace Com.Mob.Tools {
 
 		}
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/RxMob", typeof (RxMob));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/RxMob", typeof (RxMob));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

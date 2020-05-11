@@ -9,7 +9,7 @@ namespace CN.Smssdk {
 	[global::Android.Runtime.Register ("cn/smssdk/UserInterruptException", DoNotGenerateAcw=true)]
 	public partial class UserInterruptException : global::Java.Lang.Exception {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/smssdk/UserInterruptException", typeof (UserInterruptException));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/smssdk/UserInterruptException", typeof (UserInterruptException));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

@@ -57,7 +57,7 @@ namespace Com.Mob.Tools.Gui {
 				return global::Java.Lang.Object.GetObject<global::Com.Mob.Tools.Gui.SmoothScroller> (__v.Handle, JniHandleOwnership.TransferLocalRef);
 			}
 		}
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/gui/SmoothScroller", typeof (SmoothScroller));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/gui/SmoothScroller", typeof (SmoothScroller));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

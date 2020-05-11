@@ -35,7 +35,7 @@ namespace CN.Sharesdk.Framework {
 					}
 				}
 			}
-			internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/sharesdk/framework/Service$ServiceEvent", typeof (ServiceEvent));
+			static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/framework/Service$ServiceEvent", typeof (ServiceEvent));
 			internal static new IntPtr class_ref {
 				get {
 					return _members.JniPeerType.PeerReference.Handle;
@@ -160,7 +160,7 @@ namespace CN.Sharesdk.Framework {
 
 			public ServiceEventInvoker (IntPtr handle, JniHandleOwnership transfer) : base (handle, transfer) {}
 
-			internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("cn/sharesdk/framework/Service$ServiceEvent", typeof (ServiceEventInvoker));
+			static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/framework/Service$ServiceEvent", typeof (ServiceEventInvoker));
 
 			public override global::Java.Interop.JniPeerMembers JniPeerMembers {
 				get { return _members; }
@@ -173,7 +173,7 @@ namespace CN.Sharesdk.Framework {
 		}
 
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/sharesdk/framework/Service", typeof (Service));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/framework/Service", typeof (Service));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;
@@ -344,7 +344,7 @@ namespace CN.Sharesdk.Framework {
 
 		public ServiceInvoker (IntPtr handle, JniHandleOwnership transfer) : base (handle, transfer) {}
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("cn/sharesdk/framework/Service", typeof (ServiceInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/framework/Service", typeof (ServiceInvoker));
 
 		public override global::Java.Interop.JniPeerMembers JniPeerMembers {
 			get { return _members; }

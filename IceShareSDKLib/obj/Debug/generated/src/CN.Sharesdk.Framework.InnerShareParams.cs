@@ -61,7 +61,7 @@ namespace CN.Sharesdk.Framework {
 		// Metadata.xml XPath field reference: path="/api/package[@name='cn.sharesdk.framework']/class[@name='InnerShareParams']/field[@name='WX_MINIPROGRAM_WITH_SHARETICKET']"
 		[Register ("WX_MINIPROGRAM_WITH_SHARETICKET")]
 		protected const string WxMiniprogramWithShareticket = (string) "wxWithShareTicket";
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/sharesdk/framework/InnerShareParams", typeof (InnerShareParams));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/framework/InnerShareParams", typeof (InnerShareParams));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;
@@ -2696,7 +2696,7 @@ namespace CN.Sharesdk.Framework {
 
 		public InnerShareParamsInvoker (IntPtr handle, JniHandleOwnership transfer) : base (handle, transfer) {}
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("cn/sharesdk/framework/InnerShareParams", typeof (InnerShareParamsInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/framework/InnerShareParams", typeof (InnerShareParamsInvoker));
 
 		public override global::Java.Interop.JniPeerMembers JniPeerMembers {
 			get { return _members; }

@@ -9,7 +9,7 @@ namespace CN.Sharesdk.Onekeyshare.Themes.Classic.Land {
 	[global::Android.Runtime.Register ("cn/sharesdk/onekeyshare/themes/classic/land/PlatformPageAdapterLand", DoNotGenerateAcw=true)]
 	public partial class PlatformPageAdapterLand : global::CN.Sharesdk.Onekeyshare.Themes.Classic.PlatformPageAdapter {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/sharesdk/onekeyshare/themes/classic/land/PlatformPageAdapterLand", typeof (PlatformPageAdapterLand));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/onekeyshare/themes/classic/land/PlatformPageAdapterLand", typeof (PlatformPageAdapterLand));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

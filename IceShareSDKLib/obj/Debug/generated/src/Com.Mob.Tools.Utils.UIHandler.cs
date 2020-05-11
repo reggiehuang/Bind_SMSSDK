@@ -9,7 +9,7 @@ namespace Com.Mob.Tools.Utils {
 	[global::Android.Runtime.Register ("com/mob/tools/utils/UIHandler", DoNotGenerateAcw=true)]
 	public partial class UIHandler : global::Java.Lang.Object {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/utils/UIHandler", typeof (UIHandler));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/utils/UIHandler", typeof (UIHandler));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

@@ -213,7 +213,7 @@ namespace Com.Mob.Tools.Mscript.Commands {
 				return global::Java.Lang.Object.GetObject<global::Com.Mob.Tools.Mscript.Commands.CommandCode> (__v.Handle, JniHandleOwnership.TransferLocalRef);
 			}
 		}
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/mscript/commands/CommandCode", typeof (CommandCode));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/mscript/commands/CommandCode", typeof (CommandCode));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

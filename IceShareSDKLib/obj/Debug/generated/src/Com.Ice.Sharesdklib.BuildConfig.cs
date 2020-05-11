@@ -41,7 +41,7 @@ namespace Com.Ice.Sharesdklib {
 		// Metadata.xml XPath field reference: path="/api/package[@name='com.ice.sharesdklib']/class[@name='BuildConfig']/field[@name='VERSION_NAME']"
 		[Register ("VERSION_NAME")]
 		public const string VersionName = (string) "1.0";
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/ice/sharesdklib/BuildConfig", typeof (BuildConfig));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/ice/sharesdklib/BuildConfig", typeof (BuildConfig));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

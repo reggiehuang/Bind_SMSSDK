@@ -21,7 +21,7 @@ namespace CN.Sharesdk.Onekeyshare {
 				return global::Java.Lang.Object.GetObject<global::CN.Sharesdk.Onekeyshare.OnekeyShareTheme> (__v.Handle, JniHandleOwnership.TransferLocalRef);
 			}
 		}
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/sharesdk/onekeyshare/OnekeyShareTheme", typeof (OnekeyShareTheme));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/onekeyshare/OnekeyShareTheme", typeof (OnekeyShareTheme));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;
@@ -44,7 +44,7 @@ namespace CN.Sharesdk.Onekeyshare {
 
 		public unsafe global::CN.Sharesdk.Onekeyshare.OnekeyShareThemeImpl Impl {
 			// Metadata.xml XPath method reference: path="/api/package[@name='cn.sharesdk.onekeyshare']/class[@name='OnekeyShareTheme']/method[@name='getImpl' and count(parameter)=0]"
-			[Register ("getImpl", "()Lcn/sharesdk/onekeyshare/OnekeyShareThemeImpl;", "GetGetImplHandler")]
+			[Register ("getImpl", "()Lcn/sharesdk/onekeyshare/OnekeyShareThemeImpl;", "")]
 			get {
 				const string __id = "getImpl.()Lcn/sharesdk/onekeyshare/OnekeyShareThemeImpl;";
 				try {
@@ -57,7 +57,7 @@ namespace CN.Sharesdk.Onekeyshare {
 
 		public unsafe int Value {
 			// Metadata.xml XPath method reference: path="/api/package[@name='cn.sharesdk.onekeyshare']/class[@name='OnekeyShareTheme']/method[@name='getValue' and count(parameter)=0]"
-			[Register ("getValue", "()I", "GetGetValueHandler")]
+			[Register ("getValue", "()I", "")]
 			get {
 				const string __id = "getValue.()I";
 				try {

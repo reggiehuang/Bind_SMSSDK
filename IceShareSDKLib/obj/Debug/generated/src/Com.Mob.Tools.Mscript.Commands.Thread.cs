@@ -9,7 +9,7 @@ namespace Com.Mob.Tools.Mscript.Commands {
 	[global::Android.Runtime.Register ("com/mob/tools/mscript/commands/Thread", DoNotGenerateAcw=true)]
 	public partial class Thread : global::Com.Mob.Tools.Mscript.MCommand {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/mscript/commands/Thread", typeof (Thread));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/mscript/commands/Thread", typeof (Thread));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

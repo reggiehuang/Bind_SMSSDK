@@ -1,9 +1,9 @@
 cn.sharesdk.onekeyshare.OnekeyShareTheme:CN.Sharesdk.Onekeyshare:OnekeyShareTheme
 cn.smssdk.SMSSDK$InitFlag:CN.Smssdk:SMSSDK.InitFlag
 com.mob.commons.InternationalDomain:Com.Mob.Commons:InternationalDomain
-com.mob.tools.RxMob$Thread:Com.Mob.Tools:RxMob.Thread
 com.mob.tools.gui.MobDrawerLayout$DrawerType:Com.Mob.Tools.Gui:MobDrawerLayout.DrawerType
 com.mob.tools.gui.SmoothScroller:Com.Mob.Tools.Gui:SmoothScroller
 com.mob.tools.mscript.commands.CommandCode:Com.Mob.Tools.Mscript.Commands:CommandCode
 com.mob.tools.mscript.commands.Symbol$BinarySymbol:Com.Mob.Tools.Mscript.Commands:Symbol.BinarySymbol
 com.mob.tools.mscript.commands.Symbol$UnarySymbol:Com.Mob.Tools.Mscript.Commands:Symbol.UnarySymbol
+com.mob.tools.RxMob$Thread:Com.Mob.Tools:RxMob.Thread

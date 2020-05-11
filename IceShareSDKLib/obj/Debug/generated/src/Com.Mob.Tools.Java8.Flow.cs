@@ -54,7 +54,7 @@ namespace Com.Mob.Tools.Java8 {
 				}
 			}
 		}
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/java8/Flow", typeof (Flow));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/java8/Flow", typeof (Flow));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

@@ -10,7 +10,7 @@ namespace Com.Mob.Tools.Java8 {
 	[global::Java.Interop.JavaTypeParameters (new string [] {"R"})]
 	public partial class Optional : global::Java.Lang.Object {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/java8/Optional", typeof (Optional));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/java8/Optional", typeof (Optional));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

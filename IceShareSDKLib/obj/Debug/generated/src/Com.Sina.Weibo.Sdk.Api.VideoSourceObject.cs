@@ -239,7 +239,7 @@ namespace Com.Sina.Weibo.Sdk.Api {
 				}
 			}
 		}
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/sina/weibo/sdk/api/VideoSourceObject", typeof (VideoSourceObject));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/sina/weibo/sdk/api/VideoSourceObject", typeof (VideoSourceObject));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

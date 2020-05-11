@@ -9,7 +9,7 @@ namespace CN.Smssdk {
 	[global::Android.Runtime.Register ("cn/smssdk/DefaultOnSendMessageHandler", DoNotGenerateAcw=true)]
 	public partial class DefaultOnSendMessageHandler : global::Java.Lang.Object, global::CN.Smssdk.IOnSendMessageHandler {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/smssdk/DefaultOnSendMessageHandler", typeof (DefaultOnSendMessageHandler));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/smssdk/DefaultOnSendMessageHandler", typeof (DefaultOnSendMessageHandler));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

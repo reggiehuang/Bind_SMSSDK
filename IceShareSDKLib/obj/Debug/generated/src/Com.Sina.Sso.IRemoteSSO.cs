@@ -9,7 +9,7 @@ namespace Com.Sina.Sso {
 	[global::Android.Runtime.Register ("com/sina/sso/RemoteSSO$Stub", DoNotGenerateAcw=true)]
 	public abstract partial class RemoteSSOStub : global::Android.OS.Binder, global::Com.Sina.Sso.IRemoteSSO {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/sina/sso/RemoteSSO$Stub", typeof (RemoteSSOStub));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/sina/sso/RemoteSSO$Stub", typeof (RemoteSSOStub));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;
@@ -175,7 +175,7 @@ namespace Com.Sina.Sso {
 
 		public RemoteSSOStubInvoker (IntPtr handle, JniHandleOwnership transfer) : base (handle, transfer) {}
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/sina/sso/RemoteSSO$Stub", typeof (RemoteSSOStubInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/sina/sso/RemoteSSO$Stub", typeof (RemoteSSOStubInvoker));
 
 		public override global::Java.Interop.JniPeerMembers JniPeerMembers {
 			get { return _members; }
@@ -231,9 +231,9 @@ namespace Com.Sina.Sso {
 	}
 
 	[global::Android.Runtime.Register ("com/sina/sso/RemoteSSO", DoNotGenerateAcw=true)]
-	internal class IRemoteSSOInvoker : global::Java.Lang.Object, IRemoteSSO {
+	internal partial class IRemoteSSOInvoker : global::Java.Lang.Object, IRemoteSSO {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/sina/sso/RemoteSSO", typeof (IRemoteSSOInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/sina/sso/RemoteSSO", typeof (IRemoteSSOInvoker));
 
 		static IntPtr java_class_ref {
 			get { return _members.JniPeerType.PeerReference.Handle; }

@@ -9,7 +9,7 @@ namespace Com.Mob.Tools {
 	[global::Android.Runtime.Register ("com/mob/tools/MobLog", DoNotGenerateAcw=true)]
 	public partial class MobLog : global::Java.Lang.Object {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/MobLog", typeof (MobLog));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/MobLog", typeof (MobLog));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;
@@ -50,7 +50,7 @@ namespace Com.Mob.Tools {
 
 		public static unsafe global::Com.Mob.Tools.Log.NLog Instance {
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.mob.tools']/class[@name='MobLog']/method[@name='getInstance' and count(parameter)=0]"
-			[Register ("getInstance", "()Lcom/mob/tools/log/NLog;", "GetGetInstanceHandler")]
+			[Register ("getInstance", "()Lcom/mob/tools/log/NLog;", "")]
 			get {
 				const string __id = "getInstance.()Lcom/mob/tools/log/NLog;";
 				try {

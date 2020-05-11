@@ -26,7 +26,7 @@ namespace Com.Mob.Tools.Log {
 	}
 
 	[Register ("com/mob/tools/log/LogCollector", DoNotGenerateAcw=true)]
-	[global::System.Obsolete ("Use the 'LogCollector' type. This type will be removed in a future release.")]
+	[global::System.Obsolete ("Use the 'LogCollector' type. This type will be removed in a future release.", error: true)]
 	public abstract class LogCollectorConsts : LogCollector {
 
 		private LogCollectorConsts ()
@@ -36,7 +36,7 @@ namespace Com.Mob.Tools.Log {
 
 	// Metadata.xml XPath interface reference: path="/api/package[@name='com.mob.tools.log']/interface[@name='LogCollector']"
 	[Register ("com/mob/tools/log/LogCollector", "", "Com.Mob.Tools.Log.ILogCollectorInvoker")]
-	public partial interface ILogCollector : IJavaObject {
+	public partial interface ILogCollector : IJavaObject, IJavaPeerable {
 
 		// Metadata.xml XPath method reference: path="/api/package[@name='com.mob.tools.log']/interface[@name='LogCollector']/method[@name='log' and count(parameter)=5 and parameter[1][@type='java.lang.String'] and parameter[2][@type='int'] and parameter[3][@type='int'] and parameter[4][@type='java.lang.String'] and parameter[5][@type='java.lang.String']]"
 		[Register ("log", "(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;)V", "GetLog_Ljava_lang_String_IILjava_lang_String_Ljava_lang_String_Handler:Com.Mob.Tools.Log.ILogCollectorInvoker, IceShareSDKLib")]
@@ -45,9 +45,9 @@ namespace Com.Mob.Tools.Log {
 	}
 
 	[global::Android.Runtime.Register ("com/mob/tools/log/LogCollector", DoNotGenerateAcw=true)]
-	internal class ILogCollectorInvoker : global::Java.Lang.Object, ILogCollector {
+	internal partial class ILogCollectorInvoker : global::Java.Lang.Object, ILogCollector {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/log/LogCollector", typeof (ILogCollectorInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/log/LogCollector", typeof (ILogCollectorInvoker));
 
 		static IntPtr java_class_ref {
 			get { return _members.JniPeerType.PeerReference.Handle; }

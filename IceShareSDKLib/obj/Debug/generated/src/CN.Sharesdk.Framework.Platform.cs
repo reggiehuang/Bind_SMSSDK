@@ -123,7 +123,7 @@ namespace CN.Sharesdk.Framework {
 		[global::Android.Runtime.Register ("cn/sharesdk/framework/Platform$ShareParams", DoNotGenerateAcw=true)]
 		public partial class ShareParams : global::CN.Sharesdk.Framework.InnerShareParams {
 
-			internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/sharesdk/framework/Platform$ShareParams", typeof (ShareParams));
+			static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/framework/Platform$ShareParams", typeof (ShareParams));
 			internal static new IntPtr class_ref {
 				get {
 					return _members.JniPeerType.PeerReference.Handle;
@@ -208,7 +208,7 @@ namespace CN.Sharesdk.Framework {
 
 		}
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/sharesdk/framework/Platform", typeof (Platform));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/framework/Platform", typeof (Platform));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;
@@ -1638,7 +1638,7 @@ namespace CN.Sharesdk.Framework {
 
 		public PlatformInvoker (IntPtr handle, JniHandleOwnership transfer) : base (handle, transfer) {}
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("cn/sharesdk/framework/Platform", typeof (PlatformInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/framework/Platform", typeof (PlatformInvoker));
 
 		public override global::Java.Interop.JniPeerMembers JniPeerMembers {
 			get { return _members; }

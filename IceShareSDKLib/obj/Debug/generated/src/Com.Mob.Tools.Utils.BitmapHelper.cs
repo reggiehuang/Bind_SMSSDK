@@ -9,7 +9,7 @@ namespace Com.Mob.Tools.Utils {
 	[global::Android.Runtime.Register ("com/mob/tools/utils/BitmapHelper", DoNotGenerateAcw=true)]
 	public partial class BitmapHelper : global::Java.Lang.Object {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/utils/BitmapHelper", typeof (BitmapHelper));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/utils/BitmapHelper", typeof (BitmapHelper));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

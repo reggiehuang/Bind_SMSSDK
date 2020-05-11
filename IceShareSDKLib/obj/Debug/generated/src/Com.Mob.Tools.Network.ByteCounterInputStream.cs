@@ -9,7 +9,7 @@ namespace Com.Mob.Tools.Network {
 	[global::Android.Runtime.Register ("com/mob/tools/network/ByteCounterInputStream", DoNotGenerateAcw=true)]
 	public partial class ByteCounterInputStream : global::Java.IO.InputStream {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/network/ByteCounterInputStream", typeof (ByteCounterInputStream));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/network/ByteCounterInputStream", typeof (ByteCounterInputStream));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

@@ -9,7 +9,7 @@ namespace CN.Sharesdk.Framework {
 	[global::Android.Runtime.Register ("cn/sharesdk/framework/TitleLayout", DoNotGenerateAcw=true)]
 	public partial class TitleLayout : global::Android.Widget.LinearLayout {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/sharesdk/framework/TitleLayout", typeof (TitleLayout));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/framework/TitleLayout", typeof (TitleLayout));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

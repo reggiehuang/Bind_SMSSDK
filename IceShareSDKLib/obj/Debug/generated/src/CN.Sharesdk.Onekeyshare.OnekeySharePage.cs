@@ -9,7 +9,7 @@ namespace CN.Sharesdk.Onekeyshare {
 	[global::Android.Runtime.Register ("cn/sharesdk/onekeyshare/OnekeySharePage", DoNotGenerateAcw=true)]
 	public partial class OnekeySharePage : global::Com.Mob.Tools.FakeActivity {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/sharesdk/onekeyshare/OnekeySharePage", typeof (OnekeySharePage));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/onekeyshare/OnekeySharePage", typeof (OnekeySharePage));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;
@@ -52,7 +52,7 @@ namespace CN.Sharesdk.Onekeyshare {
 
 		protected unsafe global::CN.Sharesdk.Framework.IPlatformActionListener Callback {
 			// Metadata.xml XPath method reference: path="/api/package[@name='cn.sharesdk.onekeyshare']/class[@name='OnekeySharePage']/method[@name='getCallback' and count(parameter)=0]"
-			[Register ("getCallback", "()Lcn/sharesdk/framework/PlatformActionListener;", "GetGetCallbackHandler")]
+			[Register ("getCallback", "()Lcn/sharesdk/framework/PlatformActionListener;", "")]
 			get {
 				const string __id = "getCallback.()Lcn/sharesdk/framework/PlatformActionListener;";
 				try {
@@ -65,7 +65,7 @@ namespace CN.Sharesdk.Onekeyshare {
 
 		protected unsafe global::System.Collections.Generic.IList<global::CN.Sharesdk.Onekeyshare.CustomerLogo> CustomerLogos {
 			// Metadata.xml XPath method reference: path="/api/package[@name='cn.sharesdk.onekeyshare']/class[@name='OnekeySharePage']/method[@name='getCustomerLogos' and count(parameter)=0]"
-			[Register ("getCustomerLogos", "()Ljava/util/ArrayList;", "GetGetCustomerLogosHandler")]
+			[Register ("getCustomerLogos", "()Ljava/util/ArrayList;", "")]
 			get {
 				const string __id = "getCustomerLogos.()Ljava/util/ArrayList;";
 				try {
@@ -78,7 +78,7 @@ namespace CN.Sharesdk.Onekeyshare {
 
 		protected unsafe global::CN.Sharesdk.Onekeyshare.IShareContentCustomizeCallback CustomizeCallback {
 			// Metadata.xml XPath method reference: path="/api/package[@name='cn.sharesdk.onekeyshare']/class[@name='OnekeySharePage']/method[@name='getCustomizeCallback' and count(parameter)=0]"
-			[Register ("getCustomizeCallback", "()Lcn/sharesdk/onekeyshare/ShareContentCustomizeCallback;", "GetGetCustomizeCallbackHandler")]
+			[Register ("getCustomizeCallback", "()Lcn/sharesdk/onekeyshare/ShareContentCustomizeCallback;", "")]
 			get {
 				const string __id = "getCustomizeCallback.()Lcn/sharesdk/onekeyshare/ShareContentCustomizeCallback;";
 				try {
@@ -91,7 +91,7 @@ namespace CN.Sharesdk.Onekeyshare {
 
 		protected unsafe global::System.Collections.Generic.IDictionary<string, string> HiddenPlatforms {
 			// Metadata.xml XPath method reference: path="/api/package[@name='cn.sharesdk.onekeyshare']/class[@name='OnekeySharePage']/method[@name='getHiddenPlatforms' and count(parameter)=0]"
-			[Register ("getHiddenPlatforms", "()Ljava/util/HashMap;", "GetGetHiddenPlatformsHandler")]
+			[Register ("getHiddenPlatforms", "()Ljava/util/HashMap;", "")]
 			get {
 				const string __id = "getHiddenPlatforms.()Ljava/util/HashMap;";
 				try {
@@ -104,7 +104,7 @@ namespace CN.Sharesdk.Onekeyshare {
 
 		protected unsafe bool IsDialogMode {
 			// Metadata.xml XPath method reference: path="/api/package[@name='cn.sharesdk.onekeyshare']/class[@name='OnekeySharePage']/method[@name='isDialogMode' and count(parameter)=0]"
-			[Register ("isDialogMode", "()Z", "GetIsDialogModeHandler")]
+			[Register ("isDialogMode", "()Z", "")]
 			get {
 				const string __id = "isDialogMode.()Z";
 				try {
@@ -117,7 +117,7 @@ namespace CN.Sharesdk.Onekeyshare {
 
 		protected unsafe bool IsDisableSSO {
 			// Metadata.xml XPath method reference: path="/api/package[@name='cn.sharesdk.onekeyshare']/class[@name='OnekeySharePage']/method[@name='isDisableSSO' and count(parameter)=0]"
-			[Register ("isDisableSSO", "()Z", "GetIsDisableSSOHandler")]
+			[Register ("isDisableSSO", "()Z", "")]
 			get {
 				const string __id = "isDisableSSO.()Z";
 				try {
@@ -130,7 +130,7 @@ namespace CN.Sharesdk.Onekeyshare {
 
 		protected unsafe bool IsSilent {
 			// Metadata.xml XPath method reference: path="/api/package[@name='cn.sharesdk.onekeyshare']/class[@name='OnekeySharePage']/method[@name='isSilent' and count(parameter)=0]"
-			[Register ("isSilent", "()Z", "GetIsSilentHandler")]
+			[Register ("isSilent", "()Z", "")]
 			get {
 				const string __id = "isSilent.()Z";
 				try {
@@ -143,7 +143,7 @@ namespace CN.Sharesdk.Onekeyshare {
 
 		protected unsafe global::System.Collections.Generic.IDictionary<string, global::Java.Lang.Object> ShareParamsMap {
 			// Metadata.xml XPath method reference: path="/api/package[@name='cn.sharesdk.onekeyshare']/class[@name='OnekeySharePage']/method[@name='getShareParamsMap' and count(parameter)=0]"
-			[Register ("getShareParamsMap", "()Ljava/util/HashMap;", "GetGetShareParamsMapHandler")]
+			[Register ("getShareParamsMap", "()Ljava/util/HashMap;", "")]
 			get {
 				const string __id = "getShareParamsMap.()Ljava/util/HashMap;";
 				try {

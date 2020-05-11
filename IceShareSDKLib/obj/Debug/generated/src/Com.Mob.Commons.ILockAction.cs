@@ -7,7 +7,7 @@ namespace Com.Mob.Commons {
 
 	// Metadata.xml XPath interface reference: path="/api/package[@name='com.mob.commons']/interface[@name='LockAction']"
 	[Register ("com/mob/commons/LockAction", "", "Com.Mob.Commons.ILockActionInvoker")]
-	public partial interface ILockAction : IJavaObject {
+	public partial interface ILockAction : IJavaObject, IJavaPeerable {
 
 		// Metadata.xml XPath method reference: path="/api/package[@name='com.mob.commons']/interface[@name='LockAction']/method[@name='run' and count(parameter)=1 and parameter[1][@type='com.mob.tools.utils.FileLocker']]"
 		[Register ("run", "(Lcom/mob/tools/utils/FileLocker;)Z", "GetRun_Lcom_mob_tools_utils_FileLocker_Handler:Com.Mob.Commons.ILockActionInvoker, IceShareSDKLib")]
@@ -16,9 +16,9 @@ namespace Com.Mob.Commons {
 	}
 
 	[global::Android.Runtime.Register ("com/mob/commons/LockAction", DoNotGenerateAcw=true)]
-	internal class ILockActionInvoker : global::Java.Lang.Object, ILockAction {
+	internal partial class ILockActionInvoker : global::Java.Lang.Object, ILockAction {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/commons/LockAction", typeof (ILockActionInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/commons/LockAction", typeof (ILockActionInvoker));
 
 		static IntPtr java_class_ref {
 			get { return _members.JniPeerType.PeerReference.Handle; }

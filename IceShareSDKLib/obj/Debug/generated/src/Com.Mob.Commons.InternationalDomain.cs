@@ -2229,7 +2229,7 @@ namespace Com.Mob.Commons {
 				return global::Java.Lang.Object.GetObject<global::Com.Mob.Commons.InternationalDomain> (__v.Handle, JniHandleOwnership.TransferLocalRef);
 			}
 		}
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/commons/InternationalDomain", typeof (InternationalDomain));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/commons/InternationalDomain", typeof (InternationalDomain));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;
@@ -2252,7 +2252,7 @@ namespace Com.Mob.Commons {
 
 		public unsafe string Domain {
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.mob.commons']/class[@name='InternationalDomain']/method[@name='getDomain' and count(parameter)=0]"
-			[Register ("getDomain", "()Ljava/lang/String;", "GetGetDomainHandler")]
+			[Register ("getDomain", "()Ljava/lang/String;", "")]
 			get {
 				const string __id = "getDomain.()Ljava/lang/String;";
 				try {
@@ -2265,7 +2265,7 @@ namespace Com.Mob.Commons {
 
 		public unsafe string Region {
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.mob.commons']/class[@name='InternationalDomain']/method[@name='getRegion' and count(parameter)=0]"
-			[Register ("getRegion", "()Ljava/lang/String;", "GetGetRegionHandler")]
+			[Register ("getRegion", "()Ljava/lang/String;", "")]
 			get {
 				const string __id = "getRegion.()Ljava/lang/String;";
 				try {

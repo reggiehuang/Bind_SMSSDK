@@ -7,7 +7,7 @@ namespace Com.Mob.Tools.Network {
 
 	// Metadata.xml XPath interface reference: path="/api/package[@name='com.mob.tools.network']/interface[@name='HttpConnection']"
 	[Register ("com/mob/tools/network/HttpConnection", "", "Com.Mob.Tools.Network.IHttpConnectionInvoker")]
-	public partial interface IHttpConnection : IJavaObject {
+	public partial interface IHttpConnection : IJavaObject, IJavaPeerable {
 
 		global::System.IO.Stream ErrorStream {
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.mob.tools.network']/interface[@name='HttpConnection']/method[@name='getErrorStream' and count(parameter)=0]"
@@ -32,9 +32,9 @@ namespace Com.Mob.Tools.Network {
 	}
 
 	[global::Android.Runtime.Register ("com/mob/tools/network/HttpConnection", DoNotGenerateAcw=true)]
-	internal class IHttpConnectionInvoker : global::Java.Lang.Object, IHttpConnection {
+	internal partial class IHttpConnectionInvoker : global::Java.Lang.Object, IHttpConnection {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/network/HttpConnection", typeof (IHttpConnectionInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/network/HttpConnection", typeof (IHttpConnectionInvoker));
 
 		static IntPtr java_class_ref {
 			get { return _members.JniPeerType.PeerReference.Handle; }

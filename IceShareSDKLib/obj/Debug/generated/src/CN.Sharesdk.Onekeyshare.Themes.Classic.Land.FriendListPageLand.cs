@@ -9,7 +9,7 @@ namespace CN.Sharesdk.Onekeyshare.Themes.Classic.Land {
 	[global::Android.Runtime.Register ("cn/sharesdk/onekeyshare/themes/classic/land/FriendListPageLand", DoNotGenerateAcw=true)]
 	public partial class FriendListPageLand : global::CN.Sharesdk.Onekeyshare.Themes.Classic.FriendListPage {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/sharesdk/onekeyshare/themes/classic/land/FriendListPageLand", typeof (FriendListPageLand));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/onekeyshare/themes/classic/land/FriendListPageLand", typeof (FriendListPageLand));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

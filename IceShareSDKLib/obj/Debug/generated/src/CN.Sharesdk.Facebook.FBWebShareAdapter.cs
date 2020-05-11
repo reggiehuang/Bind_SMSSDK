@@ -9,7 +9,7 @@ namespace CN.Sharesdk.Facebook {
 	[global::Android.Runtime.Register ("cn/sharesdk/facebook/FBWebShareAdapter", DoNotGenerateAcw=true)]
 	public partial class FBWebShareAdapter : global::Java.Lang.Object {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/sharesdk/facebook/FBWebShareAdapter", typeof (FBWebShareAdapter));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/facebook/FBWebShareAdapter", typeof (FBWebShareAdapter));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

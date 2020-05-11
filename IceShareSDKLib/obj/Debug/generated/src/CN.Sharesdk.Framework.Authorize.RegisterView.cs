@@ -9,7 +9,7 @@ namespace CN.Sharesdk.Framework.Authorize {
 	[global::Android.Runtime.Register ("cn/sharesdk/framework/authorize/RegisterView", DoNotGenerateAcw=true)]
 	public partial class RegisterView : global::CN.Sharesdk.Framework.Authorize.ResizeLayout {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/sharesdk/framework/authorize/RegisterView", typeof (RegisterView));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/framework/authorize/RegisterView", typeof (RegisterView));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

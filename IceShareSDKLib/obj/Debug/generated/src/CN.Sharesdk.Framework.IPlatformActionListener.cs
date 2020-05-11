@@ -7,7 +7,7 @@ namespace CN.Sharesdk.Framework {
 
 	// Metadata.xml XPath interface reference: path="/api/package[@name='cn.sharesdk.framework']/interface[@name='PlatformActionListener']"
 	[Register ("cn/sharesdk/framework/PlatformActionListener", "", "CN.Sharesdk.Framework.IPlatformActionListenerInvoker")]
-	public partial interface IPlatformActionListener : IJavaObject {
+	public partial interface IPlatformActionListener : IJavaObject, IJavaPeerable {
 
 		// Metadata.xml XPath method reference: path="/api/package[@name='cn.sharesdk.framework']/interface[@name='PlatformActionListener']/method[@name='onCancel' and count(parameter)=2 and parameter[1][@type='cn.sharesdk.framework.Platform'] and parameter[2][@type='int']]"
 		[Register ("onCancel", "(Lcn/sharesdk/framework/Platform;I)V", "GetOnCancel_Lcn_sharesdk_framework_Platform_IHandler:CN.Sharesdk.Framework.IPlatformActionListenerInvoker, IceShareSDKLib")]
@@ -24,9 +24,9 @@ namespace CN.Sharesdk.Framework {
 	}
 
 	[global::Android.Runtime.Register ("cn/sharesdk/framework/PlatformActionListener", DoNotGenerateAcw=true)]
-	internal class IPlatformActionListenerInvoker : global::Java.Lang.Object, IPlatformActionListener {
+	internal partial class IPlatformActionListenerInvoker : global::Java.Lang.Object, IPlatformActionListener {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("cn/sharesdk/framework/PlatformActionListener", typeof (IPlatformActionListenerInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/framework/PlatformActionListener", typeof (IPlatformActionListenerInvoker));
 
 		static IntPtr java_class_ref {
 			get { return _members.JniPeerType.PeerReference.Handle; }

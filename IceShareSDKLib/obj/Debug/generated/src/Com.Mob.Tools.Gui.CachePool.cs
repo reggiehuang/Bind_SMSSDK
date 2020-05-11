@@ -13,7 +13,7 @@ namespace Com.Mob.Tools.Gui {
 		// Metadata.xml XPath interface reference: path="/api/package[@name='com.mob.tools.gui']/interface[@name='CachePool.OnRemoveListener']"
 		[Register ("com/mob/tools/gui/CachePool$OnRemoveListener", "", "Com.Mob.Tools.Gui.CachePool/IOnRemoveListenerInvoker")]
 		[global::Java.Interop.JavaTypeParameters (new string [] {"K", "V"})]
-		public partial interface IOnRemoveListener : IJavaObject {
+		public partial interface IOnRemoveListener : IJavaObject, IJavaPeerable {
 
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.mob.tools.gui']/interface[@name='CachePool.OnRemoveListener']/method[@name='onRemove' and count(parameter)=2 and parameter[1][@type='K'] and parameter[2][@type='V']]"
 			[Register ("onRemove", "(Ljava/lang/Object;Ljava/lang/Object;)V", "GetOnRemove_Ljava_lang_Object_Ljava_lang_Object_Handler:Com.Mob.Tools.Gui.CachePool/IOnRemoveListenerInvoker, IceShareSDKLib")]
@@ -22,9 +22,9 @@ namespace Com.Mob.Tools.Gui {
 		}
 
 		[global::Android.Runtime.Register ("com/mob/tools/gui/CachePool$OnRemoveListener", DoNotGenerateAcw=true)]
-		internal class IOnRemoveListenerInvoker : global::Java.Lang.Object, IOnRemoveListener {
+		internal partial class IOnRemoveListenerInvoker : global::Java.Lang.Object, IOnRemoveListener {
 
-			internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/gui/CachePool$OnRemoveListener", typeof (IOnRemoveListenerInvoker));
+			static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/gui/CachePool$OnRemoveListener", typeof (IOnRemoveListenerInvoker));
 
 			static IntPtr java_class_ref {
 				get { return _members.JniPeerType.PeerReference.Handle; }
@@ -159,7 +159,7 @@ namespace Com.Mob.Tools.Gui {
 		}
 
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/gui/CachePool", typeof (CachePool));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/gui/CachePool", typeof (CachePool));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

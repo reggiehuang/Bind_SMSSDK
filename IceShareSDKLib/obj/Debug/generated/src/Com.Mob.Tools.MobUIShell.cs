@@ -9,7 +9,7 @@ namespace Com.Mob.Tools {
 	[global::Android.Runtime.Register ("com/mob/tools/MobUIShell", DoNotGenerateAcw=true)]
 	public partial class MobUIShell : global::Android.App.Activity {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/MobUIShell", typeof (MobUIShell));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/MobUIShell", typeof (MobUIShell));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

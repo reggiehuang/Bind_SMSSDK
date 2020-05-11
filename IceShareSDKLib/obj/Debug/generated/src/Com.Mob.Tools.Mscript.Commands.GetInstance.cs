@@ -9,7 +9,7 @@ namespace Com.Mob.Tools.Mscript.Commands {
 	[global::Android.Runtime.Register ("com/mob/tools/mscript/commands/GetInstance", DoNotGenerateAcw=true)]
 	public partial class GetInstance : global::Com.Mob.Tools.Mscript.MCommand {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/mscript/commands/GetInstance", typeof (GetInstance));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/mscript/commands/GetInstance", typeof (GetInstance));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

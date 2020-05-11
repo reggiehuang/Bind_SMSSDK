@@ -9,7 +9,7 @@ namespace CN.Sharesdk.Framework {
 	[global::Android.Runtime.Register ("cn/sharesdk/framework/ReflectablePlatformActionListener", DoNotGenerateAcw=true)]
 	public partial class ReflectablePlatformActionListener : global::Java.Lang.Object, global::CN.Sharesdk.Framework.IPlatformActionListener {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/sharesdk/framework/ReflectablePlatformActionListener", typeof (ReflectablePlatformActionListener));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/framework/ReflectablePlatformActionListener", typeof (ReflectablePlatformActionListener));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

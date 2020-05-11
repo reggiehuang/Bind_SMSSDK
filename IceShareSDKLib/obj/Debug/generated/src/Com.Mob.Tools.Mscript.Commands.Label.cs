@@ -9,7 +9,7 @@ namespace Com.Mob.Tools.Mscript.Commands {
 	[global::Android.Runtime.Register ("com/mob/tools/mscript/commands/Label", DoNotGenerateAcw=true)]
 	public partial class Label : global::Com.Mob.Tools.Mscript.MCommand {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/mscript/commands/Label", typeof (Label));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/mscript/commands/Label", typeof (Label));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

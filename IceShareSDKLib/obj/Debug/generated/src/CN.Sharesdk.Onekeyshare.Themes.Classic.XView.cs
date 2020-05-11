@@ -9,7 +9,7 @@ namespace CN.Sharesdk.Onekeyshare.Themes.Classic {
 	[global::Android.Runtime.Register ("cn/sharesdk/onekeyshare/themes/classic/XView", DoNotGenerateAcw=true)]
 	public partial class XView : global::Android.Views.View {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/sharesdk/onekeyshare/themes/classic/XView", typeof (XView));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/onekeyshare/themes/classic/XView", typeof (XView));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

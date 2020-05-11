@@ -12,9 +12,9 @@ namespace Com.Mob.Tools.Proguard {
 	}
 
 	[global::Android.Runtime.Register ("com/mob/tools/proguard/PrivateMemberKeeper", DoNotGenerateAcw=true)]
-	internal class IPrivateMemberKeeperInvoker : global::Java.Lang.Object, IPrivateMemberKeeper {
+	internal partial class IPrivateMemberKeeperInvoker : global::Java.Lang.Object, IPrivateMemberKeeper {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/proguard/PrivateMemberKeeper", typeof (IPrivateMemberKeeperInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/proguard/PrivateMemberKeeper", typeof (IPrivateMemberKeeperInvoker));
 
 		static IntPtr java_class_ref {
 			get { return _members.JniPeerType.PeerReference.Handle; }

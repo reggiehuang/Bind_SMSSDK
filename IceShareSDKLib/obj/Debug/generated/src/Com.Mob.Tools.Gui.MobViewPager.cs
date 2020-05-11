@@ -9,7 +9,7 @@ namespace Com.Mob.Tools.Gui {
 	[global::Android.Runtime.Register ("com/mob/tools/gui/MobViewPager", DoNotGenerateAcw=true)]
 	public partial class MobViewPager : global::Android.Views.ViewGroup {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/gui/MobViewPager", typeof (MobViewPager));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/gui/MobViewPager", typeof (MobViewPager));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;
@@ -245,6 +245,7 @@ namespace Com.Mob.Tools.Gui {
 
 		static Delegate cb_scrollToScreen_IZZ;
 #pragma warning disable 0169
+		[Obsolete]
 		static Delegate GetScrollToScreen_IZZHandler ()
 		{
 			if (cb_scrollToScreen_IZZ == null)
@@ -252,6 +253,7 @@ namespace Com.Mob.Tools.Gui {
 			return cb_scrollToScreen_IZZ;
 		}
 
+		[Obsolete]
 		static void n_ScrollToScreen_IZZ (IntPtr jnienv, IntPtr native__this, int whichScreen, bool immediate, bool skip)
 		{
 			global::Com.Mob.Tools.Gui.MobViewPager __this = global::Java.Lang.Object.GetObject<global::Com.Mob.Tools.Gui.MobViewPager> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);

@@ -9,7 +9,7 @@ namespace CN.Sharesdk.Whatsapp {
 	[global::Android.Runtime.Register ("cn/sharesdk/whatsapp/WhatsAppClientNotExistException", DoNotGenerateAcw=true)]
 	public partial class WhatsAppClientNotExistException : global::Java.Lang.RuntimeException {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/sharesdk/whatsapp/WhatsAppClientNotExistException", typeof (WhatsAppClientNotExistException));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/whatsapp/WhatsAppClientNotExistException", typeof (WhatsAppClientNotExistException));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

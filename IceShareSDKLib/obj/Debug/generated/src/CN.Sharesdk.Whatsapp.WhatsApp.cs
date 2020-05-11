@@ -9,7 +9,7 @@ namespace CN.Sharesdk.Whatsapp {
 	[global::Android.Runtime.Register ("cn/sharesdk/whatsapp/WhatsApp", DoNotGenerateAcw=true)]
 	public partial class WhatsApp : global::CN.Sharesdk.Framework.Platform {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/sharesdk/whatsapp/WhatsApp", typeof (WhatsApp));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/whatsapp/WhatsApp", typeof (WhatsApp));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

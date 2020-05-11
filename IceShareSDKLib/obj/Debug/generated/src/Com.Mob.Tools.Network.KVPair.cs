@@ -54,7 +54,7 @@ namespace Com.Mob.Tools.Network {
 				}
 			}
 		}
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/network/KVPair", typeof (KVPair));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/network/KVPair", typeof (KVPair));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

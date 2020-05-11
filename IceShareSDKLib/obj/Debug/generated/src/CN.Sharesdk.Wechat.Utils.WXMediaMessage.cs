@@ -170,7 +170,7 @@ namespace CN.Sharesdk.Wechat.Utils {
 		}
 
 		[Register ("cn/sharesdk/wechat/utils/WXMediaMessage$IMediaObject", DoNotGenerateAcw=true)]
-		[global::System.Obsolete ("Use the 'MediaObject' type. This type will be removed in a future release.")]
+		[global::System.Obsolete ("Use the 'MediaObject' type. This type will be removed in a future release.", error: true)]
 		public abstract class MediaObjectConsts : MediaObject {
 
 			private MediaObjectConsts ()
@@ -180,7 +180,7 @@ namespace CN.Sharesdk.Wechat.Utils {
 
 		// Metadata.xml XPath interface reference: path="/api/package[@name='cn.sharesdk.wechat.utils']/interface[@name='WXMediaMessage.IMediaObject']"
 		[Register ("cn/sharesdk/wechat/utils/WXMediaMessage$IMediaObject", "", "CN.Sharesdk.Wechat.Utils.WXMediaMessage/IMediaObjectInvoker")]
-		public partial interface IMediaObject : IJavaObject {
+		public partial interface IMediaObject : IJavaObject, IJavaPeerable {
 
 			// Metadata.xml XPath method reference: path="/api/package[@name='cn.sharesdk.wechat.utils']/interface[@name='WXMediaMessage.IMediaObject']/method[@name='checkArgs' and count(parameter)=0]"
 			[Register ("checkArgs", "()Z", "GetCheckArgsHandler:CN.Sharesdk.Wechat.Utils.WXMediaMessage/IMediaObjectInvoker, IceShareSDKLib")]
@@ -201,9 +201,9 @@ namespace CN.Sharesdk.Wechat.Utils {
 		}
 
 		[global::Android.Runtime.Register ("cn/sharesdk/wechat/utils/WXMediaMessage$IMediaObject", DoNotGenerateAcw=true)]
-		internal class IMediaObjectInvoker : global::Java.Lang.Object, IMediaObject {
+		internal partial class IMediaObjectInvoker : global::Java.Lang.Object, IMediaObject {
 
-			internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("cn/sharesdk/wechat/utils/WXMediaMessage$IMediaObject", typeof (IMediaObjectInvoker));
+			static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/wechat/utils/WXMediaMessage$IMediaObject", typeof (IMediaObjectInvoker));
 
 			static IntPtr java_class_ref {
 				get { return _members.JniPeerType.PeerReference.Handle; }
@@ -356,7 +356,7 @@ namespace CN.Sharesdk.Wechat.Utils {
 		}
 
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/sharesdk/wechat/utils/WXMediaMessage", typeof (WXMediaMessage));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/wechat/utils/WXMediaMessage", typeof (WXMediaMessage));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;
@@ -417,7 +417,7 @@ namespace CN.Sharesdk.Wechat.Utils {
 
 		public unsafe int Type {
 			// Metadata.xml XPath method reference: path="/api/package[@name='cn.sharesdk.wechat.utils']/class[@name='WXMediaMessage']/method[@name='getType' and count(parameter)=0]"
-			[Register ("getType", "()I", "GetGetTypeHandler")]
+			[Register ("getType", "()I", "")]
 			get {
 				const string __id = "getType.()I";
 				try {

@@ -9,7 +9,7 @@ namespace Com.Mob.Tools.Utils {
 	[global::Android.Runtime.Register ("com/mob/tools/utils/FileUtils", DoNotGenerateAcw=true)]
 	public partial class FileUtils : global::Java.Lang.Object {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/utils/FileUtils", typeof (FileUtils));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/utils/FileUtils", typeof (FileUtils));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

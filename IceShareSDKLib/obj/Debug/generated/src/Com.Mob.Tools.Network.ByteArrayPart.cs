@@ -9,7 +9,7 @@ namespace Com.Mob.Tools.Network {
 	[global::Android.Runtime.Register ("com/mob/tools/network/ByteArrayPart", DoNotGenerateAcw=true)]
 	public partial class ByteArrayPart : global::Com.Mob.Tools.Network.HTTPPart {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/network/ByteArrayPart", typeof (ByteArrayPart));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/network/ByteArrayPart", typeof (ByteArrayPart));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

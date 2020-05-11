@@ -9,7 +9,7 @@ namespace CN.Sharesdk.Onekeyshare.Themes.Classic {
 	[global::Android.Runtime.Register ("cn/sharesdk/onekeyshare/themes/classic/PicViewerPage", DoNotGenerateAcw=true)]
 	public partial class PicViewerPage : global::CN.Sharesdk.Onekeyshare.OnekeySharePage, global::Android.Views.ViewTreeObserver.IOnGlobalLayoutListener {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/sharesdk/onekeyshare/themes/classic/PicViewerPage", typeof (PicViewerPage));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/onekeyshare/themes/classic/PicViewerPage", typeof (PicViewerPage));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

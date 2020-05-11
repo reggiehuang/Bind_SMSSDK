@@ -27,7 +27,7 @@ namespace Com.Mob.Commons.Logcollector {
 			public const int LevelNormal = (int) 0;
 		}
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/commons/logcollector/DefaultLogsCollector", typeof (DefaultLogsCollector));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/commons/logcollector/DefaultLogsCollector", typeof (DefaultLogsCollector));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

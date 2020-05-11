@@ -9,7 +9,7 @@ namespace CN.Sharesdk.Onekeyshare.Themes.Classic.Port {
 	[global::Android.Runtime.Register ("cn/sharesdk/onekeyshare/themes/classic/port/PlatformPageAdapterPort", DoNotGenerateAcw=true)]
 	public partial class PlatformPageAdapterPort : global::CN.Sharesdk.Onekeyshare.Themes.Classic.PlatformPageAdapter {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/sharesdk/onekeyshare/themes/classic/port/PlatformPageAdapterPort", typeof (PlatformPageAdapterPort));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/onekeyshare/themes/classic/port/PlatformPageAdapterPort", typeof (PlatformPageAdapterPort));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

@@ -9,7 +9,7 @@ namespace Com.Mob.Commons {
 	[global::Android.Runtime.Register ("com/mob/commons/SMSSDK", DoNotGenerateAcw=true)]
 	public partial class SMSSDK : global::Java.Lang.Object, global::Com.Mob.Commons.IMobProduct {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/commons/SMSSDK", typeof (SMSSDK));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/commons/SMSSDK", typeof (SMSSDK));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

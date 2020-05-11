@@ -11,7 +11,7 @@ namespace Com.Mob.Tools.Gui {
 
 		// Metadata.xml XPath interface reference: path="/api/package[@name='com.mob.tools.gui']/interface[@name='BitmapProcessor.BitmapCallback']"
 		[Register ("com/mob/tools/gui/BitmapProcessor$BitmapCallback", "", "Com.Mob.Tools.Gui.BitmapProcessor/IBitmapCallbackInvoker")]
-		public partial interface IBitmapCallback : IJavaObject {
+		public partial interface IBitmapCallback : IJavaObject, IJavaPeerable {
 
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.mob.tools.gui']/interface[@name='BitmapProcessor.BitmapCallback']/method[@name='onImageGot' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='android.graphics.Bitmap']]"
 			[Register ("onImageGot", "(Ljava/lang/String;Landroid/graphics/Bitmap;)V", "GetOnImageGot_Ljava_lang_String_Landroid_graphics_Bitmap_Handler:Com.Mob.Tools.Gui.BitmapProcessor/IBitmapCallbackInvoker, IceShareSDKLib")]
@@ -20,9 +20,9 @@ namespace Com.Mob.Tools.Gui {
 		}
 
 		[global::Android.Runtime.Register ("com/mob/tools/gui/BitmapProcessor$BitmapCallback", DoNotGenerateAcw=true)]
-		internal class IBitmapCallbackInvoker : global::Java.Lang.Object, IBitmapCallback {
+		internal partial class IBitmapCallbackInvoker : global::Java.Lang.Object, IBitmapCallback {
 
-			internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/gui/BitmapProcessor$BitmapCallback", typeof (IBitmapCallbackInvoker));
+			static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/gui/BitmapProcessor$BitmapCallback", typeof (IBitmapCallbackInvoker));
 
 			static IntPtr java_class_ref {
 				get { return _members.JniPeerType.PeerReference.Handle; }
@@ -188,7 +188,7 @@ namespace Com.Mob.Tools.Gui {
 					}
 				}
 			}
-			internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/gui/BitmapProcessor$BitmapDesiredOptions", typeof (BitmapDesiredOptions));
+			static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/gui/BitmapProcessor$BitmapDesiredOptions", typeof (BitmapDesiredOptions));
 			internal static new IntPtr class_ref {
 				get {
 					return _members.JniPeerType.PeerReference.Handle;
@@ -233,7 +233,7 @@ namespace Com.Mob.Tools.Gui {
 		[global::Android.Runtime.Register ("com/mob/tools/gui/BitmapProcessor$ImageReq", DoNotGenerateAcw=true)]
 		public partial class ImageReq : global::Java.Lang.Object {
 
-			internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/gui/BitmapProcessor$ImageReq", typeof (ImageReq));
+			static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/gui/BitmapProcessor$ImageReq", typeof (ImageReq));
 			internal static new IntPtr class_ref {
 				get {
 					return _members.JniPeerType.PeerReference.Handle;
@@ -274,7 +274,7 @@ namespace Com.Mob.Tools.Gui {
 
 		}
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/gui/BitmapProcessor", typeof (BitmapProcessor));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/gui/BitmapProcessor", typeof (BitmapProcessor));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;
@@ -315,7 +315,7 @@ namespace Com.Mob.Tools.Gui {
 
 		public static unsafe long CacheSizeInByte {
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.mob.tools.gui']/class[@name='BitmapProcessor']/method[@name='getCacheSizeInByte' and count(parameter)=0]"
-			[Register ("getCacheSizeInByte", "()J", "GetGetCacheSizeInByteHandler")]
+			[Register ("getCacheSizeInByte", "()J", "")]
 			get {
 				const string __id = "getCacheSizeInByte.()J";
 				try {
@@ -328,7 +328,7 @@ namespace Com.Mob.Tools.Gui {
 
 		public static unsafe string CacheSizeText {
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.mob.tools.gui']/class[@name='BitmapProcessor']/method[@name='getCacheSizeText' and count(parameter)=0]"
-			[Register ("getCacheSizeText", "()Ljava/lang/String;", "GetGetCacheSizeTextHandler")]
+			[Register ("getCacheSizeText", "()Ljava/lang/String;", "")]
 			get {
 				const string __id = "getCacheSizeText.()Ljava/lang/String;";
 				try {

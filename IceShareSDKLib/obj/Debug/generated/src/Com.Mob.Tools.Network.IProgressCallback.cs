@@ -7,7 +7,7 @@ namespace Com.Mob.Tools.Network {
 
 	// Metadata.xml XPath interface reference: path="/api/package[@name='com.mob.tools.network']/interface[@name='ProgressCallback']"
 	[Register ("com/mob/tools/network/ProgressCallback", "", "Com.Mob.Tools.Network.IProgressCallbackInvoker")]
-	public partial interface IProgressCallback : IJavaObject {
+	public partial interface IProgressCallback : IJavaObject, IJavaPeerable {
 
 		// Metadata.xml XPath method reference: path="/api/package[@name='com.mob.tools.network']/interface[@name='ProgressCallback']/method[@name='onProgress' and count(parameter)=2 and parameter[1][@type='long'] and parameter[2][@type='long']]"
 		[Register ("onProgress", "(JJ)V", "GetOnProgress_JJHandler:Com.Mob.Tools.Network.IProgressCallbackInvoker, IceShareSDKLib")]
@@ -16,9 +16,9 @@ namespace Com.Mob.Tools.Network {
 	}
 
 	[global::Android.Runtime.Register ("com/mob/tools/network/ProgressCallback", DoNotGenerateAcw=true)]
-	internal class IProgressCallbackInvoker : global::Java.Lang.Object, IProgressCallback {
+	internal partial class IProgressCallbackInvoker : global::Java.Lang.Object, IProgressCallback {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/network/ProgressCallback", typeof (IProgressCallbackInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/network/ProgressCallback", typeof (IProgressCallbackInvoker));
 
 		static IntPtr java_class_ref {
 			get { return _members.JniPeerType.PeerReference.Handle; }

@@ -9,7 +9,7 @@ namespace CN.Sharesdk.Sina.Weibo.Sdk {
 	[global::Android.Runtime.Register ("cn/sharesdk/sina/weibo/sdk/LoadingBar", DoNotGenerateAcw=true)]
 	public partial class LoadingBar : global::Android.Widget.TextView {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/sharesdk/sina/weibo/sdk/LoadingBar", typeof (LoadingBar));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/sina/weibo/sdk/LoadingBar", typeof (LoadingBar));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

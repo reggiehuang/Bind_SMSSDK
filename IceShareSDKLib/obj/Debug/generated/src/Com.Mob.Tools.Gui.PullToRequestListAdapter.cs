@@ -9,7 +9,7 @@ namespace Com.Mob.Tools.Gui {
 	[global::Android.Runtime.Register ("com/mob/tools/gui/PullToRequestListAdapter", DoNotGenerateAcw=true)]
 	public abstract partial class PullToRequestListAdapter : global::Com.Mob.Tools.Gui.PullToRequestBaseListAdapter {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/gui/PullToRequestListAdapter", typeof (PullToRequestListAdapter));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/gui/PullToRequestListAdapter", typeof (PullToRequestListAdapter));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;
@@ -326,7 +326,7 @@ namespace Com.Mob.Tools.Gui {
 
 		public PullToRequestListAdapterInvoker (IntPtr handle, JniHandleOwnership transfer) : base (handle, transfer) {}
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/gui/PullToRequestListAdapter", typeof (PullToRequestListAdapterInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/gui/PullToRequestListAdapter", typeof (PullToRequestListAdapterInvoker));
 
 		public override global::Java.Interop.JniPeerMembers JniPeerMembers {
 			get { return _members; }

@@ -9,7 +9,7 @@ namespace Com.Mob.Tools.Gui {
 	[global::Android.Runtime.Register ("com/mob/tools/gui/AsyncImageView", DoNotGenerateAcw=true)]
 	public partial class AsyncImageView : global::Android.Widget.ImageView, global::Android.OS.Handler.ICallback, global::Com.Mob.Tools.Gui.BitmapProcessor.IBitmapCallback {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/gui/AsyncImageView", typeof (AsyncImageView));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/gui/AsyncImageView", typeof (AsyncImageView));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

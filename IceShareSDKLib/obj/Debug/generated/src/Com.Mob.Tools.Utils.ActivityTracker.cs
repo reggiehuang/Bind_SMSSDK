@@ -11,7 +11,7 @@ namespace Com.Mob.Tools.Utils {
 
 		// Metadata.xml XPath interface reference: path="/api/package[@name='com.mob.tools.utils']/interface[@name='ActivityTracker.Tracker']"
 		[Register ("com/mob/tools/utils/ActivityTracker$Tracker", "", "Com.Mob.Tools.Utils.ActivityTracker/ITrackerInvoker")]
-		public partial interface ITracker : IJavaObject {
+		public partial interface ITracker : IJavaObject, IJavaPeerable {
 
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.mob.tools.utils']/interface[@name='ActivityTracker.Tracker']/method[@name='onCreated' and count(parameter)=2 and parameter[1][@type='android.app.Activity'] and parameter[2][@type='android.os.Bundle']]"
 			[Register ("onCreated", "(Landroid/app/Activity;Landroid/os/Bundle;)V", "GetOnCreated_Landroid_app_Activity_Landroid_os_Bundle_Handler:Com.Mob.Tools.Utils.ActivityTracker/ITrackerInvoker, IceShareSDKLib")]
@@ -44,9 +44,9 @@ namespace Com.Mob.Tools.Utils {
 		}
 
 		[global::Android.Runtime.Register ("com/mob/tools/utils/ActivityTracker$Tracker", DoNotGenerateAcw=true)]
-		internal class ITrackerInvoker : global::Java.Lang.Object, ITracker {
+		internal partial class ITrackerInvoker : global::Java.Lang.Object, ITracker {
 
-			internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/utils/ActivityTracker$Tracker", typeof (ITrackerInvoker));
+			static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/utils/ActivityTracker$Tracker", typeof (ITrackerInvoker));
 
 			static IntPtr java_class_ref {
 				get { return _members.JniPeerType.PeerReference.Handle; }
@@ -290,7 +290,7 @@ namespace Com.Mob.Tools.Utils {
 		}
 
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/utils/ActivityTracker", typeof (ActivityTracker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/utils/ActivityTracker", typeof (ActivityTracker));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

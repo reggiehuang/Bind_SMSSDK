@@ -9,7 +9,7 @@ namespace CN.Sharesdk.Wechat.Utils {
 	[global::Android.Runtime.Register ("cn/sharesdk/wechat/utils/WechatFavoriteNotSupportedException", DoNotGenerateAcw=true)]
 	public partial class WechatFavoriteNotSupportedException : global::Java.Lang.Exception {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/sharesdk/wechat/utils/WechatFavoriteNotSupportedException", typeof (WechatFavoriteNotSupportedException));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/wechat/utils/WechatFavoriteNotSupportedException", typeof (WechatFavoriteNotSupportedException));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

@@ -101,7 +101,7 @@ namespace CN.Smssdk {
 					return global::Java.Lang.Object.GetObject<global::CN.Smssdk.SMSSDK.InitFlag> (__v.Handle, JniHandleOwnership.TransferLocalRef);
 				}
 			}
-			internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/smssdk/SMSSDK$InitFlag", typeof (InitFlag));
+			static readonly JniPeerMembers _members = new XAPeerMembers ("cn/smssdk/SMSSDK$InitFlag", typeof (InitFlag));
 			internal static new IntPtr class_ref {
 				get {
 					return _members.JniPeerType.PeerReference.Handle;
@@ -154,7 +154,7 @@ namespace CN.Smssdk {
 
 		// Metadata.xml XPath interface reference: path="/api/package[@name='cn.smssdk']/interface[@name='SMSSDK.VerifyCodeReadListener']"
 		[Register ("cn/smssdk/SMSSDK$VerifyCodeReadListener", "", "CN.Smssdk.SMSSDK/IVerifyCodeReadListenerInvoker")]
-		public partial interface IVerifyCodeReadListener : IJavaObject {
+		public partial interface IVerifyCodeReadListener : IJavaObject, IJavaPeerable {
 
 			// Metadata.xml XPath method reference: path="/api/package[@name='cn.smssdk']/interface[@name='SMSSDK.VerifyCodeReadListener']/method[@name='onReadVerifyCode' and count(parameter)=1 and parameter[1][@type='java.lang.String']]"
 			[Register ("onReadVerifyCode", "(Ljava/lang/String;)V", "GetOnReadVerifyCode_Ljava_lang_String_Handler:CN.Smssdk.SMSSDK/IVerifyCodeReadListenerInvoker, IceShareSDKLib")]
@@ -163,9 +163,9 @@ namespace CN.Smssdk {
 		}
 
 		[global::Android.Runtime.Register ("cn/smssdk/SMSSDK$VerifyCodeReadListener", DoNotGenerateAcw=true)]
-		internal class IVerifyCodeReadListenerInvoker : global::Java.Lang.Object, IVerifyCodeReadListener {
+		internal partial class IVerifyCodeReadListenerInvoker : global::Java.Lang.Object, IVerifyCodeReadListener {
 
-			internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("cn/smssdk/SMSSDK$VerifyCodeReadListener", typeof (IVerifyCodeReadListenerInvoker));
+			static readonly JniPeerMembers _members = new XAPeerMembers ("cn/smssdk/SMSSDK$VerifyCodeReadListener", typeof (IVerifyCodeReadListenerInvoker));
 
 			static IntPtr java_class_ref {
 				get { return _members.JniPeerType.PeerReference.Handle; }
@@ -290,7 +290,7 @@ namespace CN.Smssdk {
 		}
 
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/smssdk/SMSSDK", typeof (SMSSDK));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/smssdk/SMSSDK", typeof (SMSSDK));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;
@@ -331,7 +331,7 @@ namespace CN.Smssdk {
 
 		public static unsafe global::System.Collections.Generic.IDictionary<global::Java.Lang.Character, global::System.Collections.Generic.IList<string[]>> GroupedCountryList {
 			// Metadata.xml XPath method reference: path="/api/package[@name='cn.smssdk']/class[@name='SMSSDK']/method[@name='getGroupedCountryList' and count(parameter)=0]"
-			[Register ("getGroupedCountryList", "()Ljava/util/HashMap;", "GetGetGroupedCountryListHandler")]
+			[Register ("getGroupedCountryList", "()Ljava/util/HashMap;", "")]
 			get {
 				const string __id = "getGroupedCountryList.()Ljava/util/HashMap;";
 				try {
@@ -344,7 +344,7 @@ namespace CN.Smssdk {
 
 		public static unsafe string Version {
 			// Metadata.xml XPath method reference: path="/api/package[@name='cn.smssdk']/class[@name='SMSSDK']/method[@name='getVersion' and count(parameter)=0]"
-			[Register ("getVersion", "()Ljava/lang/String;", "GetGetVersionHandler")]
+			[Register ("getVersion", "()Ljava/lang/String;", "")]
 			get {
 				const string __id = "getVersion.()Ljava/lang/String;";
 				try {

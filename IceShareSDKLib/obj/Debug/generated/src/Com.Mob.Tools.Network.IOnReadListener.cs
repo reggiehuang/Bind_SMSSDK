@@ -7,7 +7,7 @@ namespace Com.Mob.Tools.Network {
 
 	// Metadata.xml XPath interface reference: path="/api/package[@name='com.mob.tools.network']/interface[@name='OnReadListener']"
 	[Register ("com/mob/tools/network/OnReadListener", "", "Com.Mob.Tools.Network.IOnReadListenerInvoker")]
-	public partial interface IOnReadListener : IJavaObject {
+	public partial interface IOnReadListener : IJavaObject, IJavaPeerable {
 
 		// Metadata.xml XPath method reference: path="/api/package[@name='com.mob.tools.network']/interface[@name='OnReadListener']/method[@name='onRead' and count(parameter)=1 and parameter[1][@type='long']]"
 		[Register ("onRead", "(J)V", "GetOnRead_JHandler:Com.Mob.Tools.Network.IOnReadListenerInvoker, IceShareSDKLib")]
@@ -16,9 +16,9 @@ namespace Com.Mob.Tools.Network {
 	}
 
 	[global::Android.Runtime.Register ("com/mob/tools/network/OnReadListener", DoNotGenerateAcw=true)]
-	internal class IOnReadListenerInvoker : global::Java.Lang.Object, IOnReadListener {
+	internal partial class IOnReadListenerInvoker : global::Java.Lang.Object, IOnReadListener {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/network/OnReadListener", typeof (IOnReadListenerInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/network/OnReadListener", typeof (IOnReadListenerInvoker));
 
 		static IntPtr java_class_ref {
 			get { return _members.JniPeerType.PeerReference.Handle; }

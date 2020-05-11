@@ -93,7 +93,7 @@ namespace Com.Mob.Tools.Network {
 					}
 				}
 			}
-			internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/network/NetworkHelper$NetworkTimeOut", typeof (NetworkTimeOut));
+			static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/network/NetworkHelper$NetworkTimeOut", typeof (NetworkTimeOut));
 			internal static new IntPtr class_ref {
 				get {
 					return _members.JniPeerType.PeerReference.Handle;
@@ -138,7 +138,7 @@ namespace Com.Mob.Tools.Network {
 		[global::Android.Runtime.Register ("com/mob/tools/network/NetworkHelper$SimpleX509TrustManager", DoNotGenerateAcw=true)]
 		public sealed partial class SimpleX509TrustManager : global::Java.Lang.Object, global::Javax.Net.Ssl.IX509TrustManager {
 
-			internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/network/NetworkHelper$SimpleX509TrustManager", typeof (SimpleX509TrustManager));
+			static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/network/NetworkHelper$SimpleX509TrustManager", typeof (SimpleX509TrustManager));
 			internal static new IntPtr class_ref {
 				get {
 					return _members.JniPeerType.PeerReference.Handle;
@@ -235,7 +235,7 @@ namespace Com.Mob.Tools.Network {
 
 		}
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/network/NetworkHelper", typeof (NetworkHelper));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/network/NetworkHelper", typeof (NetworkHelper));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;
@@ -276,7 +276,7 @@ namespace Com.Mob.Tools.Network {
 
 		public static unsafe bool FollowRedirects {
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.mob.tools.network']/class[@name='NetworkHelper']/method[@name='getFollowRedirects' and count(parameter)=0]"
-			[Register ("getFollowRedirects", "()Z", "GetGetFollowRedirectsHandler")]
+			[Register ("getFollowRedirects", "()Z", "")]
 			get {
 				const string __id = "getFollowRedirects.()Z";
 				try {
@@ -286,7 +286,7 @@ namespace Com.Mob.Tools.Network {
 				}
 			}
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.mob.tools.network']/class[@name='NetworkHelper']/method[@name='setFollowRedirects' and count(parameter)=1 and parameter[1][@type='boolean']]"
-			[Register ("setFollowRedirects", "(Z)V", "GetSetFollowRedirects_ZHandler")]
+			[Register ("setFollowRedirects", "(Z)V", "")]
 			set {
 				const string __id = "setFollowRedirects.(Z)V";
 				try {

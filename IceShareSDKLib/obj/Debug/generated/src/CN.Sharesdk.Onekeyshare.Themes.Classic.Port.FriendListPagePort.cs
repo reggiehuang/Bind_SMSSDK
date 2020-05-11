@@ -9,7 +9,7 @@ namespace CN.Sharesdk.Onekeyshare.Themes.Classic.Port {
 	[global::Android.Runtime.Register ("cn/sharesdk/onekeyshare/themes/classic/port/FriendListPagePort", DoNotGenerateAcw=true)]
 	public partial class FriendListPagePort : global::CN.Sharesdk.Onekeyshare.Themes.Classic.FriendListPage {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/sharesdk/onekeyshare/themes/classic/port/FriendListPagePort", typeof (FriendListPagePort));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/onekeyshare/themes/classic/port/FriendListPagePort", typeof (FriendListPagePort));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

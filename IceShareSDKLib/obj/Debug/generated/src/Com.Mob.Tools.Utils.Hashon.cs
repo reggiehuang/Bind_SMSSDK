@@ -11,7 +11,7 @@ namespace Com.Mob.Tools.Utils {
 
 		// Metadata.xml XPath interface reference: path="/api/package[@name='com.mob.tools.utils']/interface[@name='Hashon.TabulateAdapter']"
 		[Register ("com/mob/tools/utils/Hashon$TabulateAdapter", "", "Com.Mob.Tools.Utils.Hashon/ITabulateAdapterInvoker")]
-		public partial interface ITabulateAdapter : IJavaObject {
+		public partial interface ITabulateAdapter : IJavaObject, IJavaPeerable {
 
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.mob.tools.utils']/interface[@name='Hashon.TabulateAdapter']/method[@name='tabulate' and count(parameter)=0]"
 			[Register ("tabulate", "()Ljava/lang/Object;", "GetTabulateHandler:Com.Mob.Tools.Utils.Hashon/ITabulateAdapterInvoker, IceShareSDKLib")]
@@ -20,9 +20,9 @@ namespace Com.Mob.Tools.Utils {
 		}
 
 		[global::Android.Runtime.Register ("com/mob/tools/utils/Hashon$TabulateAdapter", DoNotGenerateAcw=true)]
-		internal class ITabulateAdapterInvoker : global::Java.Lang.Object, ITabulateAdapter {
+		internal partial class ITabulateAdapterInvoker : global::Java.Lang.Object, ITabulateAdapter {
 
-			internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/utils/Hashon$TabulateAdapter", typeof (ITabulateAdapterInvoker));
+			static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/utils/Hashon$TabulateAdapter", typeof (ITabulateAdapterInvoker));
 
 			static IntPtr java_class_ref {
 				get { return _members.JniPeerType.PeerReference.Handle; }
@@ -97,7 +97,7 @@ namespace Com.Mob.Tools.Utils {
 		}
 
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/utils/Hashon", typeof (Hashon));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/utils/Hashon", typeof (Hashon));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

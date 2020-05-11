@@ -28,7 +28,7 @@ namespace Com.Mob.Commons.Logcollector {
 			public const int LevelNormal = (int) 0;
 		}
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/commons/logcollector/LogsCollector", typeof (LogsCollector));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/commons/logcollector/LogsCollector", typeof (LogsCollector));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;
@@ -139,7 +139,7 @@ namespace Com.Mob.Commons.Logcollector {
 
 		public LogsCollectorInvoker (IntPtr handle, JniHandleOwnership transfer) : base (handle, transfer) {}
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/commons/logcollector/LogsCollector", typeof (LogsCollectorInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/commons/logcollector/LogsCollector", typeof (LogsCollectorInvoker));
 
 		public override global::Java.Interop.JniPeerMembers JniPeerMembers {
 			get { return _members; }

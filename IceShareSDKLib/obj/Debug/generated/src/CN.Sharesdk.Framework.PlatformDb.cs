@@ -9,7 +9,7 @@ namespace CN.Sharesdk.Framework {
 	[global::Android.Runtime.Register ("cn/sharesdk/framework/PlatformDb", DoNotGenerateAcw=true)]
 	public partial class PlatformDb : global::Java.Lang.Object {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/sharesdk/framework/PlatformDb", typeof (PlatformDb));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/framework/PlatformDb", typeof (PlatformDb));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

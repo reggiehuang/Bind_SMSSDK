@@ -7,7 +7,7 @@ namespace Com.Mob.Tools.Gui {
 
 	// Metadata.xml XPath interface reference: path="/api/package[@name='com.mob.tools.gui']/interface[@name='OnListStopScrollListener']"
 	[Register ("com/mob/tools/gui/OnListStopScrollListener", "", "Com.Mob.Tools.Gui.IOnListStopScrollListenerInvoker")]
-	public partial interface IOnListStopScrollListener : IJavaObject {
+	public partial interface IOnListStopScrollListener : IJavaObject, IJavaPeerable {
 
 		// Metadata.xml XPath method reference: path="/api/package[@name='com.mob.tools.gui']/interface[@name='OnListStopScrollListener']/method[@name='onListStopScrolling' and count(parameter)=2 and parameter[1][@type='int'] and parameter[2][@type='int']]"
 		[Register ("onListStopScrolling", "(II)V", "GetOnListStopScrolling_IIHandler:Com.Mob.Tools.Gui.IOnListStopScrollListenerInvoker, IceShareSDKLib")]
@@ -16,9 +16,9 @@ namespace Com.Mob.Tools.Gui {
 	}
 
 	[global::Android.Runtime.Register ("com/mob/tools/gui/OnListStopScrollListener", DoNotGenerateAcw=true)]
-	internal class IOnListStopScrollListenerInvoker : global::Java.Lang.Object, IOnListStopScrollListener {
+	internal partial class IOnListStopScrollListenerInvoker : global::Java.Lang.Object, IOnListStopScrollListener {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/gui/OnListStopScrollListener", typeof (IOnListStopScrollListenerInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/gui/OnListStopScrollListener", typeof (IOnListStopScrollListenerInvoker));
 
 		static IntPtr java_class_ref {
 			get { return _members.JniPeerType.PeerReference.Handle; }

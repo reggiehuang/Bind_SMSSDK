@@ -9,7 +9,7 @@ namespace CN.Sharesdk.Framework.Utils {
 	[global::Android.Runtime.Register ("cn/sharesdk/framework/utils/ShareSDKR", DoNotGenerateAcw=true)]
 	public partial class ShareSDKR : global::Java.Lang.Object {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/sharesdk/framework/utils/ShareSDKR", typeof (ShareSDKR));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/framework/utils/ShareSDKR", typeof (ShareSDKR));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

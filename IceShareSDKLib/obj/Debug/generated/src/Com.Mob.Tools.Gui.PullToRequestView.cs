@@ -9,7 +9,7 @@ namespace Com.Mob.Tools.Gui {
 	[global::Android.Runtime.Register ("com/mob/tools/gui/PullToRequestView", DoNotGenerateAcw=true)]
 	public partial class PullToRequestView : global::Android.Widget.RelativeLayout {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/gui/PullToRequestView", typeof (PullToRequestView));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/gui/PullToRequestView", typeof (PullToRequestView));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

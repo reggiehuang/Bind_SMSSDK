@@ -9,7 +9,7 @@ namespace Com.Mob.Tools.Network {
 	[global::Android.Runtime.Register ("com/mob/tools/network/BufferedByteArrayOutputStream", DoNotGenerateAcw=true)]
 	public partial class BufferedByteArrayOutputStream : global::Java.IO.ByteArrayOutputStream {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/network/BufferedByteArrayOutputStream", typeof (BufferedByteArrayOutputStream));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/network/BufferedByteArrayOutputStream", typeof (BufferedByteArrayOutputStream));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

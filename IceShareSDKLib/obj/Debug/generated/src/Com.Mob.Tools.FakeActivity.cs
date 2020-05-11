@@ -31,7 +31,7 @@ namespace Com.Mob.Tools {
 				}
 			}
 		}
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/FakeActivity", typeof (FakeActivity));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/FakeActivity", typeof (FakeActivity));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

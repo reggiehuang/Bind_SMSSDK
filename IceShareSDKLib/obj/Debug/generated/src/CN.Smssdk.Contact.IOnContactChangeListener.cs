@@ -7,7 +7,7 @@ namespace CN.Smssdk.Contact {
 
 	// Metadata.xml XPath interface reference: path="/api/package[@name='cn.smssdk.contact']/interface[@name='OnContactChangeListener']"
 	[Register ("cn/smssdk/contact/OnContactChangeListener", "", "CN.Smssdk.Contact.IOnContactChangeListenerInvoker")]
-	public partial interface IOnContactChangeListener : IJavaObject {
+	public partial interface IOnContactChangeListener : IJavaObject, IJavaPeerable {
 
 		// Metadata.xml XPath method reference: path="/api/package[@name='cn.smssdk.contact']/interface[@name='OnContactChangeListener']/method[@name='onContactChange' and count(parameter)=1 and parameter[1][@type='boolean']]"
 		[Register ("onContactChange", "(Z)V", "GetOnContactChange_ZHandler:CN.Smssdk.Contact.IOnContactChangeListenerInvoker, IceShareSDKLib")]
@@ -16,9 +16,9 @@ namespace CN.Smssdk.Contact {
 	}
 
 	[global::Android.Runtime.Register ("cn/smssdk/contact/OnContactChangeListener", DoNotGenerateAcw=true)]
-	internal class IOnContactChangeListenerInvoker : global::Java.Lang.Object, IOnContactChangeListener {
+	internal partial class IOnContactChangeListenerInvoker : global::Java.Lang.Object, IOnContactChangeListener {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("cn/smssdk/contact/OnContactChangeListener", typeof (IOnContactChangeListenerInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/smssdk/contact/OnContactChangeListener", typeof (IOnContactChangeListenerInvoker));
 
 		static IntPtr java_class_ref {
 			get { return _members.JniPeerType.PeerReference.Handle; }

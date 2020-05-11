@@ -8,7 +8,7 @@ namespace Com.Mob.Tools.Java8 {
 	// Metadata.xml XPath interface reference: path="/api/package[@name='com.mob.tools.java8']/interface[@name='Peek.MapPeek']"
 	[Register ("com/mob/tools/java8/Peek$MapPeek", "", "Com.Mob.Tools.Java8.IPeekMapPeekInvoker")]
 	[global::Java.Interop.JavaTypeParameters (new string [] {"K", "V"})]
-	public partial interface IPeekMapPeek : IJavaObject {
+	public partial interface IPeekMapPeek : IJavaObject, IJavaPeerable {
 
 		// Metadata.xml XPath method reference: path="/api/package[@name='com.mob.tools.java8']/interface[@name='Peek.MapPeek']/method[@name='peek' and count(parameter)=2 and parameter[1][@type='K'] and parameter[2][@type='V']]"
 		[Register ("peek", "(Ljava/lang/Object;Ljava/lang/Object;)V", "GetPeek_Ljava_lang_Object_Ljava_lang_Object_Handler:Com.Mob.Tools.Java8.IPeekMapPeekInvoker, IceShareSDKLib")]
@@ -17,9 +17,9 @@ namespace Com.Mob.Tools.Java8 {
 	}
 
 	[global::Android.Runtime.Register ("com/mob/tools/java8/Peek$MapPeek", DoNotGenerateAcw=true)]
-	internal class IPeekMapPeekInvoker : global::Java.Lang.Object, IPeekMapPeek {
+	internal partial class IPeekMapPeekInvoker : global::Java.Lang.Object, IPeekMapPeek {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/java8/Peek$MapPeek", typeof (IPeekMapPeekInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/java8/Peek$MapPeek", typeof (IPeekMapPeekInvoker));
 
 		static IntPtr java_class_ref {
 			get { return _members.JniPeerType.PeerReference.Handle; }
@@ -115,9 +115,9 @@ namespace Com.Mob.Tools.Java8 {
 	}
 
 	[global::Android.Runtime.Register ("com/mob/tools/java8/Peek", DoNotGenerateAcw=true)]
-	internal class IPeekInvoker : global::Java.Lang.Object, IPeek {
+	internal partial class IPeekInvoker : global::Java.Lang.Object, IPeek {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/java8/Peek", typeof (IPeekInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/java8/Peek", typeof (IPeekInvoker));
 
 		static IntPtr java_class_ref {
 			get { return _members.JniPeerType.PeerReference.Handle; }

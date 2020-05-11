@@ -9,7 +9,7 @@ namespace Com.Mob.Tools.Log {
 	[global::Android.Runtime.Register ("com/mob/tools/log/MobUncaughtExceptionHandler", DoNotGenerateAcw=true)]
 	public partial class MobUncaughtExceptionHandler : global::Java.Lang.Object, global::Java.Lang.Thread.IUncaughtExceptionHandler {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/log/MobUncaughtExceptionHandler", typeof (MobUncaughtExceptionHandler));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/log/MobUncaughtExceptionHandler", typeof (MobUncaughtExceptionHandler));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

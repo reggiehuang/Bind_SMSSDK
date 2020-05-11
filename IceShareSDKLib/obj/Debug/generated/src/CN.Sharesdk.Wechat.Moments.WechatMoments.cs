@@ -9,7 +9,7 @@ namespace CN.Sharesdk.Wechat.Moments {
 	[global::Android.Runtime.Register ("cn/sharesdk/wechat/moments/WechatMoments", DoNotGenerateAcw=true)]
 	public partial class WechatMoments : global::CN.Sharesdk.Framework.Platform {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/sharesdk/wechat/moments/WechatMoments", typeof (WechatMoments));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/wechat/moments/WechatMoments", typeof (WechatMoments));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

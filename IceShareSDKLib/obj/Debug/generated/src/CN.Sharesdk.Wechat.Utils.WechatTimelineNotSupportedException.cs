@@ -9,7 +9,7 @@ namespace CN.Sharesdk.Wechat.Utils {
 	[global::Android.Runtime.Register ("cn/sharesdk/wechat/utils/WechatTimelineNotSupportedException", DoNotGenerateAcw=true)]
 	public partial class WechatTimelineNotSupportedException : global::Java.Lang.Exception {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/sharesdk/wechat/utils/WechatTimelineNotSupportedException", typeof (WechatTimelineNotSupportedException));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/wechat/utils/WechatTimelineNotSupportedException", typeof (WechatTimelineNotSupportedException));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

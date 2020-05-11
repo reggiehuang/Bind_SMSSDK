@@ -9,7 +9,7 @@ namespace Com.Mob.Tools.Gui {
 	[global::Android.Runtime.Register ("com/mob/tools/gui/ScrollableListView", DoNotGenerateAcw=true)]
 	public partial class ScrollableListView : global::Android.Widget.ListView, global::Com.Mob.Tools.Gui.IScrollable {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/gui/ScrollableListView", typeof (ScrollableListView));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/gui/ScrollableListView", typeof (ScrollableListView));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

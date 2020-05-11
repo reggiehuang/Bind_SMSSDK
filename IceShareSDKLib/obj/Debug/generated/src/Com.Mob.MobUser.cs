@@ -11,7 +11,7 @@ namespace Com.Mob {
 
 		// Metadata.xml XPath interface reference: path="/api/package[@name='com.mob']/interface[@name='MobUser.OnUserGotListener']"
 		[Register ("com/mob/MobUser$OnUserGotListener", "", "Com.Mob.MobUser/IOnUserGotListenerInvoker")]
-		public partial interface IOnUserGotListener : IJavaObject {
+		public partial interface IOnUserGotListener : IJavaObject, IJavaPeerable {
 
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.mob']/interface[@name='MobUser.OnUserGotListener']/method[@name='onUserGot' and count(parameter)=1 and parameter[1][@type='com.mob.MobUser']]"
 			[Register ("onUserGot", "(Lcom/mob/MobUser;)V", "GetOnUserGot_Lcom_mob_MobUser_Handler:Com.Mob.MobUser/IOnUserGotListenerInvoker, IceShareSDKLib")]
@@ -20,9 +20,9 @@ namespace Com.Mob {
 		}
 
 		[global::Android.Runtime.Register ("com/mob/MobUser$OnUserGotListener", DoNotGenerateAcw=true)]
-		internal class IOnUserGotListenerInvoker : global::Java.Lang.Object, IOnUserGotListener {
+		internal partial class IOnUserGotListenerInvoker : global::Java.Lang.Object, IOnUserGotListener {
 
-			internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/MobUser$OnUserGotListener", typeof (IOnUserGotListenerInvoker));
+			static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/MobUser$OnUserGotListener", typeof (IOnUserGotListenerInvoker));
 
 			static IntPtr java_class_ref {
 				get { return _members.JniPeerType.PeerReference.Handle; }
@@ -147,7 +147,7 @@ namespace Com.Mob {
 
 		// Metadata.xml XPath interface reference: path="/api/package[@name='com.mob']/interface[@name='MobUser.UserWatcher']"
 		[Register ("com/mob/MobUser$UserWatcher", "", "Com.Mob.MobUser/IUserWatcherInvoker")]
-		public partial interface IUserWatcher : IJavaObject {
+		public partial interface IUserWatcher : IJavaObject, IJavaPeerable {
 
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.mob']/interface[@name='MobUser.UserWatcher']/method[@name='onUserStateChange' and count(parameter)=1 and parameter[1][@type='com.mob.MobUser']]"
 			[Register ("onUserStateChange", "(Lcom/mob/MobUser;)V", "GetOnUserStateChange_Lcom_mob_MobUser_Handler:Com.Mob.MobUser/IUserWatcherInvoker, IceShareSDKLib")]
@@ -156,9 +156,9 @@ namespace Com.Mob {
 		}
 
 		[global::Android.Runtime.Register ("com/mob/MobUser$UserWatcher", DoNotGenerateAcw=true)]
-		internal class IUserWatcherInvoker : global::Java.Lang.Object, IUserWatcher {
+		internal partial class IUserWatcherInvoker : global::Java.Lang.Object, IUserWatcher {
 
-			internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/MobUser$UserWatcher", typeof (IUserWatcherInvoker));
+			static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/MobUser$UserWatcher", typeof (IUserWatcherInvoker));
 
 			static IntPtr java_class_ref {
 				get { return _members.JniPeerType.PeerReference.Handle; }
@@ -236,7 +236,7 @@ namespace Com.Mob {
 		}
 
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/MobUser", typeof (MobUser));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/MobUser", typeof (MobUser));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;
@@ -259,7 +259,7 @@ namespace Com.Mob {
 
 		public unsafe string Avatar {
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.mob']/class[@name='MobUser']/method[@name='getAvatar' and count(parameter)=0]"
-			[Register ("getAvatar", "()Ljava/lang/String;", "GetGetAvatarHandler")]
+			[Register ("getAvatar", "()Ljava/lang/String;", "")]
 			get {
 				const string __id = "getAvatar.()Ljava/lang/String;";
 				try {
@@ -272,7 +272,7 @@ namespace Com.Mob {
 
 		public unsafe global::System.Collections.Generic.IDictionary<string, global::Java.Lang.Object> ExtraInfo {
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.mob']/class[@name='MobUser']/method[@name='getExtraInfo' and count(parameter)=0]"
-			[Register ("getExtraInfo", "()Ljava/util/HashMap;", "GetGetExtraInfoHandler")]
+			[Register ("getExtraInfo", "()Ljava/util/HashMap;", "")]
 			get {
 				const string __id = "getExtraInfo.()Ljava/util/HashMap;";
 				try {
@@ -285,7 +285,7 @@ namespace Com.Mob {
 
 		public unsafe string Id {
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.mob']/class[@name='MobUser']/method[@name='getId' and count(parameter)=0]"
-			[Register ("getId", "()Ljava/lang/String;", "GetGetIdHandler")]
+			[Register ("getId", "()Ljava/lang/String;", "")]
 			get {
 				const string __id = "getId.()Ljava/lang/String;";
 				try {
@@ -298,7 +298,7 @@ namespace Com.Mob {
 
 		public unsafe bool IsAnonymous {
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.mob']/class[@name='MobUser']/method[@name='isAnonymous' and count(parameter)=0]"
-			[Register ("isAnonymous", "()Z", "GetIsAnonymousHandler")]
+			[Register ("isAnonymous", "()Z", "")]
 			get {
 				const string __id = "isAnonymous.()Z";
 				try {
@@ -311,7 +311,7 @@ namespace Com.Mob {
 
 		public unsafe string MobUserId {
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.mob']/class[@name='MobUser']/method[@name='getMobUserId' and count(parameter)=0]"
-			[Register ("getMobUserId", "()Ljava/lang/String;", "GetGetMobUserIdHandler")]
+			[Register ("getMobUserId", "()Ljava/lang/String;", "")]
 			get {
 				const string __id = "getMobUserId.()Ljava/lang/String;";
 				try {
@@ -324,7 +324,7 @@ namespace Com.Mob {
 
 		public unsafe string NickName {
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.mob']/class[@name='MobUser']/method[@name='getNickName' and count(parameter)=0]"
-			[Register ("getNickName", "()Ljava/lang/String;", "GetGetNickNameHandler")]
+			[Register ("getNickName", "()Ljava/lang/String;", "")]
 			get {
 				const string __id = "getNickName.()Ljava/lang/String;";
 				try {

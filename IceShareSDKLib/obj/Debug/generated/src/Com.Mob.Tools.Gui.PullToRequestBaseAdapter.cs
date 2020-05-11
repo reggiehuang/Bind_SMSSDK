@@ -9,7 +9,7 @@ namespace Com.Mob.Tools.Gui {
 	[global::Android.Runtime.Register ("com/mob/tools/gui/PullToRequestBaseAdapter", DoNotGenerateAcw=true)]
 	public partial class PullToRequestBaseAdapter : global::Android.Widget.BaseAdapter {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/gui/PullToRequestBaseAdapter", typeof (PullToRequestBaseAdapter));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/gui/PullToRequestBaseAdapter", typeof (PullToRequestBaseAdapter));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

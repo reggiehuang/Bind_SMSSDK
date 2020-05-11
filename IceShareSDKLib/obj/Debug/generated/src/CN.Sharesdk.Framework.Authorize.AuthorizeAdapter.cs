@@ -9,7 +9,7 @@ namespace CN.Sharesdk.Framework.Authorize {
 	[global::Android.Runtime.Register ("cn/sharesdk/framework/authorize/AuthorizeAdapter", DoNotGenerateAcw=true)]
 	public partial class AuthorizeAdapter : global::Java.Lang.Object {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/sharesdk/framework/authorize/AuthorizeAdapter", typeof (AuthorizeAdapter));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/framework/authorize/AuthorizeAdapter", typeof (AuthorizeAdapter));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

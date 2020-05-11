@@ -13,7 +13,7 @@ namespace Com.Mob.Tools.Java8 {
 		// Metadata.xml XPath interface reference: path="/api/package[@name='com.mob.tools.java8']/interface[@name='Closure.IClosure']"
 		[Register ("com/mob/tools/java8/Closure$IClosure", "", "Com.Mob.Tools.Java8.Closure/IClosureInvoker")]
 		[global::Java.Interop.JavaTypeParameters (new string [] {"R"})]
-		public partial interface IClosure : IJavaObject {
+		public partial interface IClosure : IJavaObject, IJavaPeerable {
 
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.mob.tools.java8']/interface[@name='Closure.IClosure']/method[@name='call' and count(parameter)=0]"
 			[Register ("call", "()Ljava/lang/Object;", "GetCallHandler:Com.Mob.Tools.Java8.Closure/IClosureInvoker, IceShareSDKLib")]
@@ -22,9 +22,9 @@ namespace Com.Mob.Tools.Java8 {
 		}
 
 		[global::Android.Runtime.Register ("com/mob/tools/java8/Closure$IClosure", DoNotGenerateAcw=true)]
-		internal class IClosureInvoker : global::Java.Lang.Object, IClosure {
+		internal partial class IClosureInvoker : global::Java.Lang.Object, IClosure {
 
-			internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/java8/Closure$IClosure", typeof (IClosureInvoker));
+			static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/java8/Closure$IClosure", typeof (IClosureInvoker));
 
 			static IntPtr java_class_ref {
 				get { return _members.JniPeerType.PeerReference.Handle; }
@@ -101,7 +101,7 @@ namespace Com.Mob.Tools.Java8 {
 
 		// Metadata.xml XPath interface reference: path="/api/package[@name='com.mob.tools.java8']/interface[@name='Closure.IClosureV']"
 		[Register ("com/mob/tools/java8/Closure$IClosureV", "", "Com.Mob.Tools.Java8.Closure/IClosureVInvoker")]
-		public partial interface IClosureV : IJavaObject {
+		public partial interface IClosureV : IJavaObject, IJavaPeerable {
 
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.mob.tools.java8']/interface[@name='Closure.IClosureV']/method[@name='call' and count(parameter)=0]"
 			[Register ("call", "()V", "GetCallHandler:Com.Mob.Tools.Java8.Closure/IClosureVInvoker, IceShareSDKLib")]
@@ -110,9 +110,9 @@ namespace Com.Mob.Tools.Java8 {
 		}
 
 		[global::Android.Runtime.Register ("com/mob/tools/java8/Closure$IClosureV", DoNotGenerateAcw=true)]
-		internal class IClosureVInvoker : global::Java.Lang.Object, IClosureV {
+		internal partial class IClosureVInvoker : global::Java.Lang.Object, IClosureV {
 
-			internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/java8/Closure$IClosureV", typeof (IClosureVInvoker));
+			static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/java8/Closure$IClosureV", typeof (IClosureVInvoker));
 
 			static IntPtr java_class_ref {
 				get { return _members.JniPeerType.PeerReference.Handle; }
@@ -192,7 +192,7 @@ namespace Com.Mob.Tools.Java8 {
 		[global::Java.Interop.JavaTypeParameters (new string [] {"R"})]
 		public partial class Result : global::Java.Lang.Object {
 
-			internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/java8/Closure$Result", typeof (Result));
+			static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/java8/Closure$Result", typeof (Result));
 			internal static new IntPtr class_ref {
 				get {
 					return _members.JniPeerType.PeerReference.Handle;
@@ -316,7 +316,7 @@ namespace Com.Mob.Tools.Java8 {
 
 		}
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/java8/Closure", typeof (Closure));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/java8/Closure", typeof (Closure));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

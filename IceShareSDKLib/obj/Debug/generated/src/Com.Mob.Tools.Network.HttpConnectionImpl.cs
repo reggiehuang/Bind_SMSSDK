@@ -9,7 +9,7 @@ namespace Com.Mob.Tools.Network {
 	[global::Android.Runtime.Register ("com/mob/tools/network/HttpConnectionImpl", DoNotGenerateAcw=true)]
 	public partial class HttpConnectionImpl : global::Java.Lang.Object, global::Com.Mob.Tools.Network.IHttpConnection {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/network/HttpConnectionImpl", typeof (HttpConnectionImpl));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/network/HttpConnectionImpl", typeof (HttpConnectionImpl));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

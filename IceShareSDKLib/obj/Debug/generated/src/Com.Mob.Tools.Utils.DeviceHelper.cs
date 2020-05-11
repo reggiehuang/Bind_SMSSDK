@@ -9,7 +9,7 @@ namespace Com.Mob.Tools.Utils {
 	[global::Android.Runtime.Register ("com/mob/tools/utils/DeviceHelper", DoNotGenerateAcw=true)]
 	public partial class DeviceHelper : global::Java.Lang.Object {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/utils/DeviceHelper", typeof (DeviceHelper));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/utils/DeviceHelper", typeof (DeviceHelper));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;
@@ -235,7 +235,7 @@ namespace Com.Mob.Tools.Utils {
 
 		public static unsafe global::Android.Content.Context Application {
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.mob.tools.utils']/class[@name='DeviceHelper']/method[@name='getApplication' and count(parameter)=0]"
-			[Register ("getApplication", "()Landroid/content/Context;", "GetGetApplicationHandler")]
+			[Register ("getApplication", "()Landroid/content/Context;", "")]
 			get {
 				const string __id = "getApplication.()Landroid/content/Context;";
 				try {

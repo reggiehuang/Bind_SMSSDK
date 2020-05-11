@@ -9,7 +9,7 @@ namespace Com.Mob.Tools.Utils {
 	[global::Android.Runtime.Register ("com/mob/tools/utils/FileLocker", DoNotGenerateAcw=true)]
 	public partial class FileLocker : global::Java.Lang.Object {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/utils/FileLocker", typeof (FileLocker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/utils/FileLocker", typeof (FileLocker));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

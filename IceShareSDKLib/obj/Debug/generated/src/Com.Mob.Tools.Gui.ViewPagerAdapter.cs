@@ -9,7 +9,7 @@ namespace Com.Mob.Tools.Gui {
 	[global::Android.Runtime.Register ("com/mob/tools/gui/ViewPagerAdapter", DoNotGenerateAcw=true)]
 	public abstract partial class ViewPagerAdapter : global::Java.Lang.Object {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/gui/ViewPagerAdapter", typeof (ViewPagerAdapter));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/gui/ViewPagerAdapter", typeof (ViewPagerAdapter));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;
@@ -185,7 +185,7 @@ namespace Com.Mob.Tools.Gui {
 
 		public ViewPagerAdapterInvoker (IntPtr handle, JniHandleOwnership transfer) : base (handle, transfer) {}
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/gui/ViewPagerAdapter", typeof (ViewPagerAdapterInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/gui/ViewPagerAdapter", typeof (ViewPagerAdapterInvoker));
 
 		public override global::Java.Interop.JniPeerMembers JniPeerMembers {
 			get { return _members; }

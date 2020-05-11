@@ -9,7 +9,7 @@ namespace Com.Mob.Commons.Authorize {
 	[global::Android.Runtime.Register ("com/mob/commons/authorize/DeviceAuthorizer", DoNotGenerateAcw=true)]
 	public sealed partial class DeviceAuthorizer : global::Java.Lang.Object, global::Com.Mob.Tools.Proguard.IPublicMemberKeeper {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/commons/authorize/DeviceAuthorizer", typeof (DeviceAuthorizer));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/commons/authorize/DeviceAuthorizer", typeof (DeviceAuthorizer));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

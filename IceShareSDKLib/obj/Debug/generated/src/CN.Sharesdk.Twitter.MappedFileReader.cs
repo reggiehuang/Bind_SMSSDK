@@ -9,7 +9,7 @@ namespace CN.Sharesdk.Twitter {
 	[global::Android.Runtime.Register ("cn/sharesdk/twitter/MappedFileReader", DoNotGenerateAcw=true)]
 	public partial class MappedFileReader : global::Java.Lang.Object {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/sharesdk/twitter/MappedFileReader", typeof (MappedFileReader));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/twitter/MappedFileReader", typeof (MappedFileReader));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

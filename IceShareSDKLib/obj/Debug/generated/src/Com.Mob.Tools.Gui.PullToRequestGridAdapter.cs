@@ -9,7 +9,7 @@ namespace Com.Mob.Tools.Gui {
 	[global::Android.Runtime.Register ("com/mob/tools/gui/PullToRequestGridAdapter", DoNotGenerateAcw=true)]
 	public abstract partial class PullToRequestGridAdapter : global::Com.Mob.Tools.Gui.PullToRequestBaseListAdapter {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/gui/PullToRequestGridAdapter", typeof (PullToRequestGridAdapter));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/gui/PullToRequestGridAdapter", typeof (PullToRequestGridAdapter));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;
@@ -412,7 +412,7 @@ namespace Com.Mob.Tools.Gui {
 
 		public PullToRequestGridAdapterInvoker (IntPtr handle, JniHandleOwnership transfer) : base (handle, transfer) {}
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/gui/PullToRequestGridAdapter", typeof (PullToRequestGridAdapterInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/gui/PullToRequestGridAdapter", typeof (PullToRequestGridAdapterInvoker));
 
 		public override global::Java.Interop.JniPeerMembers JniPeerMembers {
 			get { return _members; }

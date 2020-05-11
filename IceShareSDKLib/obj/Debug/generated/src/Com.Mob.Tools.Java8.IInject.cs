@@ -8,7 +8,7 @@ namespace Com.Mob.Tools.Java8 {
 	// Metadata.xml XPath interface reference: path="/api/package[@name='com.mob.tools.java8']/interface[@name='Inject.MapInject']"
 	[Register ("com/mob/tools/java8/Inject$MapInject", "", "Com.Mob.Tools.Java8.IInjectMapInjectInvoker")]
 	[global::Java.Interop.JavaTypeParameters (new string [] {"K", "V", "R"})]
-	public partial interface IInjectMapInject : IJavaObject {
+	public partial interface IInjectMapInject : IJavaObject, IJavaPeerable {
 
 		// Metadata.xml XPath method reference: path="/api/package[@name='com.mob.tools.java8']/interface[@name='Inject.MapInject']/method[@name='inject' and count(parameter)=3 and parameter[1][@type='K'] and parameter[2][@type='V'] and parameter[3][@type='R']]"
 		[Register ("inject", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", "GetInject_Ljava_lang_Object_Ljava_lang_Object_Ljava_lang_Object_Handler:Com.Mob.Tools.Java8.IInjectMapInjectInvoker, IceShareSDKLib")]
@@ -17,9 +17,9 @@ namespace Com.Mob.Tools.Java8 {
 	}
 
 	[global::Android.Runtime.Register ("com/mob/tools/java8/Inject$MapInject", DoNotGenerateAcw=true)]
-	internal class IInjectMapInjectInvoker : global::Java.Lang.Object, IInjectMapInject {
+	internal partial class IInjectMapInjectInvoker : global::Java.Lang.Object, IInjectMapInject {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/java8/Inject$MapInject", typeof (IInjectMapInjectInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/java8/Inject$MapInject", typeof (IInjectMapInjectInvoker));
 
 		static IntPtr java_class_ref {
 			get { return _members.JniPeerType.PeerReference.Handle; }
@@ -121,9 +121,9 @@ namespace Com.Mob.Tools.Java8 {
 	}
 
 	[global::Android.Runtime.Register ("com/mob/tools/java8/Inject", DoNotGenerateAcw=true)]
-	internal class IInjectInvoker : global::Java.Lang.Object, IInject {
+	internal partial class IInjectInvoker : global::Java.Lang.Object, IInject {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/java8/Inject", typeof (IInjectInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/java8/Inject", typeof (IInjectInvoker));
 
 		static IntPtr java_class_ref {
 			get { return _members.JniPeerType.PeerReference.Handle; }

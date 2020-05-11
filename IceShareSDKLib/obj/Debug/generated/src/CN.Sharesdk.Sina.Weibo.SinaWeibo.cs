@@ -9,7 +9,7 @@ namespace CN.Sharesdk.Sina.Weibo {
 	[global::Android.Runtime.Register ("cn/sharesdk/sina/weibo/SinaWeibo", DoNotGenerateAcw=true)]
 	public partial class SinaWeibo : global::CN.Sharesdk.Framework.Platform {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/sharesdk/sina/weibo/SinaWeibo", typeof (SinaWeibo));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/sina/weibo/SinaWeibo", typeof (SinaWeibo));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

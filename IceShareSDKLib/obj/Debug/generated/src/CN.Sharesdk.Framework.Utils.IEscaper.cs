@@ -7,7 +7,7 @@ namespace CN.Sharesdk.Framework.Utils {
 
 	// Metadata.xml XPath interface reference: path="/api/package[@name='cn.sharesdk.framework.utils']/interface[@name='Escaper']"
 	[Register ("cn/sharesdk/framework/utils/Escaper", "", "CN.Sharesdk.Framework.Utils.IEscaperInvoker")]
-	public partial interface IEscaper : IJavaObject {
+	public partial interface IEscaper : IJavaObject, IJavaPeerable {
 
 		// Metadata.xml XPath method reference: path="/api/package[@name='cn.sharesdk.framework.utils']/interface[@name='Escaper']/method[@name='escape' and count(parameter)=1 and parameter[1][@type='java.lang.Appendable']]"
 		[Register ("escape", "(Ljava/lang/Appendable;)Ljava/lang/Appendable;", "GetEscape_Ljava_lang_Appendable_Handler:CN.Sharesdk.Framework.Utils.IEscaperInvoker, IceShareSDKLib")]
@@ -20,9 +20,9 @@ namespace CN.Sharesdk.Framework.Utils {
 	}
 
 	[global::Android.Runtime.Register ("cn/sharesdk/framework/utils/Escaper", DoNotGenerateAcw=true)]
-	internal class IEscaperInvoker : global::Java.Lang.Object, IEscaper {
+	internal partial class IEscaperInvoker : global::Java.Lang.Object, IEscaper {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("cn/sharesdk/framework/utils/Escaper", typeof (IEscaperInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/framework/utils/Escaper", typeof (IEscaperInvoker));
 
 		static IntPtr java_class_ref {
 			get { return _members.JniPeerType.PeerReference.Handle; }

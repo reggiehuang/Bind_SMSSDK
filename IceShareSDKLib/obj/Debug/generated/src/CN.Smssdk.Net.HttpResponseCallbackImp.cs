@@ -9,7 +9,7 @@ namespace CN.Smssdk.Net {
 	[global::Android.Runtime.Register ("cn/smssdk/net/HttpResponseCallbackImp", DoNotGenerateAcw=true)]
 	public partial class HttpResponseCallbackImp : global::Java.Lang.Object, global::Com.Mob.Tools.Network.IHttpResponseCallback {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/smssdk/net/HttpResponseCallbackImp", typeof (HttpResponseCallbackImp));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/smssdk/net/HttpResponseCallbackImp", typeof (HttpResponseCallbackImp));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

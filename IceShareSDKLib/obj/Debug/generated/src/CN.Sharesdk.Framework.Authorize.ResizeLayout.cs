@@ -11,7 +11,7 @@ namespace CN.Sharesdk.Framework.Authorize {
 
 		// Metadata.xml XPath interface reference: path="/api/package[@name='cn.sharesdk.framework.authorize']/interface[@name='ResizeLayout.OnResizeListener']"
 		[Register ("cn/sharesdk/framework/authorize/ResizeLayout$OnResizeListener", "", "CN.Sharesdk.Framework.Authorize.ResizeLayout/IOnResizeListenerInvoker")]
-		public partial interface IOnResizeListener : IJavaObject {
+		public partial interface IOnResizeListener : IJavaObject, IJavaPeerable {
 
 			// Metadata.xml XPath method reference: path="/api/package[@name='cn.sharesdk.framework.authorize']/interface[@name='ResizeLayout.OnResizeListener']/method[@name='OnResize' and count(parameter)=4 and parameter[1][@type='int'] and parameter[2][@type='int'] and parameter[3][@type='int'] and parameter[4][@type='int']]"
 			[Register ("OnResize", "(IIII)V", "GetOnResize_IIIIHandler:CN.Sharesdk.Framework.Authorize.ResizeLayout/IOnResizeListenerInvoker, IceShareSDKLib")]
@@ -20,9 +20,9 @@ namespace CN.Sharesdk.Framework.Authorize {
 		}
 
 		[global::Android.Runtime.Register ("cn/sharesdk/framework/authorize/ResizeLayout$OnResizeListener", DoNotGenerateAcw=true)]
-		internal class IOnResizeListenerInvoker : global::Java.Lang.Object, IOnResizeListener {
+		internal partial class IOnResizeListenerInvoker : global::Java.Lang.Object, IOnResizeListener {
 
-			internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("cn/sharesdk/framework/authorize/ResizeLayout$OnResizeListener", typeof (IOnResizeListenerInvoker));
+			static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/framework/authorize/ResizeLayout$OnResizeListener", typeof (IOnResizeListenerInvoker));
 
 			static IntPtr java_class_ref {
 				get { return _members.JniPeerType.PeerReference.Handle; }
@@ -165,7 +165,7 @@ namespace CN.Sharesdk.Framework.Authorize {
 		}
 
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/sharesdk/framework/authorize/ResizeLayout", typeof (ResizeLayout));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/framework/authorize/ResizeLayout", typeof (ResizeLayout));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

@@ -7,7 +7,7 @@ namespace Com.Mob.Tools.Network {
 
 	// Metadata.xml XPath interface reference: path="/api/package[@name='com.mob.tools.network']/interface[@name='HttpResponseCallback']"
 	[Register ("com/mob/tools/network/HttpResponseCallback", "", "Com.Mob.Tools.Network.IHttpResponseCallbackInvoker")]
-	public partial interface IHttpResponseCallback : IJavaObject {
+	public partial interface IHttpResponseCallback : IJavaObject, IJavaPeerable {
 
 		// Metadata.xml XPath method reference: path="/api/package[@name='com.mob.tools.network']/interface[@name='HttpResponseCallback']/method[@name='onResponse' and count(parameter)=1 and parameter[1][@type='com.mob.tools.network.HttpConnection']]"
 		[Register ("onResponse", "(Lcom/mob/tools/network/HttpConnection;)V", "GetOnResponse_Lcom_mob_tools_network_HttpConnection_Handler:Com.Mob.Tools.Network.IHttpResponseCallbackInvoker, IceShareSDKLib")]
@@ -16,9 +16,9 @@ namespace Com.Mob.Tools.Network {
 	}
 
 	[global::Android.Runtime.Register ("com/mob/tools/network/HttpResponseCallback", DoNotGenerateAcw=true)]
-	internal class IHttpResponseCallbackInvoker : global::Java.Lang.Object, IHttpResponseCallback {
+	internal partial class IHttpResponseCallbackInvoker : global::Java.Lang.Object, IHttpResponseCallback {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/network/HttpResponseCallback", typeof (IHttpResponseCallbackInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/network/HttpResponseCallback", typeof (IHttpResponseCallbackInvoker));
 
 		static IntPtr java_class_ref {
 			get { return _members.JniPeerType.PeerReference.Handle; }

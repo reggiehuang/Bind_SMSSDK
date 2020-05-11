@@ -13,7 +13,7 @@ namespace Com.Mob.Tools.Utils {
 		[global::Android.Runtime.Register ("com/mob/tools/utils/ApplicationTracker$Tracker", DoNotGenerateAcw=true)]
 		public abstract partial class Tracker : global::Java.Lang.Object {
 
-			internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/utils/ApplicationTracker$Tracker", typeof (Tracker));
+			static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/utils/ApplicationTracker$Tracker", typeof (Tracker));
 			internal static new IntPtr class_ref {
 				get {
 					return _members.JniPeerType.PeerReference.Handle;
@@ -1819,7 +1819,7 @@ namespace Com.Mob.Tools.Utils {
 
 			public TrackerInvoker (IntPtr handle, JniHandleOwnership transfer) : base (handle, transfer) {}
 
-			internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/utils/ApplicationTracker$Tracker", typeof (TrackerInvoker));
+			static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/utils/ApplicationTracker$Tracker", typeof (TrackerInvoker));
 
 			public override global::Java.Interop.JniPeerMembers JniPeerMembers {
 				get { return _members; }
@@ -1832,7 +1832,7 @@ namespace Com.Mob.Tools.Utils {
 		}
 
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/utils/ApplicationTracker", typeof (ApplicationTracker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/utils/ApplicationTracker", typeof (ApplicationTracker));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

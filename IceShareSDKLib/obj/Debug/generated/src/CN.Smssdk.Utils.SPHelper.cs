@@ -9,7 +9,7 @@ namespace CN.Smssdk.Utils {
 	[global::Android.Runtime.Register ("cn/smssdk/utils/SPHelper", DoNotGenerateAcw=true)]
 	public partial class SPHelper : global::Java.Lang.Object {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/smssdk/utils/SPHelper", typeof (SPHelper));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/smssdk/utils/SPHelper", typeof (SPHelper));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;
@@ -386,7 +386,7 @@ namespace CN.Smssdk.Utils {
 
 		public static unsafe global::CN.Smssdk.Utils.SPHelper Instance {
 			// Metadata.xml XPath method reference: path="/api/package[@name='cn.smssdk.utils']/class[@name='SPHelper']/method[@name='getInstance' and count(parameter)=0]"
-			[Register ("getInstance", "()Lcn/smssdk/utils/SPHelper;", "GetGetInstanceHandler")]
+			[Register ("getInstance", "()Lcn/smssdk/utils/SPHelper;", "")]
 			get {
 				const string __id = "getInstance.()Lcn/smssdk/utils/SPHelper;";
 				try {

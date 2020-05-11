@@ -14,7 +14,7 @@ namespace Com.Mob {
 		[global::Java.Interop.JavaTypeParameters (new string [] {"T"})]
 		public partial class Callback : global::Java.Lang.Object, global::Com.Mob.Tools.Proguard.IPublicMemberKeeper {
 
-			internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/MobCommunicator$Callback", typeof (Callback));
+			static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/MobCommunicator$Callback", typeof (Callback));
 			internal static new IntPtr class_ref {
 				get {
 					return _members.JniPeerType.PeerReference.Handle;
@@ -121,7 +121,7 @@ namespace Com.Mob {
 		[global::Android.Runtime.Register ("com/mob/MobCommunicator$NetworkError", DoNotGenerateAcw=true)]
 		public partial class NetworkError : global::Java.Lang.Exception, global::Com.Mob.Tools.Proguard.IPublicMemberKeeper {
 
-			internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/MobCommunicator$NetworkError", typeof (NetworkError));
+			static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/MobCommunicator$NetworkError", typeof (NetworkError));
 			internal static new IntPtr class_ref {
 				get {
 					return _members.JniPeerType.PeerReference.Handle;
@@ -166,7 +166,7 @@ namespace Com.Mob {
 
 		}
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/MobCommunicator", typeof (MobCommunicator));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/MobCommunicator", typeof (MobCommunicator));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

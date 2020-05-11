@@ -7,7 +7,7 @@ namespace CN.Sharesdk.Framework.Authorize {
 
 	// Metadata.xml XPath interface reference: path="/api/package[@name='cn.sharesdk.framework.authorize']/interface[@name='AuthorizeListener']"
 	[Register ("cn/sharesdk/framework/authorize/AuthorizeListener", "", "CN.Sharesdk.Framework.Authorize.IAuthorizeListenerInvoker")]
-	public partial interface IAuthorizeListener : IJavaObject {
+	public partial interface IAuthorizeListener : IJavaObject, IJavaPeerable {
 
 		// Metadata.xml XPath method reference: path="/api/package[@name='cn.sharesdk.framework.authorize']/interface[@name='AuthorizeListener']/method[@name='onCancel' and count(parameter)=0]"
 		[Register ("onCancel", "()V", "GetOnCancelHandler:CN.Sharesdk.Framework.Authorize.IAuthorizeListenerInvoker, IceShareSDKLib")]
@@ -24,9 +24,9 @@ namespace CN.Sharesdk.Framework.Authorize {
 	}
 
 	[global::Android.Runtime.Register ("cn/sharesdk/framework/authorize/AuthorizeListener", DoNotGenerateAcw=true)]
-	internal class IAuthorizeListenerInvoker : global::Java.Lang.Object, IAuthorizeListener {
+	internal partial class IAuthorizeListenerInvoker : global::Java.Lang.Object, IAuthorizeListener {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("cn/sharesdk/framework/authorize/AuthorizeListener", typeof (IAuthorizeListenerInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/framework/authorize/AuthorizeListener", typeof (IAuthorizeListenerInvoker));
 
 		static IntPtr java_class_ref {
 			get { return _members.JniPeerType.PeerReference.Handle; }

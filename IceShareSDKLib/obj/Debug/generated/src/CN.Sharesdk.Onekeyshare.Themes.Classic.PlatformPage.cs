@@ -9,7 +9,7 @@ namespace CN.Sharesdk.Onekeyshare.Themes.Classic {
 	[global::Android.Runtime.Register ("cn/sharesdk/onekeyshare/themes/classic/PlatformPage", DoNotGenerateAcw=true)]
 	public abstract partial class PlatformPage : global::CN.Sharesdk.Onekeyshare.OnekeySharePage {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/sharesdk/onekeyshare/themes/classic/PlatformPage", typeof (PlatformPage));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/onekeyshare/themes/classic/PlatformPage", typeof (PlatformPage));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;
@@ -134,7 +134,7 @@ namespace CN.Sharesdk.Onekeyshare.Themes.Classic {
 
 		public PlatformPageInvoker (IntPtr handle, JniHandleOwnership transfer) : base (handle, transfer) {}
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("cn/sharesdk/onekeyshare/themes/classic/PlatformPage", typeof (PlatformPageInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/onekeyshare/themes/classic/PlatformPage", typeof (PlatformPageInvoker));
 
 		public override global::Java.Interop.JniPeerMembers JniPeerMembers {
 			get { return _members; }

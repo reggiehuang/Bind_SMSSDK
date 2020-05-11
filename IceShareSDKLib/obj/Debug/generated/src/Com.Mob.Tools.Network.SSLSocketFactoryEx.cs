@@ -9,7 +9,7 @@ namespace Com.Mob.Tools.Network {
 	[global::Android.Runtime.Register ("com/mob/tools/network/SSLSocketFactoryEx", DoNotGenerateAcw=true)]
 	public partial class SSLSocketFactoryEx : global::Org.Apache.Http.Conn.Ssl.SSLSocketFactory {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/network/SSLSocketFactoryEx", typeof (SSLSocketFactoryEx));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/network/SSLSocketFactoryEx", typeof (SSLSocketFactoryEx));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

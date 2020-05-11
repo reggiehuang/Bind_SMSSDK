@@ -9,7 +9,7 @@ namespace CN.Smssdk {
 	[global::Android.Runtime.Register ("cn/smssdk/EventHandler", DoNotGenerateAcw=true)]
 	public partial class EventHandler : global::Java.Lang.Object {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/smssdk/EventHandler", typeof (EventHandler));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/smssdk/EventHandler", typeof (EventHandler));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

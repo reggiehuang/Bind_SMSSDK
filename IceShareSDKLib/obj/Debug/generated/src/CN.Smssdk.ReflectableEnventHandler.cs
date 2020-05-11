@@ -9,7 +9,7 @@ namespace CN.Smssdk {
 	[global::Android.Runtime.Register ("cn/smssdk/ReflectableEnventHandler", DoNotGenerateAcw=true)]
 	public partial class ReflectableEnventHandler : global::CN.Smssdk.EventHandler {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/smssdk/ReflectableEnventHandler", typeof (ReflectableEnventHandler));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/smssdk/ReflectableEnventHandler", typeof (ReflectableEnventHandler));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

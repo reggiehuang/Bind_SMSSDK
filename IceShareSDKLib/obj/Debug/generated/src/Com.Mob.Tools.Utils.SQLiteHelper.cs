@@ -13,7 +13,7 @@ namespace Com.Mob.Tools.Utils {
 		[global::Android.Runtime.Register ("com/mob/tools/utils/SQLiteHelper$SingleTableDB", DoNotGenerateAcw=true)]
 		public partial class SingleTableDB : global::Java.Lang.Object {
 
-			internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/utils/SQLiteHelper$SingleTableDB", typeof (SingleTableDB));
+			static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/utils/SQLiteHelper$SingleTableDB", typeof (SingleTableDB));
 			internal static new IntPtr class_ref {
 				get {
 					return _members.JniPeerType.PeerReference.Handle;
@@ -106,7 +106,7 @@ namespace Com.Mob.Tools.Utils {
 
 		}
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/utils/SQLiteHelper", typeof (SQLiteHelper));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/utils/SQLiteHelper", typeof (SQLiteHelper));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

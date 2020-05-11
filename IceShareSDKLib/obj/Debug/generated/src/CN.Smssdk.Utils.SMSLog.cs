@@ -13,7 +13,7 @@ namespace CN.Smssdk.Utils {
 		// Metadata.xml XPath field reference: path="/api/package[@name='cn.smssdk.utils']/class[@name='SMSLog']/field[@name='FORMAT']"
 		[Register ("FORMAT")]
 		public const string Format = (string) "[SMSSDK][%s][%s] %s";
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/smssdk/utils/SMSLog", typeof (SMSLog));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/smssdk/utils/SMSLog", typeof (SMSLog));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;
@@ -36,7 +36,7 @@ namespace CN.Smssdk.Utils {
 
 		public static unsafe global::Com.Mob.Tools.Log.NLog Instance {
 			// Metadata.xml XPath method reference: path="/api/package[@name='cn.smssdk.utils']/class[@name='SMSLog']/method[@name='getInstance' and count(parameter)=0]"
-			[Register ("getInstance", "()Lcom/mob/tools/log/NLog;", "GetGetInstanceHandler")]
+			[Register ("getInstance", "()Lcom/mob/tools/log/NLog;", "")]
 			get {
 				const string __id = "getInstance.()Lcom/mob/tools/log/NLog;";
 				try {

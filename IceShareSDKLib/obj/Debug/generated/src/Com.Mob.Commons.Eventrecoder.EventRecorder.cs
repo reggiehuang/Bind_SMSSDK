@@ -9,7 +9,7 @@ namespace Com.Mob.Commons.Eventrecoder {
 	[global::Android.Runtime.Register ("com/mob/commons/eventrecoder/EventRecorder", DoNotGenerateAcw=true)]
 	public sealed partial class EventRecorder : global::Java.Lang.Object, global::Com.Mob.Tools.Proguard.IPublicMemberKeeper {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/commons/eventrecoder/EventRecorder", typeof (EventRecorder));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/commons/eventrecoder/EventRecorder", typeof (EventRecorder));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

@@ -21,7 +21,7 @@ namespace Com.Mob.Commons {
 				return global::Android.Runtime.JavaArray<string>.FromJniHandle (__v.Handle, JniHandleOwnership.TransferLocalRef);
 			}
 		}
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/commons/MobProductCollector", typeof (MobProductCollector));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/commons/MobProductCollector", typeof (MobProductCollector));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;
@@ -62,7 +62,7 @@ namespace Com.Mob.Commons {
 
 		public static unsafe global::System.Collections.Generic.IList<global::Com.Mob.Commons.IMobProduct> Products {
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.mob.commons']/class[@name='MobProductCollector']/method[@name='getProducts' and count(parameter)=0]"
-			[Register ("getProducts", "()Ljava/util/ArrayList;", "GetGetProductsHandler")]
+			[Register ("getProducts", "()Ljava/util/ArrayList;", "")]
 			get {
 				const string __id = "getProducts.()Ljava/util/ArrayList;";
 				try {
@@ -75,7 +75,7 @@ namespace Com.Mob.Commons {
 
 		public static unsafe string UserIdentity {
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.mob.commons']/class[@name='MobProductCollector']/method[@name='getUserIdentity' and count(parameter)=0]"
-			[Register ("getUserIdentity", "()Ljava/lang/String;", "GetGetUserIdentityHandler")]
+			[Register ("getUserIdentity", "()Ljava/lang/String;", "")]
 			get {
 				const string __id = "getUserIdentity.()Ljava/lang/String;";
 				try {

@@ -33,7 +33,7 @@ namespace Com.Mob.Commons.Filesys {
 					}
 				}
 			}
-			internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/commons/filesys/FileUploader$UploadedAudio", typeof (UploadedAudio));
+			static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/commons/filesys/FileUploader$UploadedAudio", typeof (UploadedAudio));
 			internal static new IntPtr class_ref {
 				get {
 					return _members.JniPeerType.PeerReference.Handle;
@@ -82,7 +82,7 @@ namespace Com.Mob.Commons.Filesys {
 		[global::Android.Runtime.Register ("com/mob/commons/filesys/FileUploader$UploadedAvatar", DoNotGenerateAcw=true)]
 		public partial class UploadedAvatar : global::Com.Mob.Commons.Filesys.FileUploader.UploadedImage {
 
-			internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/commons/filesys/FileUploader$UploadedAvatar", typeof (UploadedAvatar));
+			static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/commons/filesys/FileUploader$UploadedAvatar", typeof (UploadedAvatar));
 			internal static new IntPtr class_ref {
 				get {
 					return _members.JniPeerType.PeerReference.Handle;
@@ -175,7 +175,7 @@ namespace Com.Mob.Commons.Filesys {
 					}
 				}
 			}
-			internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/commons/filesys/FileUploader$UploadedFile", typeof (UploadedFile));
+			static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/commons/filesys/FileUploader$UploadedFile", typeof (UploadedFile));
 			internal static new IntPtr class_ref {
 				get {
 					return _members.JniPeerType.PeerReference.Handle;
@@ -246,7 +246,7 @@ namespace Com.Mob.Commons.Filesys {
 					}
 				}
 			}
-			internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/commons/filesys/FileUploader$UploadedImage", typeof (UploadedImage));
+			static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/commons/filesys/FileUploader$UploadedImage", typeof (UploadedImage));
 			internal static new IntPtr class_ref {
 				get {
 					return _members.JniPeerType.PeerReference.Handle;
@@ -355,7 +355,7 @@ namespace Com.Mob.Commons.Filesys {
 					}
 				}
 			}
-			internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/commons/filesys/FileUploader$UploadedVideo", typeof (UploadedVideo));
+			static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/commons/filesys/FileUploader$UploadedVideo", typeof (UploadedVideo));
 			internal static new IntPtr class_ref {
 				get {
 					return _members.JniPeerType.PeerReference.Handle;
@@ -400,7 +400,7 @@ namespace Com.Mob.Commons.Filesys {
 
 		}
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/commons/filesys/FileUploader", typeof (FileUploader));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/commons/filesys/FileUploader", typeof (FileUploader));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

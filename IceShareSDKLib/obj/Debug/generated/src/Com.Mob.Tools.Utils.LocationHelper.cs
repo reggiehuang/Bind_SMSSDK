@@ -9,7 +9,7 @@ namespace Com.Mob.Tools.Utils {
 	[global::Android.Runtime.Register ("com/mob/tools/utils/LocationHelper", DoNotGenerateAcw=true)]
 	public partial class LocationHelper : global::Java.Lang.Object {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/utils/LocationHelper", typeof (LocationHelper));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/utils/LocationHelper", typeof (LocationHelper));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

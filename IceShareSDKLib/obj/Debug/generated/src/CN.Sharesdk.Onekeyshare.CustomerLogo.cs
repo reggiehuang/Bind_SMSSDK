@@ -75,7 +75,7 @@ namespace CN.Sharesdk.Onekeyshare {
 				}
 			}
 		}
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/sharesdk/onekeyshare/CustomerLogo", typeof (CustomerLogo));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/onekeyshare/CustomerLogo", typeof (CustomerLogo));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

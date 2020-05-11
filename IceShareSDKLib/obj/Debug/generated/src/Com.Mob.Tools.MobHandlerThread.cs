@@ -9,7 +9,7 @@ namespace Com.Mob.Tools {
 	[global::Android.Runtime.Register ("com/mob/tools/MobHandlerThread", DoNotGenerateAcw=true)]
 	public partial class MobHandlerThread : global::Java.Lang.Thread {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/MobHandlerThread", typeof (MobHandlerThread));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/MobHandlerThread", typeof (MobHandlerThread));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;
@@ -70,6 +70,7 @@ namespace Com.Mob.Tools {
 
 		static Delegate cb_getLooper;
 #pragma warning disable 0169
+		[Obsolete]
 		static Delegate GetGetLooperHandler ()
 		{
 			if (cb_getLooper == null)
@@ -77,6 +78,7 @@ namespace Com.Mob.Tools {
 			return cb_getLooper;
 		}
 
+		[Obsolete]
 		static IntPtr n_GetLooper (IntPtr jnienv, IntPtr native__this)
 		{
 			global::Com.Mob.Tools.MobHandlerThread __this = global::Java.Lang.Object.GetObject<global::Com.Mob.Tools.MobHandlerThread> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
@@ -193,6 +195,7 @@ namespace Com.Mob.Tools {
 
 		static Delegate cb_onLooperPrepared;
 #pragma warning disable 0169
+		[Obsolete]
 		static Delegate GetOnLooperPreparedHandler ()
 		{
 			if (cb_onLooperPrepared == null)
@@ -200,6 +203,7 @@ namespace Com.Mob.Tools {
 			return cb_onLooperPrepared;
 		}
 
+		[Obsolete]
 		static void n_OnLooperPrepared (IntPtr jnienv, IntPtr native__this)
 		{
 			global::Com.Mob.Tools.MobHandlerThread __this = global::Java.Lang.Object.GetObject<global::Com.Mob.Tools.MobHandlerThread> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);
@@ -279,6 +283,7 @@ namespace Com.Mob.Tools {
 
 		static Delegate cb_realRun;
 #pragma warning disable 0169
+		[Obsolete]
 		static Delegate GetRealRunHandler ()
 		{
 			if (cb_realRun == null)
@@ -286,6 +291,7 @@ namespace Com.Mob.Tools {
 			return cb_realRun;
 		}
 
+		[Obsolete]
 		static void n_RealRun (IntPtr jnienv, IntPtr native__this)
 		{
 			global::Com.Mob.Tools.MobHandlerThread __this = global::Java.Lang.Object.GetObject<global::Com.Mob.Tools.MobHandlerThread> (jnienv, native__this, JniHandleOwnership.DoNotTransfer);

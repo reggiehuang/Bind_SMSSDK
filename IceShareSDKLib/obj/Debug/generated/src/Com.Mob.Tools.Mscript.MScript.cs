@@ -9,7 +9,7 @@ namespace Com.Mob.Tools.Mscript {
 	[global::Android.Runtime.Register ("com/mob/tools/mscript/MScript", DoNotGenerateAcw=true)]
 	public partial class MScript : global::Java.Lang.Object, global::Com.Mob.Tools.Proguard.IPublicMemberKeeper {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/mscript/MScript", typeof (MScript));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/mscript/MScript", typeof (MScript));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

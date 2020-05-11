@@ -7,7 +7,7 @@ namespace Com.Mob.Commons.Utag {
 
 	// Metadata.xml XPath interface reference: path="/api/package[@name='com.mob.commons.utag']/interface[@name='UserTagError']"
 	[Register ("com/mob/commons/utag/UserTagError", "", "Com.Mob.Commons.Utag.IUserTagErrorInvoker")]
-	public partial interface IUserTagError : IJavaObject {
+	public partial interface IUserTagError : IJavaObject, IJavaPeerable {
 
 		// Metadata.xml XPath method reference: path="/api/package[@name='com.mob.commons.utag']/interface[@name='UserTagError']/method[@name='onError' and count(parameter)=1 and parameter[1][@type='java.lang.Throwable']]"
 		[Register ("onError", "(Ljava/lang/Throwable;)V", "GetOnError_Ljava_lang_Throwable_Handler:Com.Mob.Commons.Utag.IUserTagErrorInvoker, IceShareSDKLib")]
@@ -16,9 +16,9 @@ namespace Com.Mob.Commons.Utag {
 	}
 
 	[global::Android.Runtime.Register ("com/mob/commons/utag/UserTagError", DoNotGenerateAcw=true)]
-	internal class IUserTagErrorInvoker : global::Java.Lang.Object, IUserTagError {
+	internal partial class IUserTagErrorInvoker : global::Java.Lang.Object, IUserTagError {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/commons/utag/UserTagError", typeof (IUserTagErrorInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/commons/utag/UserTagError", typeof (IUserTagErrorInvoker));
 
 		static IntPtr java_class_ref {
 			get { return _members.JniPeerType.PeerReference.Handle; }

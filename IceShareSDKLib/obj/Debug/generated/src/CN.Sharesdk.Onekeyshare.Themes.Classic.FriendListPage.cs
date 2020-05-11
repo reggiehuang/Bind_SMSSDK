@@ -9,7 +9,7 @@ namespace CN.Sharesdk.Onekeyshare.Themes.Classic {
 	[global::Android.Runtime.Register ("cn/sharesdk/onekeyshare/themes/classic/FriendListPage", DoNotGenerateAcw=true)]
 	public abstract partial class FriendListPage : global::CN.Sharesdk.Onekeyshare.OnekeySharePage, global::Android.Views.View.IOnClickListener, global::Android.Widget.AdapterView.IOnItemClickListener {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/sharesdk/onekeyshare/themes/classic/FriendListPage", typeof (FriendListPage));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/onekeyshare/themes/classic/FriendListPage", typeof (FriendListPage));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;
@@ -193,7 +193,7 @@ namespace CN.Sharesdk.Onekeyshare.Themes.Classic {
 
 		public FriendListPageInvoker (IntPtr handle, JniHandleOwnership transfer) : base (handle, transfer) {}
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("cn/sharesdk/onekeyshare/themes/classic/FriendListPage", typeof (FriendListPageInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/onekeyshare/themes/classic/FriendListPage", typeof (FriendListPageInvoker));
 
 		public override global::Java.Interop.JniPeerMembers JniPeerMembers {
 			get { return _members; }

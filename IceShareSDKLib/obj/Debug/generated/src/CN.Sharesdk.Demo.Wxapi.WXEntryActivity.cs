@@ -9,7 +9,7 @@ namespace CN.Sharesdk.Demo.Wxapi {
 	[global::Android.Runtime.Register ("cn/sharesdk/demo/wxapi/WXEntryActivity", DoNotGenerateAcw=true)]
 	public partial class WXEntryActivity : global::CN.Sharesdk.Wechat.Utils.WechatHandlerActivity {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/sharesdk/demo/wxapi/WXEntryActivity", typeof (WXEntryActivity));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/demo/wxapi/WXEntryActivity", typeof (WXEntryActivity));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

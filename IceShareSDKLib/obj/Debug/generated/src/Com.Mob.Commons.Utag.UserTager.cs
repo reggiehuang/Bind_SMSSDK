@@ -13,7 +13,7 @@ namespace Com.Mob.Commons.Utag {
 		[global::Android.Runtime.Register ("com/mob/commons/utag/UserTager$CustomTag", DoNotGenerateAcw=true)]
 		public partial class CustomTag : global::Java.Lang.Object, global::Com.Mob.Tools.Proguard.IPublicMemberKeeper {
 
-			internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/commons/utag/UserTager$CustomTag", typeof (CustomTag));
+			static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/commons/utag/UserTager$CustomTag", typeof (CustomTag));
 			internal static new IntPtr class_ref {
 				get {
 					return _members.JniPeerType.PeerReference.Handle;
@@ -134,7 +134,7 @@ namespace Com.Mob.Commons.Utag {
 
 		}
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/commons/utag/UserTager", typeof (UserTager));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/commons/utag/UserTager", typeof (UserTager));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

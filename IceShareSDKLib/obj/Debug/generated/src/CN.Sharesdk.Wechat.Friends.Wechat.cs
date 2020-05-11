@@ -9,7 +9,7 @@ namespace CN.Sharesdk.Wechat.Friends {
 	[global::Android.Runtime.Register ("cn/sharesdk/wechat/friends/Wechat", DoNotGenerateAcw=true)]
 	public partial class Wechat : global::CN.Sharesdk.Framework.Platform {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/sharesdk/wechat/friends/Wechat", typeof (Wechat));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/wechat/friends/Wechat", typeof (Wechat));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

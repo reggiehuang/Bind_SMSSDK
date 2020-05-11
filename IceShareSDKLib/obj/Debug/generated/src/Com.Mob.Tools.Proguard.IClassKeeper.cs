@@ -7,14 +7,14 @@ namespace Com.Mob.Tools.Proguard {
 
 	// Metadata.xml XPath interface reference: path="/api/package[@name='com.mob.tools.proguard']/interface[@name='ClassKeeper']"
 	[Register ("com/mob/tools/proguard/ClassKeeper", "", "Com.Mob.Tools.Proguard.IClassKeeperInvoker")]
-	public partial interface IClassKeeper : IJavaObject {
+	public partial interface IClassKeeper : IJavaObject, IJavaPeerable {
 
 	}
 
 	[global::Android.Runtime.Register ("com/mob/tools/proguard/ClassKeeper", DoNotGenerateAcw=true)]
-	internal class IClassKeeperInvoker : global::Java.Lang.Object, IClassKeeper {
+	internal partial class IClassKeeperInvoker : global::Java.Lang.Object, IClassKeeper {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/proguard/ClassKeeper", typeof (IClassKeeperInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/proguard/ClassKeeper", typeof (IClassKeeperInvoker));
 
 		static IntPtr java_class_ref {
 			get { return _members.JniPeerType.PeerReference.Handle; }

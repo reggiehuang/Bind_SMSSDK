@@ -12,7 +12,7 @@ namespace Com.Mob.Tools.Utils {
 		// Metadata.xml XPath interface reference: path="/api/package[@name='com.mob.tools.utils']/interface[@name='ReflectHelper.ReflectRunnable']"
 		[Register ("com/mob/tools/utils/ReflectHelper$ReflectRunnable", "", "Com.Mob.Tools.Utils.ReflectHelper/IReflectRunnableInvoker")]
 		[global::Java.Interop.JavaTypeParameters (new string [] {"ArgType", "RetType"})]
-		public partial interface IReflectRunnable : IJavaObject {
+		public partial interface IReflectRunnable : IJavaObject, IJavaPeerable {
 
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.mob.tools.utils']/interface[@name='ReflectHelper.ReflectRunnable']/method[@name='run' and count(parameter)=1 and parameter[1][@type='ArgType']]"
 			[Register ("run", "(Ljava/lang/Object;)Ljava/lang/Object;", "GetRun_Ljava_lang_Object_Handler:Com.Mob.Tools.Utils.ReflectHelper/IReflectRunnableInvoker, IceShareSDKLib")]
@@ -21,9 +21,9 @@ namespace Com.Mob.Tools.Utils {
 		}
 
 		[global::Android.Runtime.Register ("com/mob/tools/utils/ReflectHelper$ReflectRunnable", DoNotGenerateAcw=true)]
-		internal class IReflectRunnableInvoker : global::Java.Lang.Object, IReflectRunnable {
+		internal partial class IReflectRunnableInvoker : global::Java.Lang.Object, IReflectRunnable {
 
-			internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/utils/ReflectHelper$ReflectRunnable", typeof (IReflectRunnableInvoker));
+			static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/utils/ReflectHelper$ReflectRunnable", typeof (IReflectRunnableInvoker));
 
 			static IntPtr java_class_ref {
 				get { return _members.JniPeerType.PeerReference.Handle; }
@@ -105,7 +105,7 @@ namespace Com.Mob.Tools.Utils {
 		}
 
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/utils/ReflectHelper", typeof (ReflectHelper));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/utils/ReflectHelper", typeof (ReflectHelper));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

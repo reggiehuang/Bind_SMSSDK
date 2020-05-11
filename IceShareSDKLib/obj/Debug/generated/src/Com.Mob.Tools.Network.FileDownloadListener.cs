@@ -9,7 +9,7 @@ namespace Com.Mob.Tools.Network {
 	[global::Android.Runtime.Register ("com/mob/tools/network/FileDownloadListener", DoNotGenerateAcw=true)]
 	public abstract partial class FileDownloadListener : global::Java.Lang.Object {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/network/FileDownloadListener", typeof (FileDownloadListener));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/network/FileDownloadListener", typeof (FileDownloadListener));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;
@@ -131,7 +131,7 @@ namespace Com.Mob.Tools.Network {
 
 		public FileDownloadListenerInvoker (IntPtr handle, JniHandleOwnership transfer) : base (handle, transfer) {}
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/network/FileDownloadListener", typeof (FileDownloadListenerInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/network/FileDownloadListener", typeof (FileDownloadListenerInvoker));
 
 		public override global::Java.Interop.JniPeerMembers JniPeerMembers {
 			get { return _members; }

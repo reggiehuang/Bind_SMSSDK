@@ -237,7 +237,7 @@ namespace Com.Mob.Tools.Mscript.Commands {
 				return global::Java.Lang.Object.GetObject<global::Com.Mob.Tools.Mscript.Commands.SymbolBinarySymbol> (__v.Handle, JniHandleOwnership.TransferLocalRef);
 			}
 		}
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/mscript/commands/Symbol$BinarySymbol", typeof (SymbolBinarySymbol));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/mscript/commands/Symbol$BinarySymbol", typeof (SymbolBinarySymbol));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;
@@ -260,7 +260,7 @@ namespace Com.Mob.Tools.Mscript.Commands {
 
 		public unsafe string Symbol {
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.mob.tools.mscript.commands']/class[@name='Symbol.BinarySymbol']/method[@name='getSymbol' and count(parameter)=0]"
-			[Register ("getSymbol", "()Ljava/lang/String;", "GetGetSymbolHandler")]
+			[Register ("getSymbol", "()Ljava/lang/String;", "")]
 			get {
 				const string __id = "getSymbol.()Ljava/lang/String;";
 				try {
@@ -393,7 +393,7 @@ namespace Com.Mob.Tools.Mscript.Commands {
 				return global::Java.Lang.Object.GetObject<global::Com.Mob.Tools.Mscript.Commands.SymbolUnarySymbol> (__v.Handle, JniHandleOwnership.TransferLocalRef);
 			}
 		}
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/mscript/commands/Symbol$UnarySymbol", typeof (SymbolUnarySymbol));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/mscript/commands/Symbol$UnarySymbol", typeof (SymbolUnarySymbol));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;
@@ -416,7 +416,7 @@ namespace Com.Mob.Tools.Mscript.Commands {
 
 		public unsafe string Symbol {
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.mob.tools.mscript.commands']/class[@name='Symbol.UnarySymbol']/method[@name='getSymbol' and count(parameter)=0]"
-			[Register ("getSymbol", "()Ljava/lang/String;", "GetGetSymbolHandler")]
+			[Register ("getSymbol", "()Ljava/lang/String;", "")]
 			get {
 				const string __id = "getSymbol.()Ljava/lang/String;";
 				try {
@@ -475,7 +475,7 @@ namespace Com.Mob.Tools.Mscript.Commands {
 
 	// Metadata.xml XPath interface reference: path="/api/package[@name='com.mob.tools.mscript.commands']/interface[@name='Symbol']"
 	[Register ("com/mob/tools/mscript/commands/Symbol", "", "Com.Mob.Tools.Mscript.Commands.ISymbolInvoker")]
-	public partial interface ISymbol : IJavaObject {
+	public partial interface ISymbol : IJavaObject, IJavaPeerable {
 
 		string Symbol {
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.mob.tools.mscript.commands']/interface[@name='Symbol']/method[@name='getSymbol' and count(parameter)=0]"
@@ -485,9 +485,9 @@ namespace Com.Mob.Tools.Mscript.Commands {
 	}
 
 	[global::Android.Runtime.Register ("com/mob/tools/mscript/commands/Symbol", DoNotGenerateAcw=true)]
-	internal class ISymbolInvoker : global::Java.Lang.Object, ISymbol {
+	internal partial class ISymbolInvoker : global::Java.Lang.Object, ISymbol {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/mscript/commands/Symbol", typeof (ISymbolInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/mscript/commands/Symbol", typeof (ISymbolInvoker));
 
 		static IntPtr java_class_ref {
 			get { return _members.JniPeerType.PeerReference.Handle; }

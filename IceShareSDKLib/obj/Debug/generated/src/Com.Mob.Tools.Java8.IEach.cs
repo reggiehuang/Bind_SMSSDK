@@ -8,7 +8,7 @@ namespace Com.Mob.Tools.Java8 {
 	// Metadata.xml XPath interface reference: path="/api/package[@name='com.mob.tools.java8']/interface[@name='Each.MapEach']"
 	[Register ("com/mob/tools/java8/Each$MapEach", "", "Com.Mob.Tools.Java8.IEachMapEachInvoker")]
 	[global::Java.Interop.JavaTypeParameters (new string [] {"K", "V"})]
-	public partial interface IEachMapEach : IJavaObject {
+	public partial interface IEachMapEach : IJavaObject, IJavaPeerable {
 
 		// Metadata.xml XPath method reference: path="/api/package[@name='com.mob.tools.java8']/interface[@name='Each.MapEach']/method[@name='each' and count(parameter)=2 and parameter[1][@type='K'] and parameter[2][@type='V']]"
 		[Register ("each", "(Ljava/lang/Object;Ljava/lang/Object;)V", "GetEach_Ljava_lang_Object_Ljava_lang_Object_Handler:Com.Mob.Tools.Java8.IEachMapEachInvoker, IceShareSDKLib")]
@@ -17,9 +17,9 @@ namespace Com.Mob.Tools.Java8 {
 	}
 
 	[global::Android.Runtime.Register ("com/mob/tools/java8/Each$MapEach", DoNotGenerateAcw=true)]
-	internal class IEachMapEachInvoker : global::Java.Lang.Object, IEachMapEach {
+	internal partial class IEachMapEachInvoker : global::Java.Lang.Object, IEachMapEach {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/java8/Each$MapEach", typeof (IEachMapEachInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/java8/Each$MapEach", typeof (IEachMapEachInvoker));
 
 		static IntPtr java_class_ref {
 			get { return _members.JniPeerType.PeerReference.Handle; }
@@ -115,9 +115,9 @@ namespace Com.Mob.Tools.Java8 {
 	}
 
 	[global::Android.Runtime.Register ("com/mob/tools/java8/Each", DoNotGenerateAcw=true)]
-	internal class IEachInvoker : global::Java.Lang.Object, IEach {
+	internal partial class IEachInvoker : global::Java.Lang.Object, IEach {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/java8/Each", typeof (IEachInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/java8/Each", typeof (IEachInvoker));
 
 		static IntPtr java_class_ref {
 			get { return _members.JniPeerType.PeerReference.Handle; }

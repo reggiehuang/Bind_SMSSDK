@@ -7,7 +7,7 @@ namespace CN.Sharesdk.Twitter {
 
 	// Metadata.xml XPath interface reference: path="/api/package[@name='cn.sharesdk.twitter']/interface[@name='UpLoadViewCallBack']"
 	[Register ("cn/sharesdk/twitter/UpLoadViewCallBack", "", "CN.Sharesdk.Twitter.IUpLoadViewCallBackInvoker")]
-	public partial interface IUpLoadViewCallBack : IJavaObject {
+	public partial interface IUpLoadViewCallBack : IJavaObject, IJavaPeerable {
 
 		// Metadata.xml XPath method reference: path="/api/package[@name='cn.sharesdk.twitter']/interface[@name='UpLoadViewCallBack']/method[@name='onResule' and count(parameter)=1 and parameter[1][@type='java.lang.String']]"
 		[Register ("onResule", "(Ljava/lang/String;)V", "GetOnResule_Ljava_lang_String_Handler:CN.Sharesdk.Twitter.IUpLoadViewCallBackInvoker, IceShareSDKLib")]
@@ -16,9 +16,9 @@ namespace CN.Sharesdk.Twitter {
 	}
 
 	[global::Android.Runtime.Register ("cn/sharesdk/twitter/UpLoadViewCallBack", DoNotGenerateAcw=true)]
-	internal class IUpLoadViewCallBackInvoker : global::Java.Lang.Object, IUpLoadViewCallBack {
+	internal partial class IUpLoadViewCallBackInvoker : global::Java.Lang.Object, IUpLoadViewCallBack {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("cn/sharesdk/twitter/UpLoadViewCallBack", typeof (IUpLoadViewCallBackInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/twitter/UpLoadViewCallBack", typeof (IUpLoadViewCallBackInvoker));
 
 		static IntPtr java_class_ref {
 			get { return _members.JniPeerType.PeerReference.Handle; }

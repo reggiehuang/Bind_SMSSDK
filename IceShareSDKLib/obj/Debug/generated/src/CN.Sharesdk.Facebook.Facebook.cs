@@ -13,7 +13,7 @@ namespace CN.Sharesdk.Facebook {
 		[global::Android.Runtime.Register ("cn/sharesdk/facebook/Facebook$ShareParams", DoNotGenerateAcw=true)]
 		public new partial class ShareParams : global::CN.Sharesdk.Framework.Platform.ShareParams {
 
-			internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/sharesdk/facebook/Facebook$ShareParams", typeof (ShareParams));
+			static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/facebook/Facebook$ShareParams", typeof (ShareParams));
 			internal static new IntPtr class_ref {
 				get {
 					return _members.JniPeerType.PeerReference.Handle;
@@ -54,7 +54,7 @@ namespace CN.Sharesdk.Facebook {
 
 		}
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/sharesdk/facebook/Facebook", typeof (Facebook));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/facebook/Facebook", typeof (Facebook));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

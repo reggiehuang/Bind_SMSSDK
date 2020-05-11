@@ -9,7 +9,7 @@ namespace CN.Sharesdk.Onekeyshare.Themes.Classic {
 	[global::Android.Runtime.Register ("cn/sharesdk/onekeyshare/themes/classic/ClassicTheme", DoNotGenerateAcw=true)]
 	public partial class ClassicTheme : global::CN.Sharesdk.Onekeyshare.OnekeyShareThemeImpl {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/sharesdk/onekeyshare/themes/classic/ClassicTheme", typeof (ClassicTheme));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/onekeyshare/themes/classic/ClassicTheme", typeof (ClassicTheme));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

@@ -7,7 +7,7 @@ namespace CN.Smssdk.Utils {
 
 	// Metadata.xml XPath interface reference: path="/api/package[@name='cn.smssdk.utils']/interface[@name='LockAction']"
 	[Register ("cn/smssdk/utils/LockAction", "", "CN.Smssdk.Utils.ILockActionInvoker")]
-	public partial interface ILockAction : IJavaObject {
+	public partial interface ILockAction : IJavaObject, IJavaPeerable {
 
 		// Metadata.xml XPath method reference: path="/api/package[@name='cn.smssdk.utils']/interface[@name='LockAction']/method[@name='run' and count(parameter)=1 and parameter[1][@type='com.mob.tools.utils.FileLocker']]"
 		[Register ("run", "(Lcom/mob/tools/utils/FileLocker;)Z", "GetRun_Lcom_mob_tools_utils_FileLocker_Handler:CN.Smssdk.Utils.ILockActionInvoker, IceShareSDKLib")]
@@ -16,9 +16,9 @@ namespace CN.Smssdk.Utils {
 	}
 
 	[global::Android.Runtime.Register ("cn/smssdk/utils/LockAction", DoNotGenerateAcw=true)]
-	internal class ILockActionInvoker : global::Java.Lang.Object, ILockAction {
+	internal partial class ILockActionInvoker : global::Java.Lang.Object, ILockAction {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("cn/smssdk/utils/LockAction", typeof (ILockActionInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/smssdk/utils/LockAction", typeof (ILockActionInvoker));
 
 		static IntPtr java_class_ref {
 			get { return _members.JniPeerType.PeerReference.Handle; }

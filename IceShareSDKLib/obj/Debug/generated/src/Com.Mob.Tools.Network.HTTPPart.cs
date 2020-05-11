@@ -9,7 +9,7 @@ namespace Com.Mob.Tools.Network {
 	[global::Android.Runtime.Register ("com/mob/tools/network/HTTPPart", DoNotGenerateAcw=true)]
 	public abstract partial class HTTPPart : global::Java.Lang.Object {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/network/HTTPPart", typeof (HTTPPart));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/network/HTTPPart", typeof (HTTPPart));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;
@@ -237,7 +237,7 @@ namespace Com.Mob.Tools.Network {
 
 		public HTTPPartInvoker (IntPtr handle, JniHandleOwnership transfer) : base (handle, transfer) {}
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new JniPeerMembers ("com/mob/tools/network/HTTPPart", typeof (HTTPPartInvoker));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/network/HTTPPart", typeof (HTTPPartInvoker));
 
 		public override global::Java.Interop.JniPeerMembers JniPeerMembers {
 			get { return _members; }

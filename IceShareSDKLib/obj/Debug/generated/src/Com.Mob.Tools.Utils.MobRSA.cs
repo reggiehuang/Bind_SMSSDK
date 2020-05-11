@@ -9,7 +9,7 @@ namespace Com.Mob.Tools.Utils {
 	[global::Android.Runtime.Register ("com/mob/tools/utils/MobRSA", DoNotGenerateAcw=true)]
 	public partial class MobRSA : global::Java.Lang.Object {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/utils/MobRSA", typeof (MobRSA));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/utils/MobRSA", typeof (MobRSA));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

@@ -9,7 +9,7 @@ namespace Com.Mob.Commons.Utag {
 	[global::Android.Runtime.Register ("com/mob/commons/utag/UserTag", DoNotGenerateAcw=true)]
 	public partial class UserTag : global::Java.Lang.Object, global::Com.Mob.Tools.Proguard.IPublicMemberKeeper {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/commons/utag/UserTag", typeof (UserTag));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/commons/utag/UserTag", typeof (UserTag));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;
@@ -32,7 +32,7 @@ namespace Com.Mob.Commons.Utag {
 
 		public static unsafe global::Com.Mob.Commons.Utag.TagRequester UserTags {
 			// Metadata.xml XPath method reference: path="/api/package[@name='com.mob.commons.utag']/class[@name='UserTag']/method[@name='getUserTags' and count(parameter)=0]"
-			[Register ("getUserTags", "()Lcom/mob/commons/utag/TagRequester;", "GetGetUserTagsHandler")]
+			[Register ("getUserTags", "()Lcom/mob/commons/utag/TagRequester;", "")]
 			get {
 				const string __id = "getUserTags.()Lcom/mob/commons/utag/TagRequester;";
 				try {

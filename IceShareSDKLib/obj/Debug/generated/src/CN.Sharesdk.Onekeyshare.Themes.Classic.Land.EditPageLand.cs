@@ -9,7 +9,7 @@ namespace CN.Sharesdk.Onekeyshare.Themes.Classic.Land {
 	[global::Android.Runtime.Register ("cn/sharesdk/onekeyshare/themes/classic/land/EditPageLand", DoNotGenerateAcw=true)]
 	public partial class EditPageLand : global::CN.Sharesdk.Onekeyshare.Themes.Classic.EditPage, global::Android.Text.ITextWatcher, global::Android.Views.View.IOnClickListener, global::Java.Lang.IRunnable {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("cn/sharesdk/onekeyshare/themes/classic/land/EditPageLand", typeof (EditPageLand));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("cn/sharesdk/onekeyshare/themes/classic/land/EditPageLand", typeof (EditPageLand));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;

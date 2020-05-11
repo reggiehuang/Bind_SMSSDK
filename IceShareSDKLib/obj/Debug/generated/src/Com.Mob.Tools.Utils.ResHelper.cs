@@ -9,7 +9,7 @@ namespace Com.Mob.Tools.Utils {
 	[global::Android.Runtime.Register ("com/mob/tools/utils/ResHelper", DoNotGenerateAcw=true)]
 	public partial class ResHelper : global::Java.Lang.Object {
 
-		internal    new     static  readonly    JniPeerMembers  _members    = new XAPeerMembers ("com/mob/tools/utils/ResHelper", typeof (ResHelper));
+		static readonly JniPeerMembers _members = new XAPeerMembers ("com/mob/tools/utils/ResHelper", typeof (ResHelper));
 		internal static new IntPtr class_ref {
 			get {
 				return _members.JniPeerType.PeerReference.Handle;
@@ -948,7 +948,7 @@ namespace Com.Mob.Tools.Utils {
 
 		// Metadata.xml XPath method reference: path="/api/package[@name='com.mob.tools.utils']/class[@name='ResHelper']/method[@name='toString' and count(parameter)=1 and parameter[1][@type='java.lang.Object']]"
 		[Register ("toString", "(Ljava/lang/Object;)Ljava/lang/String;", "")]
-		public static unsafe string ToString (global::Java.Lang.Object obj)
+		public static new unsafe string ToString (global::Java.Lang.Object obj)
 		{
 			const string __id = "toString.(Ljava/lang/Object;)Ljava/lang/String;";
 			try {
